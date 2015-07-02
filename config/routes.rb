@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/dbadmin', as: 'rails_admin'
   comfy_route :cms_admin, :path => '/admin'
 
   # Make sure this routeset is defined last
