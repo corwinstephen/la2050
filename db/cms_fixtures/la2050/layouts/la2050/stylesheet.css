@@ -3,14 +3,36 @@
   Dark: #333;
   Light: #f9f9f9;
 
-  Cyan: #00B3BC;
+  Cyan: #00b3bc;
 */
+
+
+/* Base styles */
 
 body {
   font-size:14px;
   font-family:'Avenir Next';
-  color:#333;
+  color:rgba(0, 0, 0, 0.87);
 }
+
+p {
+
+}
+
+p.prose.primary {
+  font-size:24px;
+}
+
+p.prose.primary strong {
+  font-weight:bold;
+  color:#00b3bc;
+}
+
+p.prose.secondary {
+  color:rgba(0, 0, 0, 0.54);
+}
+
+/* End base styles */
 
 .nav-wrap {
   height:40px;
@@ -53,4 +75,3 @@ nav a:hover {
   color:#333;
   font-weight:bold;
 }
-
