@@ -1,13 +1,51 @@
+/*
+  Theme colors
+  Dark: #333;
+  Light: #f9f9f9;
+
+  Cyan: #00B3BC;
+*/
+
 body {
   font-size:14px;
   font-family:'Avenir Next';
   color:#333;
 }
 
+.nav-wrap {
+  height:40px;
+  line-height:40px;
+  border-bottom:3px solid #f9f9f9;
+}
+
+nav {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+nav span {
+  margin-left:2em;
+}
+
 nav a {
   color:rgba(0, 0, 0, 0.3);
   text-decoration:none;
   margin-left:2em;
+  padding-bottom:8px;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+nav a.selected {
+  color:#00b3bc;
+  font-weight:bold;
+  border-bottom: 3px solid #00b3bc;
+}
+
+nav a:hover {
+  color:#00b3bc;
+  font-weight:bold;
+  border-bottom: 3px solid #00b3bc;
+  text-decoration:none;
 }
 
 #nav-homelink {
