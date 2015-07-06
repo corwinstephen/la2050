@@ -5,6 +5,7 @@
 
   Cyan: #00b3bc;
   Magenta: #f13585;
+  Green: #8bd22c;
 */
 
 
@@ -42,6 +43,14 @@ button.bigger {
   line-height:4em;
   padding:0 2em;
   font-size:18px;
+}
+
+button.green {
+  background-color:#8bd22c;
+}
+
+button.cyan {
+  background-color:#00b3bc;
 }
 
 dl {
@@ -175,8 +184,16 @@ nav a:hover {
   margin-bottom:2em;
 }
 
+.margin-bottom-more {
+  margin-bottom:5em;
+}
+
 .padded {
   padding:1em;
+}
+
+.borderbox {
+  border:3px solid rgba(0, 0, 0, 0.87);
 }
 
 /* Modules */
@@ -206,8 +223,10 @@ nav a:hover {
   width:100%;
 }
 
-.borderbox {
-  border:3px solid rgba(0, 0, 0, 0.87);
+.homectas .icon {
+  height:50px;
+  width:100%;
+  margin-bottom:1em;
 }
 
 footer {
@@ -240,5 +259,16 @@ footer ul > li > ul > li {
 /* Icons */
 
 .icon-doc {
-  
+  background:url('/system/comfy/cms/files/files/000/000/003/original/icon-document.svg') center center no-repeat;
+  background-size:contain;
+}
+
+.icon-briefcase {
+  background:url('/system/comfy/cms/files/files/000/000/001/original/icon-briefcase.svg') center center no-repeat;
+  background-size:contain;
+}
+
+.icon-chart {
+  background:url('/system/comfy/cms/files/files/000/000/002/original/icon-chart.svg') center center no-repeat;
+  background-size:contain;
 }
