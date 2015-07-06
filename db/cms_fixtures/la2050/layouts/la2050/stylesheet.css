@@ -23,8 +23,12 @@ h1 {
   display:inline-block;
 }
 
-p {
+h1:first-child {
+  margin-top:0;
+}
 
+p {
+  font-size:18px;
 }
 
 p.prose.primary {
