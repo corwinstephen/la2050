@@ -14,6 +14,11 @@ a {
   color:#f13585;
 }
 
+a:hover {
+  text-decoration:underline;
+  color:inherit;
+}
+
 body {
   font-size:18px;
   font-family:'Avenir Next';
@@ -101,6 +106,15 @@ p.prose.guide {
   font-weight:bold;
 }
 
+ul {
+  list-style:none;
+  padding-left:0;
+  margin-bottom:0;
+}
+
+li {
+}
+
 /* End base styles */
 
 .nav-wrap {
@@ -160,6 +174,10 @@ nav a:hover {
   margin-bottom:2em;
 }
 
+.padded {
+  padding:1em;
+}
+
 /* Modules */
 
 .homeexplain {
@@ -185,5 +203,35 @@ nav a:hover {
   display:inline-block;
   vertical-align:middle;
   width:100%;
+}
+
+.borderbox {
   border:3px solid rgba(0, 0, 0, 0.87);
+}
+
+footer {
+  background-color:#fafafa;
+  padding:5em 0;
+  font-size:18px;
+}
+
+footer a {
+  color:rgba(0, 0, 0, 0.87);
+}
+
+footer ul {
+  font-weight:bold;
+}
+
+footer ul > li {
+  margin-bottom:.5em;
+}
+
+footer ul > li > ul {
+  margin-top:1em;
+}
+
+footer ul > li > ul > li {
+  font-weight:normal;
+  margin-left:1em;
 }

@@ -14,8 +14,21 @@
     {{ cms:page:content }}
 
     %footer
-      .paddedsection
-        .container
-          .row
-            .col-md-12
-              %h1 LA2050
+      .container
+        .row.margin-bottom
+          .col-md-12
+            %h1 LA2050
+
+        .row
+          .col-md-3
+            .borderbox.padded
+              %ul
+                %li
+                  %a{href: '#'} Challenge
+                %li Jobs
+                %li
+                  Dashboard
+                  %ul
+                    %li Goals
+                    %li Metrics
+                    %li Reports
