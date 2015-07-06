@@ -121,9 +121,10 @@ nav a {
   color:rgba(0, 0, 0, 0.3);
   text-decoration:none;
   margin-left:2em;
-  padding-bottom:8px;
+  padding-bottom:7px;
   padding-left:2px;
   padding-right:2px;
+  font-size:14px;
 }
 
 nav a.selected {
