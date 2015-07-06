@@ -1,6 +1,7 @@
 /*
   Theme colors
   Dark: #333;
+  Medium: #ccc;
   Light: #f9f9f9;
 
   Cyan: #00b3bc;
@@ -227,6 +228,39 @@ nav a:hover {
   height:50px;
   width:100%;
   margin-bottom:1em;
+}
+
+.greaterinitiative {
+  font-size:14px;
+  background-color:#f9f9f9;
+  padding:.5em;
+  border-bottom:1px solid #ccc;
+}
+
+.greaterinitiative dl {
+  display:inline-block;
+  margin-bottom:0;
+  margin-left:1em;
+}
+
+.greaterinitiative a {
+  color:#00b3bc;
+}
+
+.greaterinitiative dl dt {
+  font-weight:bold;
+  margin-bottom:0;
+}
+
+.greaterinitiative dl dd {
+  color:rgba(0, 0, 0, .54);
+}
+
+.greaterinitiative-slashes {
+  color:#00b3bc;
+  font-size:42px;
+  display:inline-block;
+  font-weight:bold;
 }
 
 footer {
