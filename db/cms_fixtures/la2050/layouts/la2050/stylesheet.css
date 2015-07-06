@@ -4,15 +4,31 @@
   Light: #f9f9f9;
 
   Cyan: #00b3bc;
+  Magenta: #f13585;
 */
 
 
 /* Base styles */
 
+a {
+  color:#f13585;
+}
+
 body {
-  font-size:14px;
+  font-size:18px;
   font-family:'Avenir Next';
   color:rgba(0, 0, 0, 0.87);
+}
+
+button {
+  background-color:#f13585;
+  color:#fff;
+  height:4em;
+  line-height:4em;
+  border:none;
+  padding:0 2em;
+  text-transform:uppercase;
+  font-weight:bold;
 }
 
 h1 {
@@ -101,4 +117,24 @@ nav a:hover {
 
 .paddedsection {
   padding:5em 0;
+}
+
+/* Helpers */
+
+.margin-bottom {
+  margin-bottom:2em;
+}
+
+/* Modules */
+
+.homeexplain {
+  margin-bottom:5em;
+}
+
+.homeexplain button {
+  width:100%;
+}
+
+.homegetinvolved {
+  
 }
