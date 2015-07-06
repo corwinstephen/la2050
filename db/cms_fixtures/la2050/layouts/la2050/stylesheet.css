@@ -84,6 +84,7 @@ input {
 p {
   font-size:18px;
   margin-bottom:1em;
+  line-height:28px;
 }
 
 p.prose.primary {
@@ -234,4 +235,10 @@ footer ul > li > ul {
 footer ul > li > ul > li {
   font-weight:normal;
   margin-left:1em;
+}
+
+/* Icons */
+
+.icon-doc {
+  
 }
