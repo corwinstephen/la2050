@@ -23,19 +23,39 @@ body {
 button {
   background-color:#f13585;
   color:#fff;
-  height:4em;
-  line-height:4em;
+  height:3em;
+  line-height:3em;
   border:none;
   padding:0 2em;
+  font-size:14px;
   text-transform:uppercase;
   font-weight:bold;
+}
+
+button.bigger {
+  height:4em;
+  line-height:4em;
+  padding:0 2em;
+  font-size:18px;
+}
+
+dl {
+
+}
+
+dt {
+  margin-bottom:1em;
+}
+
+dd {
+  color:rgba(0, 0, 0, 0.54);
 }
 
 h1 {
   font-size:36px;
   font-weight:bold;
   padding-bottom:.1em;
-  border-bottom:2px solid rgba(0, 0, 0, 0.87);;
+  border-bottom:2px solid rgba(0, 0, 0, 0.87);
   display:inline-block;
 }
 
@@ -43,8 +63,22 @@ h1:first-child {
   margin-top:0;
 }
 
+input {
+  font-style:'Avenir Next';
+  height:3em;
+  line-height:3em;
+  padding:0 1em;
+  display:block;
+  width:100%;
+  margin-bottom:1em;
+  outline:none;
+  background-color:#f9f9f9;
+  border:none;
+}
+
 p {
   font-size:18px;
+  margin-bottom:1em;
 }
 
 p.prose.primary {
@@ -138,4 +172,17 @@ nav a:hover {
 .homegetinvolved img {
   width:100%;
   margin-bottom:5em;
+}
+
+.homekeepupwrap img {
+  height:300px;
+}
+
+.homekeepup {
+  height:300px;
+  padding:1em;
+  display:inline-block;
+  vertical-align:middle;
+  width:100%;
+  border:3px solid rgba(0, 0, 0, 0.87);
 }

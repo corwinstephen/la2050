@@ -38,7 +38,7 @@
           into several reports which analyze the current state of human development and make informed projections about where we'll be in the year 2050. We also analyze projects submitted to the
           %a{:href => "/challenge"} My LA2050 Grants Challenge
           to highlight useful trends and patterns from the frontlines of the community. We also analyze the impact of LA2050 as an initiative.
-        %button Read our reports
+        %button.bigger Read our reports
 .background-grey.paddedsection.homegetinvolved
   .container
     .row.text-center
@@ -47,3 +47,42 @@
         %p.prose.secondary
           Help us reach our goals for Los Angeles.
         %p.prose.guide Get involved
+
+    .paddedsection
+      .row
+        .col-md-4.text-center
+          %dl
+            %dt Challenge
+            %dd
+              We provide grants in each of our goal categories to help people get great ideas off the ground.
+
+        .col-md-4.text-center
+          %dl
+            %dt Jobs
+            %dd
+              If a job has the potential for positive impact in one of our goal categories, we'll post it on our jobs board.
+
+        .col-md-4.text-center
+          %dl
+            %dt Metrics
+            %dd
+              Learn more about the numbers behind the metrics and meet Angelenos moving LA in the right direction. 
+
+      .row
+        .col-md-12.text-center
+          %p.prose.secondary Want to contribute something different?
+          %p
+            <a href='#'>Tell us about it</a>
+
+.paddedsection
+  .container
+    .row.homekeepupwrap
+      .col-md-5.col-md-offset-1.text-right
+        {{ cms:file:mailinglist.jpg:image }}
+
+      .col-md-5.text-left
+        .homekeepup
+          %p.prose.guide Keep up with LA2050
+          %p.prose.secondary Sign up for our mailing list
+          %input{ type: 'text', placeholder: 'Your email' }
+          %button Get involved
