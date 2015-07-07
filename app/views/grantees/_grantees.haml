@@ -1,0 +1,42 @@
+- Grantee.all.each_with_index do |grantee, index|
+  - if index % 2 == 0
+    .row
+      .col-md-5
+        .borderbox.padded
+          %p.prose.guide= grantee.project_name
+          .featuredwinners-winnermeta
+            .winnerlabel
+              = image_tag 'icon-gift.svg'
+              #{grantee.year} Winner
+          %p.guide= grantee.description
+          %a.button{ href: grantee.action_url } Learn more
+      .col-md-7
+        = image_tag grantee.photo.url(:medium), class: 'featuredwinners-image'
+  - else
+    .row
+      .col-md-7
+        = image_tag grantee.photo.url(:medium), class: 'featuredwinners-image'
+      .col-md-5
+        .borderbox.padded
+          %p.prose.guide= grantee.project_name
+          .featuredwinners-winnermeta
+            .winnerlabel
+              = image_tag 'icon-gift.svg'
+              #{grantee.year} Winner
+          %p.guide= grantee.description
+          %a.button{ href: grantee.action_url } Learn more
+
+.row.winnersmall
+  - Grantee.all.each do |grantee|
+    .col-md-4
+      .col-md-6 LEARN
+      .col-md-6.text-right
+        .winnerlabel
+          = image_tag 'icon-gift.svg'
+          #{grantee.year} Winner
+      .col-md-12
+        = image_tag grantee.photo.url(:small), class: 'winnersmall-photo'
+
+      .col-md-12
+        %h3= grantee.project_name
+        %p.light= grantee.description

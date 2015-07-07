@@ -33,16 +33,4 @@
 
   .featuredwinners
     = "<!-- Ping Stephen if you want to edit this! stephen@compiler.la -->"
-    {{ cms:partial:grantees/featured_grantees }}
-
-    .row
-      .col-md-7 {{ cms:file:mailinglist.jpg:image }}
-      .col-md-5
-        .borderbox.padded
-          %p.prose.guide UCLA Grand Challenges
-          .featuredwinners-winnermeta
-            .winnerlabel
-              {{ cms:file:icon-gift.svg:image }}
-              2013 Winner
-          %p.guide EnrichLA will reach our goal of building 75 school gardens, and will offer their Garden Ranger Program to at least 5,500 additional students.
-          %button Learn more
+    {{ cms:partial:grantees/grantees }}
