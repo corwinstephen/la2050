@@ -405,6 +405,8 @@ ul.linenav {
   text-transform:uppercase;
   font-weight:bold;
   font-size:12px;
+  display:inline-block;
+  margin-left:1em;
 }
 
 .winnerlabel img {
@@ -416,6 +418,27 @@ ul.linenav {
 
 .winnersmall-photo {
   width:100%;
+}
+
+.winnersmall-meta {
+  margin-bottom:1em;
+}
+
+.winnersmall-meta .winnerlabel {
+  float:right;
+  line-height:24px;
+}
+
+.goalcolorbox {
+  padding:2px 10px;
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.goalcolorbox.cyan {
+  border:3px solid #00b3bc;
+  color:#00b3bc;
 }
 
 footer {
