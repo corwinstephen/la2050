@@ -1,0 +1,10 @@
+.container-fluid
+  .row.nav-wrap{ class: @cms_page.slug == 'home' ? 'home' : '' }
+    .col-sm-2.col-xs-12
+      %a#nav-homelink{:href => "/"} LA2050
+    %nav.col-sm-10.text-right.col-xs-12
+      %a.selected{:href => "/about"} About
+      %span= "|"
+      %a{:href => "/challenge"} Challenge
+      %a{:href => "#"} Jobs
+      %a{:href => "#"} Dashboard
