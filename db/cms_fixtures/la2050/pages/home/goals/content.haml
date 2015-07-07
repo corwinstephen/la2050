@@ -5,7 +5,8 @@
       %p.prose.primary
         In order to track and drive progress, Angelenos must first be united by a shared vision of success for the region.
         In 2014, we launched #LA2050Listens - a series of community conversations - alongside expert roundtables to create a shared vision for the future of Los Angeles. Those conversations shaped the LA2050 Goals and Metrics which you can learn about below.
-      %button.bigger Learn More About #LA2050Listens
+      %a{:href => "/about"}
+        %button.bigger Learn More About #LA2050Listens
 
 .paddedsection
   .container
@@ -17,7 +18,6 @@
     .col-md-10.col-md-offset-1
       %a{:href => "/play"}
         {{ cms:file:play.png:image }}
-
   .row.text-center
     .col-md-10.col-md-offset-1
       %a{:href => "/connect"}
@@ -40,4 +40,5 @@
     .col-sm-6.col-sm-offset-3.text-center
       %p
       Learn more about the numbers behind the metrics and meet Angelenos moving LA in the right direction.
-      %button.bigger Join The Discussion
+      %a{:href => "/metrics"}
+        %button.bigger Join The Discussion
