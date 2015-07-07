@@ -8,6 +8,7 @@
   Magenta: #f13585;
   Green: #8bd22c;
   Purple: #a869aa;
+  Blue: #4d99d3;
 */
 
 
@@ -67,12 +68,19 @@ dd {
   color:rgba(0, 0, 0, 0.54);
 }
 
-h1 {
-  font-size:36px;
+h1, h2 {
   font-weight:bold;
   padding-bottom:.1em;
   border-bottom:2px solid rgba(0, 0, 0, 0.87);
   display:inline-block;
+}
+
+h1 {
+  font-size:36px;
+}
+
+h2 {
+  font-size:30px;
 }
 
 h1:first-child {
@@ -172,6 +180,9 @@ nav a:hover {
   font-weight:bold;
 }
 
+
+/* Helpers */
+
 .background-grey {
   background-color:#fafafa;
 }
@@ -179,8 +190,6 @@ nav a:hover {
 .paddedsection {
   padding:5em 0;
 }
-
-/* Helpers */
 
 .margin-bottom {
   margin-bottom:2em;
@@ -297,6 +306,48 @@ ul.linenav {
 
 .linenav li a {
   color:rgba(0, 0, 0, .54);
+}
+
+.challengehero {
+  border-bottom:1px solid #ccc;
+}
+
+.challengehero h1 {
+  margin-bottom:36px;
+}
+
+.challengehero p {
+  margin-bottom:36px;
+}
+
+.featuredwinners .row {
+  margin-bottom:5em;
+}
+
+.featuredwinners img {
+  width:100%;
+}
+
+.featuredwinners img, .featuredwinners .borderbox {
+  height:445px;
+}
+
+.featuredwinners-winnermeta {
+  margin-bottom:1em;
+}
+
+.winnerlabel {
+  color:#4d99d3;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:12px;
+}
+
+.winnerlabel img {
+  display:inline-block;
+  vertical-align:inherit;
+  width:1em;
+  height:1em;
 }
 
 footer {

@@ -1,4 +1,4 @@
-.greaterinitiative
+.greaterinitiative.margin-bottom
   .container-fluid
     .row
       .col-md-12
@@ -7,13 +7,52 @@
           %dt The My LA2050 Grants Challenge is part of the greater <a href='/'>LA2050 initiative</a>
           %dd We’re working to move Los Angeles toward the LA2050 goals
 
-.paddedsection
-  .linenav-wrap
-    .container
-      .row
-        .col-md-12
-          %ul.linenav
-            %li.selected Our grantees
-            %li= "|"
-            %li
-              %a{ href: '#' } 2015 Challenge
+.linenav-wrap
+  .container
+    .row
+      .col-md-12
+        %ul.linenav
+          %li.selected Our grantees
+          %li= "|"
+          %li
+            %a{ href: '#' } 2015 Challenge
+
+.challengehero
+  .container.paddedsection
+    .row
+      .col-md-12
+        %h1 My LA2050 Grants Challenge
+        %p.prose.secondary $1,000,000 to make LA the best place to learn, play, connect, create, and live
+        %button.bigger Learn about our next challenge
+
+.container.paddedsection
+  .row
+    .col-md-12
+      %h2.margin-bottom Previous winners
+
+
+  .featuredwinners
+    .row
+      .col-md-5
+        .borderbox.padded
+          %p.prose.guide UCLA Grand Challenges
+          .featuredwinners-winnermeta
+            .winnerlabel
+              {{ cms:file:icon-gift.svg:image }}
+              2014 Winner
+          %p.guide EnrichLA will reach our goal of building 75 school gardens, and will offer their Garden Ranger Program to at least 5,500 additional students.
+          %button Learn more
+      .col-md-7
+        {{ cms:file:mailinglist.jpg:image }}
+
+    .row
+      .col-md-7 {{ cms:file:mailinglist.jpg:image }}
+      .col-md-5
+        .borderbox.padded
+          %p.prose.guide UCLA Grand Challenges
+          .featuredwinners-winnermeta
+            .winnerlabel
+              {{ cms:file:icon-gift.svg:image }}
+              2013 Winner
+          %p.guide EnrichLA will reach our goal of building 75 school gardens, and will offer their Garden Ranger Program to at least 5,500 additional students.
+          %button Learn more
