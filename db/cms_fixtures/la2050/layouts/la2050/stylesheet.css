@@ -41,6 +41,10 @@ button {
   font-weight:bold;
 }
 
+button:hover {
+  background-color:#F74993;
+}
+
 button.bigger {
   height:4em;
   line-height:4em;
