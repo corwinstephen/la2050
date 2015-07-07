@@ -236,6 +236,11 @@ nav a:hover {
   border:3px solid rgba(0, 0, 0, 0.87);
 }
 
+.linebreak {
+  width:100%;
+  border-bottom:1px solid #ccc;
+}
+
 /* Modules */
 
 .homeexplain {
@@ -252,11 +257,11 @@ nav a:hover {
 }
 
 .homekeepupwrap img {
-  height:300px;
+  height:350px;
 }
 
 .homekeepup {
-  height:300px;
+  height:350px;
   padding:1em;
   display:inline-block;
   vertical-align:middle;
@@ -341,30 +346,30 @@ ul.linenav {
   display:inline-block;
   margin-right:1.5em;
   position:relative;
-  bottom:-1px;
-  padding-bottom:14px;
 }
 
 .linenav li.selected {
   font-weight:bold;
   color:#a869aa;
   border-bottom:3px solid #a869aa;
-}
-
-.linenav li:hover {
-  border-bottom:3px solid #a869aa;
+  padding-bottom:11px;
 }
 
 .linenav li:hover a {
+  border-bottom:3px solid #a869aa;
+  color:#a869aa;
   text-decoration:none;
+  padding-bottom:11px;
 }
 
 .linenav li a {
+  display:inline-block;
+  padding-bottom:14px;
   color:rgba(0, 0, 0, .54);
 }
 
 .challengehero {
-  border-bottom:1px solid #ccc;
+  padding-top:3em;
 }
 
 .challengehero h1 {
@@ -373,6 +378,10 @@ ul.linenav {
 
 .challengehero p {
   margin-bottom:36px;
+}
+
+.challengehero .linebreak {
+  margin:3em 0 0 0;
 }
 
 .featuredwinners .row {
