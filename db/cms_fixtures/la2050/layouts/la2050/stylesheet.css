@@ -7,6 +7,7 @@
   Cyan: #00b3bc;
   Magenta: #f13585;
   Green: #8bd22c;
+  Purple: #a869aa;
 */
 
 
@@ -263,10 +264,45 @@ nav a:hover {
   font-weight:bold;
 }
 
+.linenav-wrap {
+  border-bottom:1px solid #ccc;
+}
+
+ul.linenav {
+  font-size:14px;
+  color:rgba(0, 0, 0, .54);
+}
+
+.linenav li {
+  display:inline-block;
+  margin-right:2em;
+  position:relative;
+  bottom:-1px;
+  padding-bottom:14px;
+}
+
+.linenav li.selected {
+  font-weight:bold;
+  color:#a869aa;
+  border-bottom:3px solid #a869aa;
+}
+
+.linenav li:hover {
+  border-bottom:3px solid #a869aa;
+}
+
+.linenav li:hover a {
+  text-decoration:none;
+}
+
+.linenav li a {
+  color:rgba(0, 0, 0, .54);
+}
+
 footer {
   background-color:#fafafa;
   padding:5em 0;
-  font-size:18px;
+  font-size:14px;
 }
 
 footer a {
