@@ -39,6 +39,7 @@ button {
   font-size:14px;
   text-transform:uppercase;
   font-weight:bold;
+  border-radius:1px;
 }
 
 button:hover {
@@ -107,11 +108,12 @@ input {
 p {
   font-size:18px;
   margin-bottom:1em;
-  line-height:28px;
+  line-height:27px;
 }
 
 p.prose.primary {
   font-size:24px;
+  line-height:36px;
 }
 
 p.prose.primary strong {
@@ -122,6 +124,7 @@ p.prose.primary strong {
 p.prose.secondary {
   color:rgba(0, 0, 0, 0.54);
   font-size:18px;
+  line-height:27px;
 }
 
 p.prose.guide {
@@ -256,6 +259,7 @@ nav a:hover {
   background-color:#f9f9f9;
   padding:.5em;
   border-bottom:1px solid #ccc;
+  margin-bottom:5em;
 }
 
 .greaterinitiative dl {
