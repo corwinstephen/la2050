@@ -263,6 +263,26 @@ nav a:hover {
   font-weight:bold;
 }
 
+.goalsbackground-play {
+  background-color: #fa99c0;
+}
+
+.goalsbackground-connect {
+  background-color: #fcbd7b;
+}
+
+.goalsbackground-live {
+  background-color: #afd886;
+}
+
+.goalsbackground-learn {
+  background-color: #44cbcf;
+}
+
+.goalsbackground-create {
+  background-color: #fde069;
+}
+
 footer {
   background-color:#fafafa;
   padding:5em 0;
