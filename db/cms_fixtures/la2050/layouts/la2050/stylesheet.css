@@ -118,6 +118,12 @@ p.prose.guide {
   font-weight:bold;
 }
 
+p.prose.summary {
+  font-size:24px;
+  color:rgba(0, 0, 0, 0.54);
+  line-height: 36px;
+}
+
 ul {
   list-style:none;
   padding-left:0;
@@ -262,6 +268,31 @@ nav a:hover {
   font-size:42px;
   display:inline-block;
   font-weight:bold;
+}
+
+.goalsdisplay img {
+  width:100%;
+  margin:2em 0;
+}
+
+.goalsdisplay-playback {
+  background-color: #fa99c0;
+}
+
+.goalsdisplay-connectback {
+  background-color: #fcbd7b;
+}
+
+.goalsdisplay-liveback {
+  background-color: #afd886;
+}
+
+.goalsdisplay-learnback {
+  background-color: #44cbcf;
+}
+
+.goalsdisplay-createback {
+  background-color: #fde069;
 }
 
 .linenav-wrap {
