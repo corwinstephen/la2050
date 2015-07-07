@@ -29,7 +29,8 @@ body {
   color:rgba(0, 0, 0, 0.87);
 }
 
-button {
+button, a.button {
+  display:inline-block;
   background-color:#f13585;
   color:#fff;
   height:3em;
@@ -324,7 +325,7 @@ ul.linenav {
 
 .linenav li {
   display:inline-block;
-  margin-right:2em;
+  margin-right:1.5em;
   position:relative;
   bottom:-1px;
   padding-bottom:14px;

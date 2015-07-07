@@ -1,0 +1,13 @@
+- Grantee.all.each do |grantee|
+  .row
+    .col-md-5
+      .borderbox.padded
+        %p.prose.guide= grantee.project_name
+        .featuredwinners-winnermeta
+          .winnerlabel
+            = image_tag 'icon-gift.svg'
+            #{grantee.year} Winner
+        %p.guide= grantee.description
+        %a.button{ href: grantee.action_url } Learn more
+    .col-md-7
+      = image_tag grantee.photo.url(:medium)
