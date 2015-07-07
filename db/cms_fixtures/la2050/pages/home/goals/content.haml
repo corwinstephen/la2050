@@ -13,32 +13,46 @@
     .col-sm-8.col-sm-offset-2.text-center
       %p.prose.guide Our goals are to make Los Angeles the best place to:
 
-.container
-  .goalsbackground-play.row.text-center
-    .col-md-10.col-md-offset-1
-      %a{:href => "/play"}
-        {{ cms:file:play.png:image }}
-  .goalsbackground-connect.row.text-center
-    .col-md-10.col-md-offset-1
-      %a{:href => "/connect"}
-        {{ cms:file:connect.png:image }}
-  .goalsbackground-live.row.text-center
-    .col-md-10.col-md-offset-1
-      %a{:href => "/live"}
-        {{ cms:file:live.png:image }}
-  .goalsbackground-learn.row.text-center
-    .col-md-10.col-md-offset-1
-      %a{:href => "/learn"}
-        {{ cms:file:learn.png:image }}
-  .goalsbackground-create.row.text-center
-    .col-md-10.col-md-offset-1
-      %a{:href => "/create"}
-        {{ cms:file:create.png:image }}
+.goalsdisplay
+  .goalsdisplay-playback
+    .container
+      .row.text-center
+        .col-md-12
+          %a{:href => "/play"}
+            {{ cms:file:play.png:image }}
+
+  .goalsdisplay-connectback
+    .container
+      .row.text-center
+        .col-md-12
+          %a{:href => "/connect"}
+            {{ cms:file:connect.png:image }}
+
+  .goalsdisplay-liveback
+    .container
+      .row.text-center
+        .col-md-12
+          %a{:href => "/live"}
+            {{ cms:file:live.png:image }}
+
+  .goalsdisplay-learnback
+    .container
+      .row.text-center
+        .col-md-12
+          %a{:href => "/learn"}
+            {{ cms:file:learn.png:image }}
+
+  .goalsdisplay-createback
+    .container
+      .row.text-center
+        .col-md-12
+          %a{:href => "/create"}
+            {{ cms:file:create.png:image }}
 
 .paddedsection
   .container
     .col-sm-6.col-sm-offset-3.text-center
-      %p
-      Learn more about the numbers behind the metrics and meet Angelenos moving LA in the right direction.
+      %p.prose.primary
+        Learn more about the numbers behind the metrics and meet Angelenos moving LA in the right direction.
       %a{:href => "/metrics"}
         %button.bigger Join The Discussion

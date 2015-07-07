@@ -263,23 +263,28 @@ nav a:hover {
   font-weight:bold;
 }
 
-.goalsbackground-play {
+.goalsdisplay img {
+  width:100%;
+  margin:2em 0;
+}
+
+.goalsdisplay-playback {
   background-color: #fa99c0;
 }
 
-.goalsbackground-connect {
+.goalsdisplay-connectback {
   background-color: #fcbd7b;
 }
 
-.goalsbackground-live {
+.goalsdisplay-liveback {
   background-color: #afd886;
 }
 
-.goalsbackground-learn {
+.goalsdisplay-learnback {
   background-color: #44cbcf;
 }
 
-.goalsbackground-create {
+.goalsdisplay-createback {
   background-color: #fde069;
 }
 
