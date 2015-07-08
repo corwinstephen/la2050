@@ -9,8 +9,8 @@
       %a{:href => "/about", class: (['home'].include?(@cms_page.slug) ? 'selected' : '')} About
       %span= "|"
       %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.slug) ? 'selected' : '')} Challenge
-      %a{:href => "#"} Jobs
-      %a{:href => "#"} Dashboard
+      %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.slug) ? 'selected' : '')} Jobs
+      %a{:href => "/dashboard", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.slug) ? 'selected' : '')} Dashboard
 
 :javascript
   $(document).ready(function(){
