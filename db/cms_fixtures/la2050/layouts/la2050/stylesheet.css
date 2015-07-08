@@ -48,10 +48,10 @@ button:hover, a.button:hover {
   text-decoration:none;
 }
 
-button.bigger {
+button.bigger, .button.bigger {
   height:4em;
   line-height:4em;
-  padding:0 2em;
+  padding:0 3em;
   font-size:18px;
 }
 
@@ -265,7 +265,15 @@ nav a:hover {
 }
 
 .margin-bottom {
-  margin-bottom:2em;
+  margin-bottom:36px;
+}
+
+.margin-right {
+  margin-right:36px;
+}
+
+.margin-left {
+  margin-left:36px;
 }
 
 .margin-bottom-more {
@@ -286,6 +294,32 @@ nav a:hover {
 }
 
 /* Modules */
+
+.homehero-contentwrap {
+  position:absolute;
+  font-size:24px;
+  color:rgba(255, 255, 255, 0.95);
+  height:292px;
+  top:50%;
+  margin-top:-146px;
+  width:100%;
+}
+
+.homehero-title {
+  margin-left:-5px;
+  font-size:121px;
+  line-height:80px;
+  color:rgba(255, 255, 255, 0.95);
+  font-weight:bold;
+}
+
+.homehero-title span {
+  margin-right:10px;
+}
+
+.homehero-byline {
+  text-shadow:0 0 3px rgba(0, 0, 0, .2);
+}
 
 .homeexplain {
   margin-bottom:5em;
