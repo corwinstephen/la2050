@@ -1,14 +1,14 @@
 - unless @cms_page.slug == 'home'
   .navpadding
-  
+
 .container-fluid
   .row.nav-wrap{ class: @cms_page.slug == 'home' ? 'home' : '' }
     .col-sm-2.col-xs-12
       %a#nav-homelink{:href => "/"} LA2050
     %nav.col-sm-10.text-right.col-xs-12
-      %a.selected{:href => "/about"} About
+      %a{:href => "/about", class: (['home'].include?(@cms_page.slug) ? 'selected' : '')} About
       %span= "|"
-      %a{:href => "/challenge"} Challenge
+      %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.slug) ? 'selected' : '')} Challenge
       %a{:href => "#"} Jobs
       %a{:href => "#"} Dashboard
 
