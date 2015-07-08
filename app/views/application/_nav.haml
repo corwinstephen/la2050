@@ -8,3 +8,21 @@
       %a{:href => "/challenge"} Challenge
       %a{:href => "#"} Jobs
       %a{:href => "#"} Dashboard
+
+:javascript
+  $(document).ready(function(){
+    var $navWrap = $('.nav-wrap');
+    var classBeforeName = 'will-be-scrolled';
+    var classAfterName = 'scrolled';
+    $(document).scroll(function(){
+      if($(document).scrollTop() > 100){
+        $navWrap.addClass(classBeforeName);
+        setTimeout(function(){
+          $navWrap.addClass(classAfterName);
+        }, 1);
+      } else {
+        $navWrap.removeClass(classAfterName);
+        $navWrap.removeClass(classBeforeName);
+      }
+    });
+  });
