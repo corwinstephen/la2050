@@ -342,7 +342,7 @@ nav a:hover {
   width:100%;
 }
 
-.homehero-title {
+.hero-title {
   margin-left:-5px;
   font-size:121px;
   line-height:80px;
@@ -350,12 +350,22 @@ nav a:hover {
   font-weight:bold;
 }
 
-.homehero-title span {
+.hero-title span {
   margin-right:10px;
 }
 
-.homehero-byline {
+.hero-byline {
   text-shadow:0 0 3px rgba(0, 0, 0, .2);
+  font-weight:bold;
+  font-size:24px;
+  color:rgba(255, 255, 255, 0.95);
+}
+
+.hero-info {
+  text-shadow:0 0 3px rgba(0, 0, 0, .2);
+  color:rgba(255, 255, 255, 0.95);
+  font-style:italic;
+  font-size:24px;
 }
 
 .homeexplain {
@@ -424,7 +434,7 @@ nav a:hover {
   background-color:#f9f9f9;
   padding:.5em;
   border-bottom:1px solid #ccc;
-  margin-bottom:5em;
+  margin-bottom:3em;
 }
 
 .greaterinitiative dl {
@@ -513,19 +523,19 @@ ul.linenav {
   color:rgba(0, 0, 0, .54);
 }
 
-.challengehero {
+.granteeshero {
   padding-top:3em;
 }
 
-.challengehero h1 {
+.granteeshero h1 {
   margin-bottom:36px;
 }
 
-.challengehero p {
+.granteeshero p {
   margin-bottom:36px;
 }
 
-.challengehero .linebreak {
+.granteeshero .linebreak {
   margin:3em 0 0 0;
 }
 
@@ -634,6 +644,32 @@ ul.linenav {
   height:1em;
   bottom:2px;
   margin-right:5px;
+}
+
+#challengehero {
+  height:500px;
+  background-size:cover;
+  margin-top:1em;
+  position:relative;
+}
+
+.challengehero-contentwrap {
+  position:relative;
+  color:#fff;
+  transform:translateY(-50%);
+  top:50%;
+}
+
+.challengehero-contentwrap .hero-title {
+  position:relative;
+  font-size:72px;
+  text-shadow:0 0 3px rgba(0, 0, 0, .2);
+  margin-bottom:18px;
+}
+
+.challengehero-contentwrap .linebreak {
+  border-color:rgba(255, 255, 255, 0.5);
+  margin:2em 0;
 }
 
 footer {
