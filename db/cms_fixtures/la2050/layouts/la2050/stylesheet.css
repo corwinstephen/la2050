@@ -446,6 +446,20 @@ nav a:hover {
   width:100%;
 }
 
+.icon {
+  width:1em;
+  height:1em;
+  display:inline-block;
+  position:relative;
+}
+
+.icon.title {
+  width:39px;
+  height:39px;
+  margin-right:1.5em;
+  bottom:-12px;
+}
+
 .homectas .icon {
   height:50px;
   width:100%;
@@ -457,7 +471,7 @@ nav a:hover {
 }
 
 .metricexplainbox {
-  background-color:#f9f9f9;
+  border:3px solid #333;
   text-align:center;
   padding:2em;
 }
@@ -473,8 +487,8 @@ nav a:hover {
   font-size:14px;
   background-color:#f9f9f9;
   padding:.5em;
-  border-bottom:1px solid #eee;
-  border-top:1px solid #eee;
+  border-top:1px solid #ccc;
+  border-bottom:2px dashed #ccc;
   margin-bottom:3em;
 }
 
