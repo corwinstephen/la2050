@@ -188,6 +188,7 @@ li {
   height:100px;
   line-height:150px;
   top:-100px;
+  width:100%;
 }
 
 .nav-wrap.scrolled {
@@ -197,6 +198,7 @@ li {
   background-color:#fff;
   box-shadow:0 0 5px 0 rgba(0, 0, 0, .2);
   transition:top .3s cubic-bezier(0.125, 0.370, 0.365, 1.650);
+  width:100%;
 }
 
 .nav-wrap.scrolled #nav-homelink {
