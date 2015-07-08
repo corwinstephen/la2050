@@ -5,14 +5,14 @@
         .col-md-12
           .homehero-title.margin-bottom.animated.flipInX <span>L</span>A2050
           .homehero-byline.margin-bottom Driving and tracking progress toward a <br />shared vision for the future of Los Angeles.
-          %a.button.bigger.margin-right{ href: '#' } Get involved
+          %a.button.bigger.margin-right{ href: '#getinvolved' } Get involved
           or
           %a.margin-left{href: '#'} Learn more about what we're doing
 
 .background-grey.paddedsection
   .container
     .row
-      .col-sm-6.col-sm-offset-3.text-center
+      .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.text-center
         %p.prose.primary.margin-bottom
           LA2050 is a community-guided initiative to drive and track progress toward a
           %strong shared vision for the future of Los Angeles.
@@ -23,12 +23,13 @@
           .text-center
             {{ cms:file:arrow-down-cyan.svg:image }}
 
+.sectionbreak
 .paddedsection
   .container
-    .row.homeexplain
+    .row.homeexplain.text-center
       .col-md-2.col-md-offset-1
         %h1 Goals
-      .col-md-8
+      .col-md-7.col-md-offset-1
         %p We worked with Angelenos to come up with the following five goals. All LA2050 activities work in support of these five goals.
         %p.prose.guide Together, we can make Los Angeles the best place to:
         .goalboxes
@@ -37,21 +38,45 @@
           %a.goalcolorbox.bigger.yellow{ href: '#' } Create
           %a.goalcolorbox.bigger.magenta{ href: '#' } Play
           %a.goalcolorbox.bigger.cyan{ href: '#' } Learn
-    .row.homeexplain
+
+        .linebreak
+
+    .row.homeexplain.text-center
       .col-md-2.col-md-offset-1
         %h1 Metrics
-      .col-md-8
+      .col-md-7.col-md-offset-1
         %p
           Metrics measure whether we are on track to reach our goals.
           They're backed by data, which helps us understand what's working and what's not.
         %p.prose.guide
           For example
-        %p
+        %p.margin-bottom
           Per-capita crime rate is a metric that affects whether Los Angeles is becoming a safer place to play, and truancy rate measures whether LA is a great place to learn.
+
+        .metricexplainbox.margin-bottom
+          .margin-bottom
+            .metric
+              %i.icon-chart
+              Per capita crime rate
+            .arrow {{ cms:file:arrow-right-black.svg:image }}
+            %a.goalcolorbox.bigger.magenta{ href: 'goals/play' } Play
+
+          %div
+            .metric
+              %i.icon-chart
+              Truancy rate
+            .arrow {{ cms:file:arrow-right-black.svg:image }}
+            %a.goalcolorbox.bigger.cyan{ href: 'goals/play' } Learn
+
+        .text-center 
+          %a{ href: '/metrics' } See all the LA2050 metrics
+
+        .linebreak
+
     .row.homeexplain
       .col-md-2.col-md-offset-1
         %h1 Reports
-      .col-md-8
+      .col-md-7.col-md-offset-1
         %p.margin-bottom
           We compile the information we get from the
           %a{:href => "/goals"} goals
@@ -61,45 +86,54 @@
           %a{:href => "/challenge"} My LA2050 Grants Challenge
           to highlight useful trends and patterns from the frontlines of the community. We also analyze the impact of LA2050 as an initiative.
         %button.bigger Read our reports
+
+        .linebreak
+
+.sectionbreak
+
 .background-grey.paddedsection.homegetinvolved
   .container
     .row.text-center
       .col-md-10.col-md-offset-1
         {{ cms:file:la2050logo.png:image }}
-        %p.prose.secondary
-          Help us reach our goals for Los Angeles.
-        %p.prose.guide Get involved
+        .margin-top.margin-bottom
+          %a{ id: 'getinvolved' }
+          %p.prose.secondary
+            Help us reach our goals for Los Angeles.
+          %p.prose.guide.nomargin Get involved
 
-      .row.homectas.margin-bottom-more
-        .col-md-4.text-center
-          .icon.icon-doc
-          %dl
-            %dt Challenge
-            %dd
-              {{ cms:page:challenge_cta:text }}
-          %button See our challenges
+    .row.homectas.margin-bottom-more.margin-top-more
+      .col-md-4.text-center
+        .icon.icon-doc
+        %dl
+          %dt Challenge
+          %dd
+            {{ cms:page:challenge_cta:text }}
+        %a.button{ href: '/challenge' } See our challenges
 
-        .col-md-4.text-center
-          .icon.icon-briefcase
-          %dl
-            %dt Jobs
-            %dd
-              {{ cms:page:jobs_cta:text }}
-          %button.green Search jobs
+      .col-md-4.text-center
+        .icon.icon-briefcase
+        %dl
+          %dt Jobs
+          %dd
+            {{ cms:page:jobs_cta:text }}
+        %a.button.green{ href: '/jobs' } Search jobs
 
-        .col-md-4.text-center
-          .icon.icon-chart
-          %dl
-            %dt Metrics
-            %dd
-              Learn more about the numbers behind the metrics and meet Angelenos moving LA in the right direction. 
-          %button.cyan Join the discussion
+      .col-md-4.text-center
+        .icon.icon-chart
+        %dl
+          %dt Metrics
+          %dd
+            Learn more about the numbers behind the metrics and meet Angelenos moving LA in the right direction. 
+        %a.button.cyan{ href: '/metrics' } Join the discussion
 
-      .row
-        .col-md-12.text-center
-          %p.prose.secondary Want to contribute something different?
-          %p
-            <a href='#'>Tell us about it</a>
+    .row
+      .col-md-12.text-center
+        %p.prose.aside Want to contribute something different?
+        %p
+          <a href='#'>Tell us about it</a>
+
+.sectionbreak
 
 .paddedsection
   .container

@@ -5,3 +5,23 @@
   background:url(asset-path('homehero.jpg'));
   background-size:cover;
 }
+
+i {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.icon-doc {
+  background:url(asset-path('icon-document.svg')) center center no-repeat;
+  background-size:contain;
+}
+
+.icon-briefcase {
+  background:url(asset-path('icon-briefcase.svg')) center center no-repeat;
+  background-size:contain;
+}
+
+.icon-chart {
+  background:url(asset-path('icon-chart.svg')) center center no-repeat;
+  background-size:contain;
+}

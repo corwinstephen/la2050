@@ -1,0 +1,37 @@
+.greaterinitiative
+  .container-fluid
+    .row
+      .col-md-12
+        .greaterinitiative-slashes //
+        %dl
+          %dt The My LA2050 Grants Challenge is part of the greater <a href='/'>LA2050 initiative</a>
+          %dd We’re working to move Los Angeles toward the LA2050 goals
+
+.linenav-wrap
+  .container
+    .row
+      .col-md-12
+        %ul.linenav
+          %li.selected Our grantees
+          %li= "|"
+          %li
+            %a{ href: '#' } 2015 MyLA2050 Grants Challenge
+
+.challengehero
+  .container
+    .row
+      .col-md-12
+        %h1 My LA2050 Grants Challenge
+        %p.prose.secondary $1,000,000 to make LA the best place to learn, play, connect, create, and live
+        %button.bigger Learn about our next challenge
+        .linebreak
+
+.container.paddedsection
+  .row
+    .col-md-12
+      %h2.margin-bottom Previous winners
+
+
+  .featuredwinners
+    = "<!-- Ping Stephen if you want to edit this! stephen@compiler.la -->"
+    {{ cms:partial:grantees/grantees }}

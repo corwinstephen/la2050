@@ -57,11 +57,11 @@ button.bigger, .button.bigger {
   font-size:18px;
 }
 
-button.green {
+.button.green {
   background-color:#8bd22c;
 }
 
-button.cyan {
+.button.cyan {
   background-color:#00b3bc;
 }
 
@@ -153,6 +153,15 @@ p.prose.summary {
   font-size:24px;
   color:rgba(0, 0, 0, 0.54);
   line-height: 36px;
+}
+
+p.prose.aside {
+  color:rgba(0, 0, 0, 0.54);
+  font-size:14px;
+}
+
+p:last-child {
+  margin-bottom:0;
 }
 
 ul {
@@ -263,8 +272,8 @@ nav a:hover {
 }
 
 .paddedsection {
-  padding-top:5em;
-  padding-bottom:5em;
+  padding-top:7em;
+  padding-bottom:7em;
 }
 
 .margin-bottom {
@@ -283,6 +292,14 @@ nav a:hover {
   margin-bottom:5em;
 }
 
+.margin-top {
+  margin-top:2em;
+}
+
+.margin-top-more {
+  margin-top:5em;
+}
+
 .nomargin {
   margin:0;
 }
@@ -297,7 +314,12 @@ nav a:hover {
 
 .linebreak {
   width:100%;
-  border-bottom:1px solid #ccc;
+  border-bottom:1px solid #999;
+}
+
+.sectionbreak {
+  width:100%;
+  border:2px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Modules */
@@ -340,6 +362,14 @@ nav a:hover {
   margin-bottom:5em;
 }
 
+.homeexplain .linebreak {
+  margin-top:3em;
+}
+
+.homeexplain:last-child {
+  margin-bottom:0;
+}
+
 .homeexplain p.prose.guide {
   margin-top:3em;
   margin-bottom:2em;
@@ -369,7 +399,24 @@ nav a:hover {
 .homectas .icon {
   height:50px;
   width:100%;
-  margin-bottom:1em;
+  margin-bottom:2em;
+}
+
+.homectas dl {
+  margin-bottom:2em;
+}
+
+.metricexplainbox {
+  background-color:#f9f9f9;
+  text-align:center;
+  padding:2em;
+}
+
+.metricexplainbox .arrow {
+  width:55px;
+  height:16px;
+  display:inline-block;
+  margin:0 3em;
 }
 
 .greaterinitiative {
@@ -542,6 +589,7 @@ ul.linenav {
   font-weight:bold;
   border-width:3px;
   border-style:solid;
+  text-transform:uppercase;
 }
 
 .goalcolorbox.bigger {
@@ -575,9 +623,22 @@ ul.linenav {
   color:#00b3bc;
 }
 
+.metric {
+  color:#00b3bc;
+  display:inline-block;
+}
+
+.metric .icon-chart {
+  position:relative;
+  width:1em;
+  height:1em;
+  bottom:2px;
+  margin-right:5px;
+}
+
 footer {
   background-color:#fafafa;
-  padding:5em 0;
+  padding:7em 0;
   font-size:14px;
 }
 
@@ -600,21 +661,4 @@ footer ul > li > ul {
 footer ul > li > ul > li {
   font-weight:normal;
   margin-left:1em;
-}
-
-/* Icons */
-
-.icon-doc {
-  background:url('/system/comfy/cms/files/files/000/000/003/original/icon-document.svg') center center no-repeat;
-  background-size:contain;
-}
-
-.icon-briefcase {
-  background:url('/system/comfy/cms/files/files/000/000/001/original/icon-briefcase.svg') center center no-repeat;
-  background-size:contain;
-}
-
-.icon-chart {
-  background:url('/system/comfy/cms/files/files/000/000/002/original/icon-chart.svg') center center no-repeat;
-  background-size:contain;
 }
