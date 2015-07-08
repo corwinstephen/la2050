@@ -9,6 +9,8 @@
   Green: #8bd22c;
   Purple: #a869aa;
   Blue: #4d99d3;
+  Yellow: #fdc100;
+  Red: #ed3f21;
 */
 
 
@@ -338,6 +340,11 @@ nav a:hover {
   margin-bottom:5em;
 }
 
+.homeexplain p.prose.guide {
+  margin-top:3em;
+  margin-bottom:2em;
+}
+
 .homeexplain button {
   width:100%;
 }
@@ -533,10 +540,38 @@ ul.linenav {
   display:inline-block;
   font-size:14px;
   font-weight:bold;
+  border-width:3px;
+  border-style:solid;
 }
 
+.goalcolorbox.bigger {
+  font-size:24px;
+  margin-right:.5em;
+}
+
+.goalcolorbox.red {
+  border-color:#ed3f21;
+  color:#ed3f21;
+}
+
+.goalcolorbox.green {
+  border-color:#8bd22c;
+  color:#8bd22c;
+}
+
+.goalcolorbox.yellow {
+  border-color:#fdc100;
+  color:#fdc100;
+}
+
+.goalcolorbox.magenta {
+  border-color:#f13585;
+  color:#f13585;
+}
+
+
 .goalcolorbox.cyan {
-  border:3px solid #00b3bc;
+  border-color:#00b3bc;
   color:#00b3bc;
 }
 

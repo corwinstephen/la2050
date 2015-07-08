@@ -1,7 +1,7 @@
 - Grantee.all.each_with_index do |grantee, index|
   - if index % 2 == 0
     .row.featuredwinners-winner
-      .col-md-5
+      .col-sm-5
         .borderbox.padded
           %p.prose.guide= grantee.project_name
           .featuredwinners-winnermeta
@@ -11,13 +11,13 @@
               #{grantee.year} Winner
           %p.guide= grantee.description
           %a.button{ href: grantee.action_url } Learn more
-      .col-md-7
+      .col-sm-7
         = image_tag grantee.photo.url(:medium), class: 'featuredwinners-image'
   - else
     .row.featuredwinners-winner
-      .col-md-7
+      .col-sm-7
         = image_tag grantee.photo.url(:medium), class: 'featuredwinners-image'
-      .col-md-5
+      .col-sm-5
         .borderbox.padded
           %p.prose.guide= grantee.project_name
           .featuredwinners-winnermeta
