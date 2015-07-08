@@ -29,6 +29,7 @@ body {
   font-size:18px;
   font-family:'Avenir Next';
   color:rgba(0, 0, 0, 0.87);
+  background-color:#f9f9f9;
 }
 
 button, a.button {
@@ -164,6 +165,29 @@ p:last-child {
   margin-bottom:0;
 }
 
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th {
+  font-size:12px;
+  font-weight:bold;
+  text-transform:uppercase;
+  border-bottom:3px solid #333;
+  padding-bottom:1em;
+}
+
+td {
+  height:5em;
+  vertical-align:middle;
+  border-bottom:1px solid #ccc;
+}
+
+tr:last-child td {
+  border:none;
+}
+
 ul {
   list-style:none;
   padding-left:0;
@@ -275,8 +299,16 @@ nav a:hover {
 
 /* Helpers */
 
+.background-white {
+  background-color:#fff;
+}
+
 .background-grey {
   background-color:#fafafa;
+}
+
+.background-green {
+  background-color:rgba(139, 210, 44, 0);
 }
 
 .paddedsection {
@@ -452,10 +484,6 @@ nav a:hover {
   margin-left:1em;
 }
 
-.greaterinitiative a {
-  color:#00b3bc;
-}
-
 .greaterinitiative dl dt {
   font-weight:bold;
   margin-bottom:0;
@@ -466,7 +494,7 @@ nav a:hover {
 }
 
 .greaterinitiative-slashes {
-  color:#00b3bc;
+  color:#f13585;
   font-size:42px;
   display:inline-block;
   font-weight:bold;
@@ -499,11 +527,14 @@ nav a:hover {
 
 .linenav-wrap {
   border-bottom:1px solid #ccc;
+  position:relative;
 }
 
 ul.linenav {
-  font-size:14px;
+  font-size:18px;
   color:rgba(0, 0, 0, .54);
+  position:relative;
+  bottom:-1px;
 }
 
 .linenav li {
@@ -609,11 +640,11 @@ ul.linenav {
   border-width:3px;
   border-style:solid;
   text-transform:uppercase;
+  margin-right:.5em;
 }
 
 .goalcolorbox.bigger {
   font-size:24px;
-  margin-right:.5em;
 }
 
 .goalcolorbox.red {

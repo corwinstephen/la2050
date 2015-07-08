@@ -23,69 +23,70 @@
           .text-center
             {{ cms:file:arrow-down-cyan.svg:image }}
 
-.sectionbreak
-.paddedsection
-  .container
-    .row.homeexplain.text-center
-      .col-md-2.col-md-offset-1
-        %h1 Goals
-      .col-md-7.col-md-offset-1
-        %p We worked with Angelenos to come up with the following five goals. All LA2050 activities work in support of these five goals.
-        %p.prose.guide Together, we can make Los Angeles the best place to:
-        .goalboxes
-          %a.goalcolorbox.bigger.red{ href: '#' } Connect
-          %a.goalcolorbox.bigger.green{ href: '#' } Live
-          %a.goalcolorbox.bigger.yellow{ href: '#' } Create
-          %a.goalcolorbox.bigger.magenta{ href: '#' } Play
-          %a.goalcolorbox.bigger.cyan{ href: '#' } Learn
+.background-white
+  .sectionbreak
+  .paddedsection
+    .container
+      .row.homeexplain.text-center
+        .col-md-2.col-md-offset-1
+          %h1 Goals
+        .col-md-7.col-md-offset-1
+          %p We worked with Angelenos to come up with the following five goals. All LA2050 activities work in support of these five goals.
+          %p.prose.guide Together, we can make Los Angeles the best place to:
+          .goalboxes
+            %a.goalcolorbox.bigger.red{ href: '#' } Connect
+            %a.goalcolorbox.bigger.green{ href: '#' } Live
+            %a.goalcolorbox.bigger.yellow{ href: '#' } Create
+            %a.goalcolorbox.bigger.magenta{ href: '#' } Play
+            %a.goalcolorbox.bigger.cyan{ href: '#' } Learn
 
-        .linebreak
+          .linebreak
 
-    .row.homeexplain.text-center
-      .col-md-2.col-md-offset-1
-        %h1 Metrics
-      .col-md-7.col-md-offset-1
-        %p
-          Metrics measure whether we are on track to reach our goals.
-          They're backed by data, which helps us understand what's working and what's not.
-        %p.prose.guide
-          For example
-        %p.margin-bottom
-          Per-capita crime rate is a metric that affects whether Los Angeles is becoming a safer place to play, and truancy rate measures whether LA is a great place to learn.
+      .row.homeexplain.text-center
+        .col-md-2.col-md-offset-1
+          %h1 Metrics
+        .col-md-7.col-md-offset-1
+          %p
+            Metrics measure whether we are on track to reach our goals.
+            They're backed by data, which helps us understand what's working and what's not.
+          %p.prose.guide
+            For example
+          %p.margin-bottom
+            Per-capita crime rate is a metric that affects whether Los Angeles is becoming a safer place to play, and truancy rate measures whether LA is a great place to learn.
 
-        .metricexplainbox.margin-bottom
-          .margin-bottom
-            .metric
-              %i.icon-chart
-              Per capita crime rate
-            .arrow {{ cms:file:arrow-right-black.svg:image }}
-            %a.goalcolorbox.bigger.magenta{ href: 'goals/play' } Play
+          .metricexplainbox.margin-bottom
+            .margin-bottom
+              .metric
+                %i.icon-chart
+                Per capita crime rate
+              .arrow {{ cms:file:arrow-right-black.svg:image }}
+              %a.goalcolorbox.bigger.magenta{ href: 'goals/play' } Play
 
-          %div
-            .metric
-              %i.icon-chart
-              Truancy rate
-            .arrow {{ cms:file:arrow-right-black.svg:image }}
-            %a.goalcolorbox.bigger.cyan{ href: 'goals/play' } Learn
+            %div
+              .metric
+                %i.icon-chart
+                Truancy rate
+              .arrow {{ cms:file:arrow-right-black.svg:image }}
+              %a.goalcolorbox.bigger.cyan{ href: 'goals/play' } Learn
 
-        .text-center 
-          %a{ href: '/metrics' } See all the LA2050 metrics
+          .text-center 
+            %a{ href: '/metrics' } See all the LA2050 metrics
 
-        .linebreak
+          .linebreak
 
-    .row.homeexplain
-      .col-md-2.col-md-offset-1
-        %h1 Reports
-      .col-md-7.col-md-offset-1
-        %p.margin-bottom
-          We compile the information we get from the
-          %a{:href => "/goals"} goals
-          and
-          %a{:href => "/metrics"} metrics
-          into several reports which analyze the current state of human development and make informed projections about where we'll be in the year 2050. We also analyze projects submitted to the
-          %a{:href => "/challenge"} My LA2050 Grants Challenge
-          to highlight useful trends and patterns from the frontlines of the community. We also analyze the impact of LA2050 as an initiative.
-        %button.bigger Read our reports
+      .row.homeexplain
+        .col-md-2.col-md-offset-1
+          %h1 Reports
+        .col-md-7.col-md-offset-1
+          %p.margin-bottom
+            We compile the information we get from the
+            %a{:href => "/goals"} goals
+            and
+            %a{:href => "/metrics"} metrics
+            into several reports which analyze the current state of human development and make informed projections about where we'll be in the year 2050. We also analyze projects submitted to the
+            %a{:href => "/challenge"} My LA2050 Grants Challenge
+            to highlight useful trends and patterns from the frontlines of the community. We also analyze the impact of LA2050 as an initiative.
+          %button.bigger Read our reports
 
 .sectionbreak
 
@@ -133,15 +134,16 @@
 
 .sectionbreak
 
-.paddedsection
-  .container
-    .row.homekeepupwrap
-      .col-md-6
-        {{ cms:file:mailinglist.jpg:image }}
+.background-white
+  .paddedsection
+    .container
+      .row.homekeepupwrap
+        .col-md-6
+          {{ cms:file:mailinglist.jpg:image }}
 
-      .col-md-6
-        .homekeepup.borderbox
-          %p.prose.guide Keep up with LA2050
-          %p.prose.secondary Sign up for our mailing list
-          %input{ type: 'text', placeholder: 'Your email' }
-          %button Get involved
+        .col-md-6
+          .homekeepup.borderbox
+            %p.prose.guide Keep up with LA2050
+            %p.prose.secondary Sign up for our mailing list
+            %input{ type: 'text', placeholder: 'Your email' }
+            %button Get involved
