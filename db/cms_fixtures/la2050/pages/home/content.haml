@@ -13,11 +13,16 @@
   .container
     .row
       .col-sm-8.col-sm-offset-2.text-center
-        %p.prose.primary
+        %p.prose.primary.margin-bottom
           LA2050 is a community-guided initiative to drive and track progress toward a
           %strong shared vision for the future of Los Angeles.
-        %p.prose.secondary Our vision is that Los Angeles in 2050 will be the best place to learn, connect, play, create and the healthiest place to live.
-        %p.prose.guide Here’s how we’ll get there:
+        %p.prose.secondary.nomargin Our vision is that Los Angeles in 2050 will be the best place to learn, connect, play, create and the healthiest place to live.
+
+        .arrowguide
+          %p.prose.guide Here’s how we’ll get there:
+          .text-center
+            {{ cms:file:arrow-down-cyan.svg:image }}
+
 .paddedsection
   .container
     .row.homeexplain
@@ -59,7 +64,6 @@
           Help us reach our goals for Los Angeles.
         %p.prose.guide Get involved
 
-    .paddedsection
       .row.homectas.margin-bottom-more
         .col-md-4.text-center
           .icon.icon-doc
