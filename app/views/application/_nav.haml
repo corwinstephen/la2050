@@ -1,3 +1,6 @@
+- unless @cms_page.slug == 'home'
+  .navpadding
+  
 .container-fluid
   .row.nav-wrap{ class: @cms_page.slug == 'home' ? 'home' : '' }
     .col-sm-2.col-xs-12

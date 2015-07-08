@@ -175,11 +175,19 @@ li {
 
 /* End base styles */
 
+.navpadding {
+  height:55px; 
+  width:100%;
+}
+
 .nav-wrap {
   height:55px;
   line-height:55px;
   background-color:#fff;
   z-index:10;
+  position:absolute;
+  width:100%;
+  top:0;
 }
 
 .nav-wrap.home {
