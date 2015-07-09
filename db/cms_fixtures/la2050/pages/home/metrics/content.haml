@@ -5,4 +5,33 @@
       .col-sm-8
         .icon.icon-chart.title
         %h1.margin-bottom Metrics
-        %p Metrics help us track our goals. They were chosen as a result of our <a href='/about/la2050listens'>#LA2050Listens</a> series of events. These metrics were shaped by <strong>you</strong>. Below is a list of all of the metrics being tracked as part of <a href='/goals'>LA2050's goals</a>.
+        %p
+          Metrics help us track our goals. They were chosen as a result of our <a href='/about/la2050listens'>#LA2050Listens</a> series of events. These metrics were shaped by
+          %strong you.
+        %p Below is a list of all of the metrics being tracked as part of the <a href='/goals'>LA2050 goals</a>.
+
+  .container
+    .row
+      .col-md-12.margin-bottom.margin-top
+        %a.goalcolorbox.red{ href: '#' } Connect
+        %a.goalcolorbox.green{ href: '#' } Live
+        %a.goalcolorbox.yellow{ href: '#' } Create
+        %a.goalcolorbox.magenta{ href: '#' } Play
+        %a.goalcolorbox.cyan{ href: '#' } Learn
+
+    .row
+      .col-md-12
+        %table
+          %thead
+            %th Metric
+
+          %tbody
+            %tr
+              %td Access to free wifi
+              %td
+                %a{ :href => "/metric"}View Metric
+
+            %tr
+              %td Adults getting sufficient social & emotional support
+              %td
+                %a{ :href => "/metric"}View Metric
