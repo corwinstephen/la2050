@@ -1,13 +1,15 @@
 .footer-facebook {
   display:inline-block;
-  width:30px;
-  height:30px;
+  width:40px;
+  height:40px;
   background:url(asset-path('icon-facebook-grey.svg')) center center no-repeat;
+  background-size:contain;
 }
 
 .footer-twitter {
   display:inline-block;
-  width:37px;
-  height:30px;
+  width:50px;
+  height:40px;
   background:url(asset-path('icon-twitter-grey.svg')) center center no-repeat;
+  background-size:contain;
 }

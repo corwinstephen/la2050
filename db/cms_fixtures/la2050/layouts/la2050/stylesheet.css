@@ -111,7 +111,7 @@ input[type=text], input[type=password], input[type=email] {
   font-style:'Avenir Next';
   height:2.66em;
   line-height:2.66em;
-  padding:0 1em;
+  padding:0 .66em;
   display:block;
   width:100%;
   margin-bottom:1em;
@@ -772,9 +772,10 @@ footer ul > li > ul > li {
 
 .footer-newslettersignup input[type=email] {
   display:inline-block;
-  max-width:60%;
+  max-width:300px;
   border:3px solid #333;
   vertical-align:top;
+  margin-right:.5em;
 }
 
 .footer-newslettersignup input[type=submit] {
