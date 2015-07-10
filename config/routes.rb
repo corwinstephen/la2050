@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+
   mount RailsAdmin::Engine => '/dbadmin', as: 'rails_admin'
   comfy_route :cms_admin, :path => '/admin'
 
+  comfy_route :blog_admin, :path => '/admin'
+  comfy_route :blog, :path => '/blog'
+  
   # Make sure this routeset is defined last
   comfy_route :cms, :path => '/', :sitemap => false
 
