@@ -46,7 +46,7 @@ button, .button {
   border-radius:1px;
 }
 
-button:hover, a.button:hover {
+button:hover, .button:hover {
   background-color:#F74993;
   text-decoration:none;
 }
@@ -250,23 +250,36 @@ li {
 }
 
 .nav-wrap.scrolled #nav-homelink {
-  color:rgba(0, 0, 0, 0.87);;
+  color:rgba(0, 0, 0, 0.87);
+}
+
+.nav-wrap.home nav {
+  color:rgba(255, 255, 255, 0.26);
 }
 
 .nav-wrap.home nav a {
   color:rgba(0, 0, 0, 0.54);
 }
 
-.nav-wrap.home.scrolled nav a.selected {
+.nav-wrap.scrolled.nav a {
+  color:rgba(0, 0, 0, .87);
+}
+
+
+.nav-wrap.scrolled nav a.selected {
   color:#00b3bc;
+}
+
+.nav-wrap.scrolled nav {
+  color:rgba(0, 0, 0, 0.26);
+}
+
+nav {
+  color:rgba(0, 0, 0, 0.26);
 }
 
 .nav-wrap.home nav a.selected {
   color:#fff;
-}
-
-nav {
-  color:rgba(0, 0, 0, 0.3);
 }
 
 nav span {
@@ -274,13 +287,13 @@ nav span {
 }
 
 nav a {
-  color:rgba(0, 0, 0, 0.3);
+  color:rgba(0, 0, 0, 0.54);
   text-decoration:none;
   margin-left:2em;
   padding-bottom:14px;
   padding-left:2px;
   padding-right:2px;
-  font-size:18px;
+  font-size:14px;
   position:relative;
 }
 
@@ -296,7 +309,7 @@ nav a:hover {
 }
 
 #nav-homelink {
-  font-size:24px;
+  font-size:18px;
   color:#333;
   font-weight:bold;
 }
@@ -491,10 +504,11 @@ nav a:hover {
 .greaterinitiative {
   font-size:14px;
   background-color:#f9f9f9;
-  padding:.5em;
+  padding:1em 0;
   border-top:1px solid #ccc;
   border-bottom:2px dashed #ccc;
   margin-bottom:5em;
+  box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .greaterinitiative dl {
