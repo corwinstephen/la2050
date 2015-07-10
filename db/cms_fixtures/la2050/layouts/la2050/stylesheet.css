@@ -49,6 +49,7 @@ button, .button {
 button:hover, .button:hover {
   background-color:#F74993;
   text-decoration:none;
+  color:#fff;
 }
 
 button.bigger, .button.bigger {
@@ -233,15 +234,15 @@ li {
 
 .nav-wrap.will-be-scrolled {
   position:fixed;
-  height:100px;
-  line-height:150px;
-  top:-100px;
+  height:122px;
+  line-height:185px;
+  top:-130px;
   width:100%;
 }
 
 .nav-wrap.scrolled {
   position:fixed;
-  top:-50px;
+  top:-65px;
   /*border-bottom:3px solid #f9f9f9;*/
   background-color:#fff;
   box-shadow:0 0 5px 0 rgba(0, 0, 0, .2);
@@ -778,6 +779,7 @@ footer ul > li > ul > li {
 
 .footer-sectionheader {
   margin-bottom:1em;
+  color:rgba(0, 0, 0, 0.54);
 }
 
 .footer-social {
