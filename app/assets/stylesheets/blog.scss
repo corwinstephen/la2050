@@ -1,0 +1,39 @@
+.blogpost {
+  margin-bottom:3em;
+
+  h3 {
+    margin-bottom:.5em;
+  }
+
+  p {
+
+  }
+}
+
+.blogpost-shadedbox {
+  background-color:#f9f9f9;
+  padding:1em;
+  border-top:1px solid #333;
+
+  img {
+    width:100%;
+  }
+}
+
+.blogpost-meta {
+  font-size:14px;
+  color:rgba(#000, .54);
+  margin-bottom:2em;
+}
+
+.blognav {
+  h3 {
+    margin-top:0;
+    margin-bottom:1em;
+    display:block;
+  }
+
+  .linebreak {
+    margin:2em 0;
+  }
+}

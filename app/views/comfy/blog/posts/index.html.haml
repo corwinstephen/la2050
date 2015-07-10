@@ -4,16 +4,32 @@
   .container
     .row
       .col-md-12
-        %h1 Blog Posts
+        %h1.margin-bottom Blog Posts
 
+    .row
+      .col-md-8
         - @posts.each do |post|
+          .blogpost
+            %h3= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
+            .blogpost-meta
+              Posted
+              = post.published_at.strftime("%B %e, %Y")
+              by
+              %span.blogpost-author
+                = post.author
 
-          %h1= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
-          .author
-            = post.author
-          .date
-            = post.published_at.to_s(:db)
-          .content
-            = post.content.html_safe
+            .blogpost-shadedbox
+              %p= post.content.html_safe
 
-        = comfy_paginate @posts
+          = comfy_paginate @posts
+
+      .col-md-4.blognav
+        %h3 Keep up with LA2050
+        %input{type: 'text', placeholder: 'Your email'}
+        = link_to 'Email things to me', '#', class: 'button'
+
+        .linebreak
+
+        %h3 Tags
+
+        %h3 Archives

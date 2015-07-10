@@ -84,6 +84,10 @@ h1, h2, h3 {
   display:inline-block;
 }
 
+h1 a, h2 a, h3 a {
+  color:rgba(0, 0, 0, 0.87);
+}
+
 h1 {
   font-size:36px;
   border-bottom:2px solid rgba(0, 0, 0, 0.87);
@@ -731,7 +735,7 @@ ul.linenav {
 }
 
 footer {
-  background-color:#fafafa;
+  background-color:#f9f9f9;
   padding:7em 0;
   font-size:14px;
 }
