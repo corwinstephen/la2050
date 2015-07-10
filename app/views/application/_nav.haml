@@ -6,7 +6,7 @@
     .col-sm-2.col-xs-12
       %a#nav-homelink{:href => "/"} LA2050
     %nav.col-sm-10.text-right.col-xs-12
-      %a{:href => "/about", class: (['home'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
+      %a{:href => "/about", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
       %span= "|"
       %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenge
       %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs

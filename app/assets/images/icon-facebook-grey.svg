@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook-grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-v4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-534.000000, -4392.000000)">
+            <g id="Footer" sketch:type="MSLayerGroup" transform="translate(-1.000000, 4234.000000)">
+                <g id="facebook-grey" transform="translate(535.000000, 158.000000)" sketch:type="MSShapeGroup">
+                    <path d="M28.2720463,29.9197297 C29.1817761,29.9197297 29.9194981,29.1820077 29.9194981,28.2720463 L29.9194981,1.71567568 C29.9194981,0.805714286 29.1818919,0.0681081081 28.2720463,0.0681081081 L1.71567568,0.0681081081 C0.805714286,0.0681081081 0.0681081081,0.805598456 0.0681081081,1.71567568 L0.0681081081,28.2721622 C0.0681081081,29.1818919 0.805482625,29.9198456 1.71567568,29.9198456 L28.2720463,29.9198456 L28.2720463,29.9197297 Z" id="Blue_1_" fill="#666666"></path>
+                    <path d="M20.6651351,29.9197297 L20.6651351,18.3595367 L24.5453282,18.3595367 L25.126332,13.8542085 L20.6651351,13.8542085 L20.6651351,10.9780309 C20.6651351,9.67366795 21.0273359,8.78478764 22.8976448,8.78478764 L25.2832819,8.78374517 L25.2832819,4.7542471 C24.870695,4.6992278 23.4546718,4.57667954 21.8069884,4.57667954 C18.367529,4.57667954 16.0127027,6.67621622 16.0127027,10.5318533 L16.0127027,13.8543243 L12.1225483,13.8543243 L12.1225483,18.3596525 L16.0127027,18.3596525 L16.0127027,29.9198456 L20.6651351,29.9198456 L20.6651351,29.9197297 Z" id="f" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

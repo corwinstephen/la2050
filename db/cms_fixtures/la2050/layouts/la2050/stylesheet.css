@@ -32,7 +32,7 @@ body {
   background-color:#f9f9f9;
 }
 
-button, a.button {
+button, .button {
   display:inline-block;
   background-color:#f13585;
   color:#fff;
@@ -107,10 +107,10 @@ h1:first-child {
   margin-top:0;
 }
 
-input {
+input[type=text], input[type=password], input[type=email] {
   font-style:'Avenir Next';
-  height:3em;
-  line-height:3em;
+  height:2.66em;
+  line-height:2.66em;
   padding:0 1em;
   display:block;
   width:100%;
@@ -118,6 +118,7 @@ input {
   outline:none;
   background-color:#f9f9f9;
   border:none;
+  box-sizing:border-box;
 }
 
 p {
@@ -204,13 +205,13 @@ li {
 /* End base styles */
 
 .navpadding {
-  height:55px; 
+  height:65px; 
   width:100%;
 }
 
 .nav-wrap {
-  height:55px;
-  line-height:55px;
+  height:65px;
+  line-height:65px;
   background-color:#fff;
   z-index:10;
   position:absolute;
@@ -279,7 +280,7 @@ nav a {
   padding-bottom:14px;
   padding-left:2px;
   padding-right:2px;
-  font-size:14px;
+  font-size:18px;
   position:relative;
 }
 
@@ -295,7 +296,7 @@ nav a:hover {
 }
 
 #nav-homelink {
-  font-size:18px;
+  font-size:24px;
   color:#333;
   font-weight:bold;
 }
@@ -737,7 +738,7 @@ ul.linenav {
 footer {
   background-color:#f9f9f9;
   padding:7em 0;
-  font-size:14px;
+  font-size:18px;
 }
 
 footer a {
@@ -759,4 +760,30 @@ footer ul > li > ul {
 footer ul > li > ul > li {
   font-weight:normal;
   margin-left:1em;
+}
+
+.footer-sectionheader {
+  margin-bottom:1em;
+}
+
+.footer-social {
+  margin-bottom:3em;
+}
+
+.footer-newslettersignup input[type=email] {
+  display:inline-block;
+  max-width:60%;
+  border:3px solid #333;
+  vertical-align:top;
+}
+
+.footer-newslettersignup input[type=submit] {
+  height:47px;
+  vertical-align:top;
+  position:relative;
+}
+
+
+.footer-social > div {
+  margin-right:1em;
 }
