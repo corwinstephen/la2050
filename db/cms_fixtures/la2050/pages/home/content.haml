@@ -1,3 +1,11 @@
+:javascript
+  $(function(){
+    $('#getinvolvedlink').click(function(e){
+      e.preventDefault();
+       $('html, body').animate({scrollTop: $('#getinvolved').offset().top}, 500);
+    });
+  });
+
 #homehero
   .homehero-contentwrap
     .container
@@ -5,9 +13,9 @@
         .col-md-12
           .hero-title.margin-bottom.animated.flipInX <span>L</span>A2050
           .hero-byline.margin-bottom Driving and tracking progress toward a <br />shared vision for the future of Los Angeles.
-          %a.button.bigger.margin-right{ href: '#getinvolved' } Get involved
+          %a#getinvolvedlink.button.bigger.margin-right{ href: '#getinvolved' } Get involved
           or
-          %a.margin-left{href: '#'} Learn more about what we're doing
+          %a#learnmore.margin-left{href: '#'} Learn more about what we're doing
 
 .background-grey.paddedsection
   .container
