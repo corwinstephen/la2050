@@ -27,12 +27,13 @@
           %a.button.bigger{ href: '/challenge' } Learn about our next challenge
           .linebreak
 
-  .container.paddedsection
-    .row
-      .col-md-12
-        %h2.margin-bottom Previous winners
+  .previouswinners
+    .container
+      .row
+        .col-md-12
+          %h2.margin-bottom Previous winners
 
 
-    .featuredwinners
-      = "<!-- Ping Stephen if you want to edit this! stephen@compiler.la -->"
-      {{ cms:partial:grantees/grantees }}
+      .featuredwinners
+        = "<!-- Ping Stephen if you want to edit this! stephen@compiler.la -->"
+        {{ cms:partial:grantees/grantees }}

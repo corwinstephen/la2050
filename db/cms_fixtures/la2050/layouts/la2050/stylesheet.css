@@ -489,7 +489,7 @@ nav a:hover {
   padding:.5em;
   border-top:1px solid #ccc;
   border-bottom:2px dashed #ccc;
-  margin-bottom:3em;
+  margin-bottom:5em;
 }
 
 .greaterinitiative dl {
@@ -591,6 +591,10 @@ ul.linenav {
 
 .granteeshero .linebreak {
   margin:3em 0 0 0;
+}
+
+.previouswinners {
+  padding:3em 0 5em 0;
 }
 
 .featuredwinners-image {

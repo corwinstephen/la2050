@@ -1,0 +1,7 @@
+%tbody
+	- Job.all.each do |job|
+		%tr
+			%td= job.title
+			%td= job.organization
+			%td= job.employment_type
+			%td #{time_ago_in_words(job.created_at)} ago
