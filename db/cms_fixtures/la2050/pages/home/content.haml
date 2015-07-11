@@ -2,7 +2,12 @@
   $(function(){
     $('#getinvolvedlink').click(function(e){
       e.preventDefault();
-       $('html, body').animate({scrollTop: $('#getinvolved').offset().top}, 500);
+       $('html, body').animate({scrollTop: $('#getinvolved').offset().top - 50}, 500);
+    });
+
+    $('#learnmorelink').click(function(e){
+      e.preventDefault();
+       $('html, body').animate({scrollTop: $('#learnmore').offset().top - 80}, 500);
     });
   });
 
@@ -15,12 +20,13 @@
           .hero-byline.margin-bottom Driving and tracking progress toward a <br />shared vision for the future of Los Angeles.
           %a#getinvolvedlink.button.bigger.margin-right{ href: '#getinvolved' } Get involved
           or
-          %a#learnmore.margin-left{href: '#'} Learn more about what we're doing
+          %a#learnmorelink.margin-left{href: '#'} Learn more about what we're doing
 
 .background-grey.paddedsection
   .container
     .row
       .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.text-center
+        %a{ id: 'learnmore' }
         %p.prose.primary.margin-bottom
           LA2050 is a community-guided initiative to drive and track progress toward a
           %strong shared vision for the future of Los Angeles.
