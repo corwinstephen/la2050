@@ -1,5 +1,5 @@
 - unless @cms_page.present? && @cms_page.slug == 'home'
-  .navpadding
+  .navpadding{ class: display_subnav? ? 'bigger' : '' }
 
 .container-fluid
   .row.nav-wrap{ class: @cms_page.try(:slug) == 'home' ? 'home' : '' }
@@ -13,12 +13,19 @@
       %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
       %a{:href => "/dashboard", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Dashboard
 
-    .nav-subnav.col-xs-12
-      %a{:href => "/about", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Blog
-      %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Press
-      %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Instagram
-      %a{:href => "/dashboard", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Team
-      %a{:href => "/dashboard", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Contact
+    - if display_subnav?
+      .nav-subnav.col-xs-12
+        %a{:href => "/about", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
+        \/
+        %a{:href => "/blog", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Blog
+        \/
+        %a{:href => "/press", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Press
+        \/
+        %a{:href => "/instagram", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Instagram
+        \/
+        %a{:href => "/team", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Team
+        \/
+        %a{:href => "/contact", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Contact
 
 :javascript
   $(document).ready(function(){

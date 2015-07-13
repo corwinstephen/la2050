@@ -1,6 +1,10 @@
 .navpadding {
-  height:65px; 
+  height:65px;
   width:100%;
+
+  &.bigger {
+    height:115px;
+  }
 }
 
 .nav-wrap {
@@ -54,6 +58,10 @@
 
     #nav-homelink {
       color:rgba(0, 0, 0, 0.87);
+    }
+
+    .nav-subnav {
+      box-shadow:0 2px 1px 0 rgba(0, 0, 0, .2);
     }
   }
 
@@ -112,20 +120,31 @@ nav {
 .nav-subnav {
   position:absolute;
   background-color:#fff;
-  height:66px;
-  bottom:-66px;
-  line-height:66px;
+  height:50px;
+  bottom:-50px;
+  line-height:50px;
   width:100%;
-  border-top:3px solid #ccc;
+  border-top:1px solid #ddd;
   font-size:14px;
   text-align:right;
 
   a {
     color:rgba(#000, .54);
+    margin:2em;
 
-    &:not(:last-child):after {
-      content: ' / ';
-      margin:0 2em;
+    &:last-child {
+      margin-right:0;
+    }
+
+    &:hover {
+      color:#fdc100;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    &.selected {
+      color:#fdc100;
+      font-weight:bold;
     }
   }
 }
