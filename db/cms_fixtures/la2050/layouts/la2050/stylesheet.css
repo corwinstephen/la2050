@@ -334,8 +334,9 @@ li {
   margin-bottom:2em;
 }
 
-.homeexplain button {
+.homeexplain .button {
   width:100%;
+  text-align:center;
 }
 
 .homegetinvolved img {
