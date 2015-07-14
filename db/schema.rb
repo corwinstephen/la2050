@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150710195629) do
+ActiveRecord::Schema.define(version: 20150714170753) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -179,6 +179,20 @@ ActiveRecord::Schema.define(version: 20150710195629) do
   add_index "comfy_cms_snippets", ["site_id", "identifier"], name: "index_comfy_cms_snippets_on_site_id_and_identifier", unique: true, using: :btree
   add_index "comfy_cms_snippets", ["site_id", "position"], name: "index_comfy_cms_snippets_on_site_id_and_position", using: :btree
 
+  create_table "goal_taggings", force: :cascade do |t|
+    t.integer "goal_id",       null: false
+    t.integer "taggable_id",   null: false
+    t.string  "taggable_type", null: false
+  end
+
+  add_index "goal_taggings", ["goal_id", "taggable_id", "taggable_type"], name: "unique_pairs", unique: true, using: :btree
+  add_index "goal_taggings", ["goal_id"], name: "index_goal_taggings_on_goal_id", using: :btree
+  add_index "goal_taggings", ["taggable_id", "taggable_type"], name: "index_goal_taggings_on_taggable_id_and_taggable_type", using: :btree
+
+  create_table "goals", force: :cascade do |t|
+    t.string "name", null: false
+  end
+
   create_table "grantees", force: :cascade do |t|
     t.string   "project_name",       null: false
     t.integer  "year",               null: false
@@ -196,6 +210,10 @@ ActiveRecord::Schema.define(version: 20150710195629) do
     t.string   "employment_type", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "metrics", force: :cascade do |t|
+    t.string "name", null: false
   end
 
 end
