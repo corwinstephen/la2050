@@ -1,5 +1,9 @@
 class Goal < ActiveRecord::Base
-  validates_presence_of :name
+  COLORS = ['cyan', 'magenta', 'red', 'green', 'yellow']
 
-  has_many  :goal_taggings
+  validates_presence_of :name
+  validates :color, inclusion: COLORS
+
+  has_many  :goal_taggings,
+            dependent: :destroy
 end

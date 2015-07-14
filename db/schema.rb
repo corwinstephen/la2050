@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150714170753) do
+ActiveRecord::Schema.define(version: 20150714172833) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -190,7 +190,8 @@ ActiveRecord::Schema.define(version: 20150714170753) do
   add_index "goal_taggings", ["taggable_id", "taggable_type"], name: "index_goal_taggings_on_taggable_id_and_taggable_type", using: :btree
 
   create_table "goals", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "name",                  null: false
+    t.string "color", default: "red", null: false
   end
 
   create_table "grantees", force: :cascade do |t|

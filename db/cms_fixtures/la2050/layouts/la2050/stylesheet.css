@@ -615,6 +615,35 @@ ul.linenav {
   color:#00b3bc;
 }
 
+.goallabel {
+  display:inline-block;
+  margin-left:10px;
+  font-size:14px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+.goallabel.red {
+  color:#ed3f21;
+}
+
+.goallabel.green {
+  color:#8bd22c;
+}
+
+.goallabel.yellow {
+  color:#fdc100;
+}
+
+.goallabel.magenta {
+  color:#f13585;
+}
+
+
+.goallabel.cyan {
+  color:#00b3bc;
+}
+
 .metric {
   color:#00b3bc;
   display:inline-block;
