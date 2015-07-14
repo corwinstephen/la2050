@@ -1,0 +1,29 @@
+.background-grey.paddedsection
+  .container
+    .row
+      .col-sm-8.col-sm-offset-2.text-center
+        %h1 Our shared goal:
+        %p.prose.summary.margin-bottom to make LA the best place to
+        .goalsdisplay
+          <img src='{{cms:page:goal_graphic_url:string}}' />
+        %p.prose.primary.margin-top
+          One of five
+          %a{ href: '/goals' } LA2050 Goals
+
+        .sectionbreak.margin-top-more.margin-bottom-more
+
+        {{cms:page:goal_explanation:text}}
+
+.background-grey.paddedsection
+  .container
+    .row
+      .col-sm-8.col-sm-offset-2.text-center
+        %h1 Metrics
+        %p
+          %a{ :href => "/metrics" } Where do these come from?
+
+.background-grey.paddedsection
+  .container
+    .row
+      .col-sm-8.col-sm-offset-2.text-center
+        %h1 Updates
