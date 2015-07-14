@@ -1,3 +1,5 @@
+{{cms:field:goal_name:string}}
+
 .background-grey.paddedsection
   .container
     .row
@@ -21,6 +23,8 @@
         %h1 Metrics
         %p
           %a{ :href => "/metrics" } Where do these come from?
+
+        {{cms:partial:metrics/goal_metrics}}
 
 .background-grey.paddedsection
   .container

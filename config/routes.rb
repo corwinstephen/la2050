@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :metrics, only: [:show]
 
   mount RailsAdmin::Engine => '/dbadmin', as: 'rails_admin'
   comfy_route :cms_admin, :path => '/admin'
