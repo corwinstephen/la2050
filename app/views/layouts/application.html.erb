@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>La2050</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag comfy_cms_render_css_path(@cms_site.id, @cms_layout.try(:identifier) || 'la2050') %>
+  <%= stylesheet_link_tag comfy_cms_render_css_path(@cms_site.id, 'la2050') %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag comfy_cms_render_js_path(@cms_site.id, @cms_layout.try(:identifier) || 'la2050') %>
   <%= csrf_meta_tags %>

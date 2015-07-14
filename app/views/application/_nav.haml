@@ -7,7 +7,7 @@
       %a#nav-homelink{:href => "/"} LA2050
 
     %nav.col-sm-10.col-xs-12
-      %a{:href => "/about", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
+      %a{:href => "/about", class: (['about', 'press', 'instagram', 'team', 'contact'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
       %span= "|"
       %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenge
       %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
@@ -19,13 +19,13 @@
         \/
         %a{:href => "/blog", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Blog
         \/
-        %a{:href => "/press", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Press
+        %a{:href => "/press", class: (['press'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Press
         \/
-        %a{:href => "/instagram", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Instagram
+        %a{:href => "/instagram", class: (['instagram'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Instagram
         \/
-        %a{:href => "/team", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Team
+        %a{:href => "/team", class: (['team'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Team
         \/
-        %a{:href => "/contact", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Contact
+        %a{:href => "/contact", class: (['contact'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Contact
 
 :javascript
   $(document).ready(function(){
