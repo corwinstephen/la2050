@@ -32,12 +32,12 @@ body {
   background-color:#f9f9f9;
 }
 
-button, .button {
+button, .button, input[type=submit] {
   display:inline-block;
   background-color:#f13585;
   color:#fff;
-  height:3em;
-  line-height:3em;
+  height:45px;
+  line-height:45px;
   border:none;
   padding:0 2em;
   font-size:14px;
@@ -92,6 +92,7 @@ h1 a, h2 a, h3 a {
 h1 {
   font-size:36px;
   border-bottom:2px solid rgba(0, 0, 0, 0.87);
+  margin-bottom:36px;
 }
 
 h2 {
@@ -110,8 +111,8 @@ h1:first-child {
 
 input[type=text], input[type=password], input[type=email] {
   font-style:'Avenir Next';
-  height:2.66em;
-  line-height:2.66em;
+  height:45px;
+  line-height:45px;
   padding:0 .66em;
   display:block;
   width:100%;
@@ -142,6 +143,18 @@ p.prose.primary {
 p.prose.primary strong {
   font-weight:bold;
   color:#00b3bc;
+}
+
+p.prose.primary a {
+  color:#00b3bc;
+  padding-bottom:3px;
+  font-weight:bold;
+  text-decoration:none;
+  border-bottom:1px solid rgba(0, 179, 188, 0.5);
+}
+
+p.prose.primary a:hover {
+  border-bottom:1px solid rgba(0, 179, 188, 1);
 }
 
 p.prose.secondary {
@@ -643,8 +656,8 @@ ul.linenav {
 
 footer {
   background-color:#f9f9f9;
-  padding:7em 0;
-  font-size:18px;
+  padding:5em 0;
+  font-size:14px;
 }
 
 footer a {
@@ -686,7 +699,6 @@ footer ul > li > ul > li {
 }
 
 .footer-newslettersignup input[type=submit] {
-  height:47px;
   vertical-align:top;
   position:relative;
 }
