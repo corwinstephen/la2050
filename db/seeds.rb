@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Generate goals
+['live', 'create', 'play', 'learn', 'connect'].each do |goal_name|
+  Goal.create(name: goal_name)  
+end
