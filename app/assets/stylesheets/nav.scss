@@ -8,6 +8,7 @@
 }
 
 .nav-wrap {
+  border-bottom:1px solid #999;
   height:65px;
   line-height:65px;
   background-color:#fff;
@@ -46,6 +47,7 @@
     line-height:185px;
     top:-130px;
     width:100%;
+    border-bottom:none;
   }
 
   &.scrolled {
