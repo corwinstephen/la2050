@@ -1,11 +1,27 @@
-.background-white.paddedsection
+.background-white
   .container
     .row
       .col-sm-12.text-center
-        %h3 Metric
+        %h1 Metric
 
   .metricheader
     .container
       .row
         .col-sm-12
-          Citywide air quality
+          {{cms:page:name}}
+
+          %dl
+            %dt Goal
+            %dd {{cms:page:goal}}
+
+          %dl
+            %dt Our target
+            %dd To keep my desk from turning black when I haven't dusted in a week.
+
+.paddedsection.background-white
+  .container
+    .row
+      .col-sm-12
+        %h2.margin-bottom Help us reach our goals for this metric
+
+    {{cms:partial:action_items/list}}

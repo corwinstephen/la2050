@@ -44,6 +44,7 @@ button, .button, input[type=submit] {
   text-transform:uppercase;
   font-weight:bold;
   border-radius:1px;
+  text-align:center;
 }
 
 button:hover, .button:hover {
@@ -285,6 +286,20 @@ li {
 }
 
 /* Modules */
+
+.actionitem-title {
+  font-size:18px;
+  font-weight:bold;
+}
+
+.actionitem img {
+  width:100%;
+  margin-bottom:1em;
+}
+
+.actionitem .button {
+  width:100%;
+}
 
 .arrowguide {
   margin:5em 0 0 0;
