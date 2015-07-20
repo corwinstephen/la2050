@@ -31,7 +31,7 @@
       .nav-subnav.col-xs-12
         %a{:href => "/goals", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Goals
         \/
-        %a{:href => "/metrics", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Metrics
+        %a{:href => "/metrics", class: (['metrics'].include?(@cms_page.try(:slug)) || controller.controller_name == 'metrics' ? 'selected' : '')} Metrics
         \/
         %a{:href => "/datasets", class: (['press'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Data sets
         \/
