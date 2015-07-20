@@ -5,7 +5,9 @@ class MetricsController < ApplicationController
 
     render :cms_layout => 'metric', :cms_blocks => {
       name: @metric.name,
-      goal: @metric.goal_name
+      description: @metric.description,
+      goal: @metric.goal_name,
+      target_description: @metric.target_description
     }
   end
 end

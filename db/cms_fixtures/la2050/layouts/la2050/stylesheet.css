@@ -99,6 +99,7 @@ h1 {
 h2 {
   font-size:30px;
   border-bottom:2px solid rgba(0, 0, 0, 0.87);
+  margin-bottom:30px;
 }
 
 h3 {
@@ -636,27 +637,28 @@ ul.linenav {
   font-size:14px;
   text-transform:uppercase;
   font-weight:bold;
+  vertical-align:middle;
 }
 
 .goallabel.red {
-  color:#ed3f21;
+  color:#ed3f21 !important;
 }
 
 .goallabel.green {
-  color:#8bd22c;
+  color:#8bd22c !important;
 }
 
 .goallabel.yellow {
-  color:#fdc100;
+  color:#fdc100 !important;
 }
 
 .goallabel.magenta {
-  color:#f13585;
+  color:#f13585 !important;
 }
 
 
 .goallabel.cyan {
-  color:#00b3bc;
+  color:#00b3bc !important;
 }
 
 .metric {
@@ -700,7 +702,31 @@ ul.linenav {
 
 .metricheader {
   background-color:#4d99d3;
-  padding:2em 0;
+  padding:3em 0;
+  color:#fff;
+}
+
+.metricheader-name {
+  font-size:36px;
+  font-weight:bold;
+}
+
+.metricheader-description {
+  margin:18px 0;
+  font-size:24px;
+}
+
+.metricheader .linebreak {
+  border-bottom-color:rgba(255, 255, 255, .2);
+  margin:18px 0;
+}
+
+.metricheader dt {
+  margin-right:1em;
+}
+
+.metricheader dt, .metricheader dd {
+  display:inline-block;
 }
 
 footer {

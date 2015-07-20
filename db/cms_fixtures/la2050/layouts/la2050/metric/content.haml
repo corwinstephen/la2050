@@ -2,21 +2,25 @@
   .container
     .row
       .col-sm-12.text-center
+        .margin-top
         %h1 Metric
 
   .metricheader
     .container
       .row
         .col-sm-12
-          {{cms:page:name}}
+          .metricheader-name
+            {{cms:page:name}}
+            .goallabel.red {{cms:page:goal}}
 
-          %dl
-            %dt Goal
-            %dd {{cms:page:goal}}
+          .metricheader-description {{cms:page:description}}
 
+          .linebreak
+
+        .col-sm-6
           %dl
-            %dt Our target
-            %dd To keep my desk from turning black when I haven't dusted in a week.
+            %dt Our target:
+            %dd {{cms:page:target_description}}
 
 .paddedsection.background-white
   .container
