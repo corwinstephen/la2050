@@ -13,7 +13,7 @@
       %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
       %a{:href => "/dashboard", class: (['dashboard', 'goals', 'metrics'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Dashboard
 
-    - if display_subnav?
+    - if display_about_nav?
       .nav-subnav.col-xs-12
         %a{:href => "/about", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
         \/
@@ -27,6 +27,15 @@
         \/
         %a{:href => "/contact", class: (['contact'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Contact
 
+    - if display_dashboard_nav?
+      .nav-subnav.col-xs-12
+        %a{:href => "/goals", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Goals
+        \/
+        %a{:href => "/metrics", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Metrics
+        \/
+        %a{:href => "/datasets", class: (['press'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Data sets
+        \/
+        %a{:href => "/reports", class: (['instagram'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Reports
 :javascript
   $(document).ready(function(){
     var $navWrap = $('.nav-wrap');

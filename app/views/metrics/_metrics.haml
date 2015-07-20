@@ -1,0 +1,5 @@
+- Metric.all.each do |metric|
+  %tr
+    %td= metric.name
+    %td.text-right
+      = link_to 'View Metric', metric_path(metric)
