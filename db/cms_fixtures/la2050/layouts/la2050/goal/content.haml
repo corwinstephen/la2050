@@ -1,6 +1,5 @@
-{{cms:field:goal_name:string}}
-
-.background-white.paddedsection
+.paddedsection.goal-bg{class: '{{cms:page:goal_name:string}}'}
+  .goal-gradient
   .container
     .row
       .col-sm-8.col-sm-offset-2.text-center
@@ -15,6 +14,7 @@
         .sectionbreak.margin-top-more.margin-bottom-more
 
         {{cms:page:goal_explanation:text}}
+}
 
 .background-grey.paddedsection
   .container
