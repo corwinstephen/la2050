@@ -683,6 +683,11 @@ ul.linenav {
   margin:2em 0;
 }
 
+.metricheader {
+  background-color:#4d99d3;
+  padding:2em 0;
+}
+
 footer {
   background-color:#f9f9f9;
   padding:5em 0;

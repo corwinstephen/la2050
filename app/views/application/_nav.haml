@@ -33,9 +33,9 @@
         \/
         %a{:href => "/metrics", class: (['metrics'].include?(@cms_page.try(:slug)) || controller.controller_name == 'metrics' ? 'selected' : '')} Metrics
         \/
-        %a{:href => "/datasets", class: (['press'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Data sets
+        %a{:href => "/datasets", class: (['datasets'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Data sets
         \/
-        %a{:href => "/reports", class: (['instagram'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Reports
+        %a{:href => "/reports", class: (['reports'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Reports
 :javascript
   $(document).ready(function(){
     var $navWrap = $('.nav-wrap');

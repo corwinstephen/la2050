@@ -1,7 +1,7 @@
 module ApplicationHelper
   def display_about_nav?
     request.original_fullpath == '/blog' ||
-      @cms_page.present? && ['about', 'press', 'instagram', 'team', 'contact'].include?(@cms_page.slug)
+      @cms_page.present? && ['la2050listens', 'about', 'press', 'instagram', 'team', 'contact'].include?(@cms_page.slug)
   end
 
   def display_dashboard_nav?
