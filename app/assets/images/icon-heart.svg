@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="68px" viewBox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2015-Challenge-Before-voting" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-232.000000, -2760.000000)" fill="#ED3F21">
+            <g id="Top-voted" sketch:type="MSLayerGroup" transform="translate(75.000000, 2760.000000)">
+                <path d="M225.237162,1.8752152 C215.04549,-2.80824526 201.71572,1.59704603 197,11.6962899 C192.28428,1.59704603 178.95451,-2.81392218 168.762838,1.8752152 C157.908108,6.87658328 152.717957,19.6496573 161.291994,34.7162077 C167.37956,45.4399129 178.171415,53.5181726 197,68 C215.828585,53.5181726 226.62044,45.434236 232.708006,34.7162077 C241.282043,19.6496573 236.091892,6.87658328 225.237162,1.8752152 L225.237162,1.8752152 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

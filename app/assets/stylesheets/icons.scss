@@ -2,4 +2,24 @@
   display:inline-block;
   background:url(asset-path('icon-arrow-cyan-down.svg')) no-repeat;
   background-size:contain;
+  width:2em;
+  height:2em;
+}
+
+.icon-heart {
+  display:block;
+  background:url(asset-path('icon-heart.svg')) no-repeat;
+  background-size:contain;
+  width:80px;
+  height:68px;
+  margin:auto;
+}
+
+.icon-jury {
+  display:block;
+  background:url(asset-path('icon-jury.svg')) no-repeat;
+  background-size:contain;
+  width:141px;
+  height:68px;
+  margin:auto;
 }

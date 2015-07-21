@@ -747,6 +747,19 @@ ul.linenav {
   opacity:.3;
 }
 
+.twoways {
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+
+.twoways .col-md-6:first-child {
+  border-right:1px solid #ccc;
+}
+
+.twoways .col-md-6 {
+  padding:3em;
+}
+
 footer {
   background-color:#f9f9f9;
   padding:5em 0;
