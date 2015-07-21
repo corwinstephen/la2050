@@ -4,7 +4,7 @@
 			%td
 				= job.title
 				- job.goals.each do |goal|
-					.goallabel{ class: goal.color }= goal.name
+					= link_to goal.name, "/goals/#{goal.name}", class: "goallabel #{goal.color}"
 
 			%td= job.organization
 			%td= job.employment_type
