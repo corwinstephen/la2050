@@ -171,10 +171,9 @@ p.prose.guide {
   font-weight:bold;
 }
 
-p.prose.summary {
-  font-size:24px;
-  color:rgba(0, 0, 0, 0.54);
-  line-height: 36px;
+p.prose.guide.little {
+  font-size:14px;
+  text-transform:uppercase;
 }
 
 p.prose.aside {
@@ -241,19 +240,19 @@ li {
 }
 
 .margin-bottom {
-  margin-bottom:36px;
+  margin-bottom:48px;
 }
 
 .margin-right {
-  margin-right:36px;
+  margin-right:48px;
 }
 
 .margin-left {
-  margin-left:36px;
+  margin-left:48px;
 }
 
 .margin-top {
-  margin-top:36px;
+  margin-top:48px;
 }
 
 .margin-bottom-more {
@@ -269,7 +268,7 @@ li {
 }
 
 .padded {
-  padding:1em;
+  padding:1.44em;
 }
 
 .borderbox {
@@ -732,6 +731,20 @@ ul.linenav {
 
 .metricheader dt, .metricheader dd {
   display:inline-block;
+}
+
+.timelinebox {
+  background-color:#f9f9f9;
+  border-top:3px solid #ccc;
+  padding:1.2em;
+  font-size:24px;
+  color:#00b3bc;
+  font-weight:bold;
+  margin-bottom:2em;
+}
+
+.timelinebox-deactivated {
+  opacity:.3;
 }
 
 footer {

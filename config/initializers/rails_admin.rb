@@ -30,5 +30,16 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
+
+    config.model 'Metric' do
+      list do
+        field :name
+        field :description
+        field :target_description
+        field :dream
+        field :data_unit
+        field :goals
+      end
+    end
   end
 end
