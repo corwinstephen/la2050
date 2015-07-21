@@ -137,8 +137,8 @@ p.light {
 }
 
 p.prose.primary {
-  font-size:24px;
-  line-height:36px;
+  font-size:30px;
+  line-height:45px;
   color:rgba(0, 0, 0, 0.87);
 }
 
@@ -161,8 +161,8 @@ p.prose.primary a:hover {
 
 p.prose.secondary {
   color:rgba(0, 0, 0, 0.54);
-  font-size:18px;
-  line-height:27px;
+  font-size:24px;
+  line-height:36px;
 }
 
 p.prose.guide {
@@ -236,8 +236,8 @@ li {
 }
 
 .paddedsection {
-  padding-top:7em;
-  padding-bottom:7em;
+  padding-top:5em;
+  padding-bottom:5em;
 }
 
 .margin-bottom {
@@ -252,12 +252,12 @@ li {
   margin-left:36px;
 }
 
-.margin-bottom-more {
-  margin-bottom:5em;
+.margin-top {
+  margin-top:36px;
 }
 
-.margin-top {
-  margin-top:2em;
+.margin-bottom-more {
+  margin-bottom:5em;
 }
 
 .margin-top-more {
@@ -356,6 +356,11 @@ li {
 
 .homeexplain:last-child {
   margin-bottom:0;
+}
+
+.homeexplain p {
+  font-size:24px;
+  line-height:36px;
 }
 
 .homeexplain p.prose.guide {
@@ -661,11 +666,6 @@ ul.linenav {
   color:#00b3bc !important;
 }
 
-.metric {
-  color:#00b3bc;
-  display:inline-block;
-}
-
 .metric .icon-chart {
   position:relative;
   width:1em;
@@ -702,7 +702,7 @@ ul.linenav {
 
 .metricheader {
   background-color:#4d99d3;
-  padding:3em 0;
+  padding:5em 0;
   color:#fff;
 }
 

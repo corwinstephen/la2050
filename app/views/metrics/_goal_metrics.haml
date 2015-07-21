@@ -1,2 +1,6 @@
-- Goal.find_by_name(@cms_page.slug).metrics.each do |metric|
-  .goalmetrics= link_to(metric.name, metric_path(metric))
+.goalmetrics.margin-top
+  - Goal.find_by_name(@cms_page.slug).metrics.each do |metric|
+    .col-md-6.text-center
+      .metric
+        %i
+        = link_to(metric.name, metric_path(metric))

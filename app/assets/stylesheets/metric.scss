@@ -1,0 +1,23 @@
+.metric {
+  color:#00b3bc;
+  display:inline-block;
+
+  a {
+    color:#00b3bc;
+  }
+
+  i {
+    background:url(image-path('icon-chart.svg')) no-repeat;
+    height:1em;
+    width:1em;
+    background-size:contain;
+    display:inline-block;
+    margin-right:12px;
+  }
+}
+
+.goalmetrics {
+  .metric {
+    font-size:24px;
+  }
+}

@@ -7,8 +7,14 @@ class Goal < ActiveRecord::Base
   has_many  :goal_taggings,
             dependent: :destroy
 
+  has_many  :action_items,
+            through: :goal_taggings,
+            source: 'taggable',
+            source_type: 'ActionItem'
+
   has_many  :metrics,
             through: :goal_taggings,
             source: 'taggable',
             source_type: 'Metric'
+
 end

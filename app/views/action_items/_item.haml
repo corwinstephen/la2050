@@ -1,0 +1,9 @@
+.col-md-4
+  .borderbox.padded.actionitem
+    .actionitem-title= action_item.title
+    %p= action_item.description
+
+    - if action_item.photo?
+      = image_tag action_item.photo.url(:small)
+
+    = link_to action_item.action_text, action_item.action_url, class: 'button'

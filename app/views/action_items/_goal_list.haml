@@ -1,0 +1,2 @@
+- Goal.find_by_name(@cms_page.slug).action_items.each do |action_item|
+    = render partial: 'action_items/item', locals: { action_item: action_item }

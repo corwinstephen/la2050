@@ -14,7 +14,6 @@
         .sectionbreak.margin-top-more.margin-bottom-more
 
         {{cms:page:goal_explanation:text}}
-}
 
 .background-grey.paddedsection
   .container
@@ -24,6 +23,8 @@
         %p
           %a{ :href => "/metrics" } Where do these come from?
 
+    .row
+      .col-md-8.col-md-offset-2
         {{cms:partial:metrics/goal_metrics}}
 
 .background-grey.paddedsection
@@ -31,3 +32,13 @@
     .row
       .col-sm-8.col-sm-offset-2.text-center
         %h1 Updates
+        .margin-bottom
+
+    .row
+      {{cms:partial:action_items/goal_list}}
+
+.container
+  .row
+    .col-sm-12
+      .margin-bottom-more
+        {{cms:partial:application/disqus}}
