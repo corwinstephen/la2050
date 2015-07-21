@@ -178,7 +178,7 @@ p.prose.guide.little {
 
 p.prose.aside {
   color:rgba(0, 0, 0, 0.54);
-  font-size:14px;
+  font-size:18px;
 }
 
 p:last-child {
@@ -424,7 +424,7 @@ li {
   padding:2em;
 }
 
-.metricexplainbox .arrow {
+.metricexplainbox .icon-arrow-right-black {
   width:55px;
   height:16px;
   display:inline-block;
