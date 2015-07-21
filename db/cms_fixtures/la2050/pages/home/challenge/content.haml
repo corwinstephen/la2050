@@ -94,9 +94,16 @@
             %p.prose.secondary
               The <strong>jury will pick</strong> one proposal in each of the five LA2050 Goal Categories to receive $100,000 to implement their idea.
 
-  .background-white
+  .background-white.paddedsection
     .container
       .row
         .col-md-8.col-md-offset-2.text-center
           %p.prose.primary In 2014 we recieved <strong>more than 260 proposals</strong> for the My LA2050 Grants Challange. 
           %p.prose.secondary Need some inspiration? Check out some of our previous winners.
+
+  .background-white.margin-top-more
+    .container
+      .row
+        {{ cms:partial:grantees/granteespreview }}
+        .col-md-12
+          .margin-bottom-more

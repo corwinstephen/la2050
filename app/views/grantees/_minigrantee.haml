@@ -1,0 +1,12 @@
+.col-md-4
+  .winnersmall-meta      
+    .goalcolorbox.cyan LEARN
+    .winnerlabel
+      = image_tag 'icon-gift.svg'
+      #{grantee.year} Winner
+  %div
+    = image_tag grantee.photo.url(:small), class: 'winnersmall-photo'
+
+  %div
+    %h3= grantee.project_name
+    %p.light= grantee.description
