@@ -27,7 +27,7 @@ a:hover {
 
 body {
   font-size:18px;
-  font-family:'Avenir Next';
+  font-family:'Avenir';
   color:rgba(0, 0, 0, 0.87);
   background-color:#f9f9f9;
 }
@@ -112,7 +112,7 @@ h1:first-child {
 }
 
 input[type=text], input[type=password], input[type=email] {
-  font-style:'Avenir Next';
+  font-style:'Avenir';
   height:45px;
   line-height:45px;
   padding:0 .66em;
