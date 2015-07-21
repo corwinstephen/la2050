@@ -1,5 +1,6 @@
 class Metric < ActiveRecord::Base
   validates_presence_of :name
+  validates :dream, inclusion: { in: [true, false] }
 
   has_many  :goal_taggings,
             as: :taggable
