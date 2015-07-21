@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150721212133) do
+ActiveRecord::Schema.define(version: 20150721212307) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -192,6 +192,16 @@ ActiveRecord::Schema.define(version: 20150721212133) do
   add_index "comfy_cms_snippets", ["site_id", "identifier"], name: "index_comfy_cms_snippets_on_site_id_and_identifier", unique: true, using: :btree
   add_index "comfy_cms_snippets", ["site_id", "position"], name: "index_comfy_cms_snippets_on_site_id_and_position", using: :btree
 
+  create_table "data_points", force: :cascade do |t|
+    t.float    "value",      null: false
+    t.integer  "metric_id",  null: false
+    t.datetime "data_time",  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "data_points", ["metric_id"], name: "index_data_points_on_metric_id", using: :btree
+
   create_table "goal_taggings", force: :cascade do |t|
     t.integer "goal_id",       null: false
     t.integer "taggable_id",   null: false
@@ -233,9 +243,11 @@ ActiveRecord::Schema.define(version: 20150721212133) do
   end
 
   create_table "metrics", force: :cascade do |t|
-    t.string "name",               null: false
-    t.text   "description"
-    t.text   "target_description"
+    t.string  "name",                               null: false
+    t.text    "description"
+    t.text    "target_description"
+    t.boolean "dream",              default: false, null: false
+    t.string  "data_unit"
   end
 
 end
