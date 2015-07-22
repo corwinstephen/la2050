@@ -63,5 +63,27 @@ CSV.foreach(file, headers: true) do |row|
   # match and add goal
   goal = Goal.find_by_name(row['goal'].try(:downcase))
   metric.goals << goal unless goal.nil?
+end
 
+# Generate jobs
+file = Rails.root.join("db", "seed_files", "jobs.csv")
+CSV.foreach(file, headers: true) do |row|
+  attrs = {
+    title: row['title'],
+    employment_type: row['type'],
+    location: row['location'],
+    description: row['description'],
+    to_apply: row['to_apply'],
+    # date_posted: DateTime.strptime(row['date_posted'], "%m/%d/%Y")
+  }
+
+  job = Job.create(attrs)
+
+  # Try to find a matching organization
+  org = Organization.find_by_name(row['organization'])
+  job.organizations << org unless org.nil?
+
+  # match and add goal
+  goal = Goal.find_by_name(row['goal'].try(:downcase))
+  job.goals << goal unless goal.nil?
 end
