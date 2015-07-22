@@ -1,6 +1,7 @@
 module GoalsHelper
-  def color_for_goal(goal_name)
-    goal = Goal.find_by_name(goal_name)
+  def color_for_goal
+    metric = Metric.find(params[:id])
+    goal = metric.goals.first
     return nil unless goal.present?
     return goal.color
   end

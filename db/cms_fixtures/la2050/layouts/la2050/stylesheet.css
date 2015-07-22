@@ -669,6 +669,10 @@ ul.linenav {
   vertical-align:middle;
 }
 
+.goallabel.bigger {
+  font-size:18px;
+}
+
 .goallabel.red {
   color:#ed3f21 !important;
 }
@@ -782,6 +786,10 @@ ul.linenav {
 
 .twoways .col-md-6 {
   padding:5em 3em;
+}
+
+.goalmetrics .metric {
+  margin-bottom:1.44em;
 }
 
 footer {

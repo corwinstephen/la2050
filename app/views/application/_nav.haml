@@ -11,7 +11,7 @@
       %span= "|"
       %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenge
       %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
-      %a{:href => "/dashboard", class: (['dashboard', 'goals', 'metrics', 'datasets', 'reports'].include?(@cms_page.try(:slug)) || ['metrics'].include?(controller.controller_name) ? 'selected' : '')} Dashboard
+      %a{:href => "/dashboard", class: (['dashboard', 'goals', 'metrics', 'datasets', 'reports', 'live', 'create', 'learn', 'connect', 'play'].include?(@cms_page.try(:slug)) || ['metrics'].include?(controller.controller_name) ? 'selected' : '')} Dashboard
 
     - if display_about_nav?
       .nav-subnav.col-xs-12
@@ -29,7 +29,7 @@
 
     - if display_dashboard_nav?
       .nav-subnav.col-xs-12
-        %a{:href => "/goals", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Goals
+        %a{:href => "/goals", class: (['goals', 'live', 'create', 'learn', 'connect', 'play'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Goals
         \/
         %a{:href => "/metrics", class: (['metrics'].include?(@cms_page.try(:slug)) || controller.controller_name == 'metrics' ? 'selected' : '')} Metrics
         \/
