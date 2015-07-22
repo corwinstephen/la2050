@@ -1,8 +1,8 @@
-- unless @cms_page.present? && @cms_page.slug == 'home'
+- unless @cms_page.present? && @cms_page.label == 'home'
   .navpadding{ class: display_subnav? ? 'bigger' : '' }
 
 .container-fluid
-  .row.nav-wrap{ class: @cms_page.try(:slug) == 'home' ? 'home' : @cms_page.inspect }
+  .row.nav-wrap{ class: @cms_page.try(:label) == 'home' ? 'home' : '' }
     .col-sm-2.col-xs-12
       %a#nav-homelink{:href => "/"} LA2050
 
