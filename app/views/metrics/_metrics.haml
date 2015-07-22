@@ -1,5 +1,9 @@
 - Metric.all.each do |metric|
   %tr
-    %td= metric.name
+    %td
+      = metric.name
+      - metric.goals.each do |goal|
+        = link_to goal.name, "/goals/#{goal.name}", class: "goallabel #{goal.color}"
+
     %td.text-right
       = link_to 'View Metric', metric_path(metric)
