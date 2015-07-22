@@ -74,7 +74,7 @@ CSV.foreach(file, headers: true) do |row|
     location: row['location'],
     description: row['description'],
     to_apply: row['to_apply'],
-    # date_posted: DateTime.strptime(row['date_posted'], "%m/%d/%Y")
+    date_posted: DateTime.strptime(row['date_posted'], "%m/%d/%Y")
   }
 
   job = Job.create(attrs)
