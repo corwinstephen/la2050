@@ -379,6 +379,7 @@ li {
 
 .homegetinvolved img {
   width:100%;
+  margin-bottom:5em;
 }
 
 .homekeepupwrap img {
@@ -468,23 +469,23 @@ li {
 }
 
 .goalsdisplay-playback {
-  background-color: #fa99c0;
+  background-color: #f13585;
 }
 
 .goalsdisplay-connectback {
-  background-color: #fcbd7b;
+  background-color: #f9a136;
 }
 
 .goalsdisplay-liveback {
-  background-color: #afd886;
+  background-color: #8bd22c;
 }
 
 .goalsdisplay-learnback {
-  background-color: #44cbcf;
+  background-color: #00b3bc;
 }
 
 .goalsdisplay-createback {
-  background-color: #fde069;
+  background-color: #fdc100;
 }
 
 .linenav-wrap {
