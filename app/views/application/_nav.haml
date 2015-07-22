@@ -2,7 +2,7 @@
   .navpadding{ class: display_subnav? ? 'bigger' : '' }
 
 .container-fluid
-  .row.nav-wrap{ class: @cms_page.try(:slug) == 'home' ? 'home' : '' }
+  .row.nav-wrap{ class: @cms_page.try(:slug) == 'home' ? 'home' : @cms_page.try(:slug) }
     .col-sm-2.col-xs-12
       %a#nav-homelink{:href => "/"} LA2050
 
