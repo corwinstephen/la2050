@@ -11,9 +11,8 @@
   .container
     .row
       .col-lg-8
-        .margin-bottom-more.margin-top
-          %h1.margin-bottom Jobs
-          %p The LA2050 jobs board provides opportunities to work with grantees, partners, and community leaders who are helping to create a better future for Los Angeles.
+        %h1.margin-bottom Jobs
+        %p The LA2050 jobs board provides opportunities to work with grantees, partners, and community leaders who are helping to create a better future for Los Angeles.
 
 
   .linenav-wrap
@@ -28,16 +27,11 @@
 
   .container
     .row
-      .col-md-12.margin-bottom.margin-top
-        %a.goalcolorbox.red{ href: '#' } Connect
-        %a.goalcolorbox.green{ href: '#' } Live
-        %a.goalcolorbox.yellow{ href: '#' } Create
-        %a.goalcolorbox.magenta{ href: '#' } Play
-        %a.goalcolorbox.cyan{ href: '#' } Learn
+      {{cms:partial:goals/goalfilters}}
 
     .row
       .col-md-12
-        %table.margin-top
+        %table.margin-top.margin-bottom
           %thead
             %th Position
             %th Organization

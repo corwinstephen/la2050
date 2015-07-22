@@ -1,0 +1,7 @@
+.col-md-12.margin-bottom.margin-top
+  %a.goalcolorbox.red{ href: '?goal=connect', class: (params[:goal] != 'connect' ? 'deselected' : '' )  } Connect
+  %a.goalcolorbox.green{ href: '?goal=live', class: (params[:goal] != 'live' ? 'deselected' : '' )  } Live
+  %a.goalcolorbox.yellow{ href: '?goal=create', class: (params[:goal] != 'create' ? 'deselected' : '' )  } Create
+  %a.goalcolorbox.magenta{ href: '?goal=play', class: (params[:goal] != 'play' ? 'deselected' : '' )  } Play
+  %a.goalcolorbox.cyan{ href: '?goal=learn', class: (params[:goal] != 'learn' ? 'deselected' : '' )  } Learn
+  %a{ href: '?' } Show all
