@@ -27,11 +27,11 @@ class Metric < ActiveRecord::Base
   end
 
   def percent_of_target
-    point = data_points.where('data_time < ?', Date.new(2050)).order('data_time DESC').first
-    return nil unless point.present?
+    point_1 = data_points.order('data_time ASC').first
+    point_2 = data_points.order('data_time ASC').last
+    return nil unless [point_1, point_2].all?
 
-    if point.value > 0 && point.value < 1
-      return (point.value * 100).round
-    end      
+    ratio = point_1.value / point_2.value
+    (ratio * 100).round
   end
 end
