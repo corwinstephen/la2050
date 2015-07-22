@@ -1,9 +1,10 @@
 module MetricsHelper
   def metrics_from_params
+    scope = Metric.order('metrics.name ASC')
     if params[:goal].present?
-      Metric.includes(:goals).joins(:goals).where("goals.name = ?", params[:goal])
+      scope.includes(:goals).joins(:goals).where("goals.name = ?", params[:goal])
     else
-      Metric.all
+      scope.all
     end
   end
 end

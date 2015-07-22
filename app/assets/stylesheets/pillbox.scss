@@ -10,3 +10,16 @@
   border-radius:100px;
   width:100%;
 }
+
+.pillbox-year {
+  position:absolute;
+  top:.5em;
+  left:1em;
+  text-align:right;
+  color:rgba(#fff, .8);
+  font-size:24px;
+}
+
+.pillbox-timeaxis {
+  position:relative;
+}
