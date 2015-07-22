@@ -25,4 +25,13 @@ class Metric < ActiveRecord::Base
   def action_items
     ActionItem.joins(:goals).includes(:goals).where("goals.id IN (#{goals.pluck(:id).join(',')})")
   end
+
+  def percent_of_target
+    point = data_points.where('data_time < ?', Date.new(2050)).order('data_time DESC').first
+    return nil unless point.present?
+
+    if point.value > 0 && point.value < 1
+      return (point.value * 100).round
+    end      
+  end
 end

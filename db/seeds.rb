@@ -40,7 +40,7 @@ CSV.foreach(file, headers: true) do |row|
   grantee = Grantee.create(attrs)
   goal = Goal.find_by_name(row['Goal'].try(:downcase))
 
-  # Try to find a matching organization
+  # Try to find a matching organization and goal
   org = Organization.find_by_name(row['Organization(s)'])
   grantee.organizations << org unless org.nil?
   grantee.goals << goal unless goal.nil?
@@ -51,16 +51,32 @@ end
 file = Rails.root.join("db", "seed_files", "metrics.csv")
 CSV.foreach(file, headers: true) do |row|
   dream = row['dream'] == "x" ? true : false
-  attrs = {
+  metric_attrs = {
     name: row['name'],
     description: row['description'],
     target_description: row['target_description'],
     dream: dream
   }
 
-  metric = Metric.create(attrs)
+  metric = Metric.create(metric_attrs)
 
-  # match and add goal
+  if [row['Data Point 1: Value'], row['Data Point 1: Year'], row['Target: Value']].all?
+    data_point_1_attrs = {
+      value: row['Data Point 1: Value'],
+      data_time: Date.new(row['Data Point 1: Year'].to_i)
+    }
+
+    data_point_goal_attrs = {
+      value: row['Target: Value'],
+      data_time: Date.new(2050)
+    }
+
+    metric.data_points.build(data_point_1_attrs)
+    metric.data_points.build(data_point_goal_attrs)
+    metric.save
+  end
+
+  # Match and add goal
   goal = Goal.find_by_name(row['goal'].try(:downcase))
   metric.goals << goal unless goal.nil?
 
