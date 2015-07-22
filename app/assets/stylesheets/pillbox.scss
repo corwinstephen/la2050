@@ -1,4 +1,10 @@
+.pillbox-wrap {
+  margin-top:90px;
+  margin-bottom:18px;
+}
+
 .pillbox-outer {
+  position:relative;
   border:3px solid #fff;
   border-radius:100px;
   padding:9px;
@@ -13,13 +19,21 @@
 
 .pillbox-year {
   position:absolute;
-  top:.5em;
+  top:18px;
   left:1em;
   text-align:right;
-  color:rgba(#fff, .8);
-  font-size:24px;
+  color:rgba(#000, .87);
+  font-size:18px;
 }
 
-.pillbox-timeaxis {
+.pillbox-value {
+  position:absolute;
+  top:-90px;
+  left:1em;
+  text-align:right;
+  font-size:18px;
+}
+
+.pillbox-axis {
   position:relative;
 }

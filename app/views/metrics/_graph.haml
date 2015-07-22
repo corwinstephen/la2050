@@ -1,7 +1,9 @@
 - unless @metric.percent_of_target.nil?
-  .pillbox-outer
-    .pillbox-inner{style: "width:#{@metric.percent_of_target}%;" }
+  .pillbox-wrap
+    .pillbox-outer
+      .pillbox-inner{style: "width:#{@metric.percent_of_target}%;" }
 
-  .pillbox-timeaxis
-    - @metric.data_points.each do |data_point|
-      .pillbox-year{style: "width:#{data_point.percent_of_target}%;" }= data_point.data_time.year
+    .pillbox-axis
+      - @metric.data_points.each do |data_point|
+        .pillbox-value{style: "width:#{data_point.percent_of_target}%;" }= data_point.value_with_units
+        .pillbox-year{style: "width:#{data_point.percent_of_target}%;" }= data_point.data_time.year
