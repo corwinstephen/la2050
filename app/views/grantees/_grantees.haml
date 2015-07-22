@@ -1,4 +1,4 @@
-- big = Grantee.offset(rand(Grantee.count)).limit(3)
+- big = Grantee.order('RANDOM()').limit(3)
 - big.all.each_with_index do |grantee, index|
   - if index % 2 == 0
     .row.featuredwinners-winner
@@ -37,5 +37,5 @@
           %a.button{ href: grantee.action_url } Learn more
 
 .row.minigrantees
-  - Grantee.where.not(id: big.map(&:id)).each do |grantee|
+  - Grantee.where.not(id: big.map(&:id)).order('RANDOM()').each do |grantee|
     = render partial: 'grantees/minigrantee', locals: { grantee: grantee }
