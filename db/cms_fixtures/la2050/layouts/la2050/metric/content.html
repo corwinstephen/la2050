@@ -1,0 +1,51 @@
+<div class="background-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="margin-top"></div>
+        <h1>Metric</h1>
+      </div>
+    </div>
+  </div>
+  <div class="metricheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="metricheader-name">
+            {{cms:page:name}}
+            <div class="goallabel {{cms:helper:color_for_goal:live}}">{{cms:page:goal}}</div>
+          </div>
+          <div class="metricheader-description">{{cms:page:description}}</div>
+          <div class="linebreak"></div>
+        </div>
+        <div class="col-sm-6">
+          <dl>
+            <dt>Our target:</dt>
+            <dd>{{cms:page:target_description}}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="paddedsection background-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="margin-bottom">Help us reach our goals for this metric</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{cms:partial:action_items/metric_list}}
+    </div>
+  </div>
+</div>
+<div class="background-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        {{cms:partial:application/disqus}}
+      </div>
+    </div>
+  </div>
+</div>
