@@ -11,6 +11,7 @@
   Blue: #4d99d3;
   Yellow: #fdc100;
   Red: #ed3f21;
+  Orange: #f9a136;
 */
 
 
@@ -658,6 +659,12 @@ ul.linenav {
 .goalcolorbox.cyan {
   border-color:#00b3bc;
   color:#00b3bc;
+  #f9a136
+}
+
+.goalcolorbox.orange {
+  border-color:#00b3bc;
+  color:#f9a136;
 }
 
 .goallabel {
@@ -692,6 +699,10 @@ ul.linenav {
 
 .goallabel.cyan {
   color:#00b3bc !important;
+}
+
+.goallabel.orange {
+  color:#f9a136 !important;
 }
 
 .metric .icon-chart {

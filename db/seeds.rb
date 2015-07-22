@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Generate goals
-[['live', 'green'], ['create', 'yellow'], ['play', 'magenta'], ['learn', 'cyan'], ['connect', 'red']].each do |goal_params|
+[['live', 'green'], ['create', 'yellow'], ['play', 'magenta'], ['learn', 'cyan'], ['connect', 'orange']].each do |goal_params|
   Goal.create(name: goal_params[0], color: goal_params[1])  
 end
 

@@ -1,5 +1,5 @@
 class Goal < ActiveRecord::Base
-  COLORS = ['cyan', 'magenta', 'red', 'green', 'yellow']
+  COLORS = ['cyan', 'magenta', 'orange', 'green', 'yellow']
 
   validates_presence_of :name
   validates :color, inclusion: COLORS
