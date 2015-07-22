@@ -12,7 +12,7 @@ class Metric < ActiveRecord::Base
 
   public
 
-  # Right now metrics can only 
+  # Right now metrics can only
   # have one goal.
   def goal_name
     if (goal = goals.first)

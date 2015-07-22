@@ -46,3 +46,22 @@ CSV.foreach(file, headers: true) do |row|
   grantee.goals << goal unless goal.nil?
 
 end
+
+# Generate metrics
+file = Rails.root.join("db", "seed_files", "metrics.csv")
+CSV.foreach(file, headers: true) do |row|
+  dream = row['dream'] == "x" ? true : false
+  attrs = {
+    name: row['name'],
+    description: row['description'],
+    target_description: row['target_description'],
+    dream: dream
+  }
+
+  metric = Metric.create(attrs)
+
+  # match and add goal
+  goal = Goal.find_by_name(row['goal'].try(:downcase))
+  metric.goals << goal unless goal.nil?
+
+end
