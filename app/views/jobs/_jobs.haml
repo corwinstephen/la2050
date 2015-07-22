@@ -1,5 +1,5 @@
 %tbody
-	- Job.all.each do |job|
+	- jobs_from_params.each do |job|
 		%tr
 			%td
 				= job.title
