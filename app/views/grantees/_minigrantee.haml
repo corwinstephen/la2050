@@ -1,12 +1,15 @@
 .col-md-4
   .winnersmall-meta      
-    .goalcolorbox.cyan LEARN
+    - grantee.goals.each do |goal|
+      = link_to goal.name, "/goals/#{goal.name}", class: "goalcolorbox #{goal.color}"
     .winnerlabel
       = image_tag 'icon-gift.svg'
       #{grantee.year} Winner
   %div
-    = image_tag grantee.photo.url(:small), class: 'winnersmall-photo'
+    - if grantee.video_url.present?
+      .winnersmall-video
+        = auto_html(grantee.video_url) { youtube(width: '100%') }
 
   %div
-    %h3= grantee.project_name
-    %p.light= grantee.description
+    %h3= link_to truncate(grantee.project_name), grantee.submission_url
+    %p.light= truncate(grantee.description, length: 150)

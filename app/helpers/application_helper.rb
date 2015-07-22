@@ -1,4 +1,6 @@
 module ApplicationHelper
+  include AutoHtml
+  
   def display_about_nav?
     request.original_fullpath == '/blog' ||
       @cms_page.present? && ['la2050listens', 'about', 'press', 'instagram', 'team', 'contact'].include?(@cms_page.slug)

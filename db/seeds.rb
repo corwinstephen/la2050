@@ -14,9 +14,35 @@ end
 # Genrate Organizations
 file = Rails.root.join("db", "seed_files", "organizations.csv")
 CSV.foreach(file, headers: true) do |row|
- attrs = {
-   name: row['name']
- }
+  attrs = {
+    name: row['name']
+  }
 
  Organization.create(attrs)
+end
+
+# Generate grantees
+file = Rails.root.join("db", "seed_files", "grantees.csv")
+CSV.foreach(file, headers: true) do |row|
+  attrs = {
+    project_name: row['Project'],
+    year: row['Year Awarded'],
+    description: row['Description'],
+    action_url: row[''],
+    website_url: row['Website'],
+    submission_url: row['Original Submission Link'],
+    instagram: row['Instagram'],
+    twitter: row['Twitter'],
+    facebook: row['Facebook'],
+    video_url: row['Video url']
+  }
+
+  grantee = Grantee.create(attrs)
+  goal = Goal.find_by_name(row['Goal'].try(:downcase))
+
+  # Try to find a matching organization
+  org = Organization.find_by_name(row['Organization(s)'])
+  grantee.organizations << org unless org.nil?
+  grantee.goals << goal unless goal.nil?
+
 end

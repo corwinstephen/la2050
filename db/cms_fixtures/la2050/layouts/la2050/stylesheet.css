@@ -566,8 +566,17 @@ ul.linenav {
   margin-bottom:4em;
 }
 
+.featuredwinners-winner .prose a {
+  color:#000;
+}
+
 .featuredwinners-image {
   margin-bottom:1em;
+}
+
+.featuredwinners-video, .featuredwinners-video .video, .featuredwinners-video iframe {
+  width:100%;
+  height:400px;
 }
 
 .winnerlabel {
@@ -586,8 +595,14 @@ ul.linenav {
   height:1em;
 }
 
-.winnersmall-photo {
+.winnersmall-photo, .winnersmall-video, .winnersmal-video iframe {
   width:100%;
+
+}
+
+.minigrantees.row [class*="col-"] {
+  margin-bottom:5em;
+  height:533px;
 }
 
 .winnersmall-meta {

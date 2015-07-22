@@ -1,9 +1,10 @@
-- Grantee.all.each_with_index do |grantee, index|
+- big = Grantee.offset(rand(Grantee.count)).limit(3)
+- big.all.each_with_index do |grantee, index|
   - if index % 2 == 0
     .row.featuredwinners-winner
       .col-sm-5
         .borderbox.padded
-          %p.prose.guide= grantee.project_name
+          %p.prose.guide= link_to grantee.project_name, grantee.submission_url
           .featuredwinners-winnermeta
             .goalcolorbox.cyan LEARN
             .winnerlabel
@@ -12,14 +13,18 @@
           %p.guide= grantee.description
           %a.button{ href: grantee.action_url } Learn more
       .col-sm-7
-        = image_tag grantee.photo.url(:medium), class: 'featuredwinners-image'
+        - if grantee.video_url.present?
+          .featuredwinners-video
+            = auto_html(grantee.video_url) { youtube(width: '100%') }
   - else
     .row.featuredwinners-winner
       .col-sm-7
-        = image_tag grantee.photo.url(:medium), class: 'featuredwinners-image'
+        - if grantee.video_url.present?
+          .featuredwinners-video
+            = auto_html(grantee.video_url) { youtube(width: '100%') }
       .col-sm-5
         .borderbox.padded
-          %p.prose.guide= grantee.project_name
+          %p.prose.guide= link_to grantee.project_name, grantee.submission_url
           .featuredwinners-winnermeta
             .goalcolorbox.cyan LEARN
             .winnerlabel
@@ -28,6 +33,6 @@
           %p.guide= grantee.description
           %a.button{ href: grantee.action_url } Learn more
 
-.row
-  - Grantee.all.each do |grantee|
+.row.minigrantees
+  - Grantee.where.not(id: big.map(&:id)).each do |grantee|
     = render partial: 'grantees/minigrantee', locals: { grantee: grantee }

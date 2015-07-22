@@ -7,6 +7,10 @@ class Grantee < ActiveRecord::Base
   has_many  :goals,
             through: :goal_taggings
 
+  has_and_belongs_to_many :organizations
+
   has_attached_file :photo, :styles => { :medium => "600x600>", :small => "360x215#", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
+
+
 end
