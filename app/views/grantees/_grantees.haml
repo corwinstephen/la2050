@@ -6,7 +6,9 @@
         .borderbox.padded
           %p.prose.guide= link_to grantee.project_name, grantee.submission_url
           .featuredwinners-winnermeta
-            .goalcolorbox.cyan LEARN
+            - grantee.goals.each do |goal|
+              = link_to goal.name, "/goals/#{goal.name}", class: "goalcolorbox #{goal.color}"
+              
             .winnerlabel
               = image_tag 'icon-gift.svg'
               #{grantee.year} Winner
@@ -26,7 +28,8 @@
         .borderbox.padded
           %p.prose.guide= link_to grantee.project_name, grantee.submission_url
           .featuredwinners-winnermeta
-            .goalcolorbox.cyan LEARN
+            - grantee.goals.each do |goal|
+              = link_to goal.name, "/goals/#{goal.name}", class: "goalcolorbox #{goal.color}"
             .winnerlabel
               = image_tag 'icon-gift.svg'
               #{grantee.year} Winner
