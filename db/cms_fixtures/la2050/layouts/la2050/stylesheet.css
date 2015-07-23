@@ -383,18 +383,6 @@ li {
   margin-bottom:5em;
 }
 
-.homekeepupwrap img {
-  height:350px;
-}
-
-.homekeepup {
-  height:350px;
-  padding:1em;
-  display:inline-block;
-  vertical-align:middle;
-  width:100%;
-}
-
 .icon {
   width:1em;
   height:1em;
@@ -417,6 +405,17 @@ li {
 
 .homectas dl {
   margin-bottom:2em;
+}
+
+@media (max-width: 992px) {
+  .homecta {
+    border-bottom:1px solid #ccc;
+    margin-bottom:3em;
+    padding-bottom:3em;
+  }
+
+  .homectas a.button {
+  }
 }
 
 .metricexplainbox {

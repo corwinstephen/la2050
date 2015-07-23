@@ -116,7 +116,7 @@
           %p.prose.guide.nomargin Get involved
 
     .row.homectas.margin-bottom-more.margin-top-more
-      .col-md-4.text-center
+      .col-md-4.text-center.homecta
         .icon.icon-doc
         %dl
           %dt Challenge
@@ -124,7 +124,7 @@
             {{ cms:page:challenge_cta:text }}
         %a.button{ href: '/challenge' } See our challenges
 
-      .col-md-4.text-center
+      .col-md-4.text-center.homecta
         .icon.icon-briefcase
         %dl
           %dt Jobs
@@ -132,7 +132,7 @@
             {{ cms:page:jobs_cta:text }}
         %a.button.green{ href: '/jobs' } Search jobs
 
-      .col-md-4.text-center
+      .col-md-4.text-center.homecta
         .icon.icon-chart
         %dl
           %dt Metrics
@@ -153,11 +153,11 @@
     .container
       .row.homekeepupwrap
         .col-md-6
-          {{ cms:file:mailinglist.jpg:image }}
+          .homekeepup-image
 
         .col-md-6
           .homekeepup.borderbox
             %p.prose.guide Keep up with LA2050
-            %p.prose.secondary Sign up for our mailing list
+            %p.aside Sign up for our mailing list
             %input{ type: 'text', placeholder: 'Your email' }
             %button Get involved
