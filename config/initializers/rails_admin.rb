@@ -16,6 +16,10 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  [Comfy::Cms::Block, Comfy::Cms::Categorization, Comfy::Cms::File, Comfy::Cms::Category, Comfy::Cms::Layout, Comfy::Cms::Page, Comfy::Cms::Revision, Comfy::Cms::Site, Comfy::Cms::Snippet, Comfy::Blog::Blog, Comfy::Blog::Post, GoalTagging].each do |model|
+    config.excluded_models << model
+  end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
@@ -32,6 +36,7 @@ RailsAdmin.config do |config|
     # history_show
 
     config.model 'Metric' do
+      visible true
       list do
         field :name
         field :description
@@ -41,5 +46,6 @@ RailsAdmin.config do |config|
         field :goals
       end
     end
+
   end
 end
