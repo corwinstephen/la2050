@@ -10,4 +10,4 @@
 				- job.organizations.each do |org|
 					= "#{org.name}"
 			%td= job.employment_type
-			%td= job.date_posted.strftime('%b %d, %Y')
+			%td=  "#{time_ago_in_words(job.created_at)} ago"
