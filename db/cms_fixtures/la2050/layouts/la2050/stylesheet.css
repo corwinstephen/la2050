@@ -26,6 +26,10 @@ a:hover {
   color:inherit;
 }
 
+a.dark {
+  color:rgba(0, 0, 0, 0.87);
+}
+
 body {
   font-size:18px;
   font-family:'Avenir';

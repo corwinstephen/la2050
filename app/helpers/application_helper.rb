@@ -14,4 +14,5 @@ module ApplicationHelper
   def display_subnav?
     display_about_nav? || display_dashboard_nav?
   end
+
 end
