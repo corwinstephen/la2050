@@ -1,0 +1,8 @@
+development:
+  bucket: la2050
+  access_key_id: AKIAIJ4SZZTJYPU2TGIQ
+  secret_access_key: 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
+production:
+  bucket: la2050
+  access_key_id: AKIAIJ4SZZTJYPU2TGIQ
+  secret_access_key: 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

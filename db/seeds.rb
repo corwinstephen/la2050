@@ -55,7 +55,8 @@ CSV.foreach(file, headers: true) do |row|
     name: row['name'],
     description: row['description'],
     target_description: row['target_description'],
-    dream: dream
+    dream: dream,
+    data_unit: row['Data Point 1: Units']
   }
 
   metric = Metric.create(metric_attrs)

@@ -22,6 +22,16 @@ class Metric < ActiveRecord::Base
     end
   end
 
+  def unit_symbol
+    case data_unit
+    when 'percentage'
+      '%'
+    when 'dollars'
+      '$'
+    else data_unit
+    end
+  end
+
   def action_items
     ActionItem.joins(:goals).includes(:goals).where("goals.id IN (#{goals.pluck(:id).join(',')})")
   end
