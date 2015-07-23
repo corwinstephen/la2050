@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :metrics, only: [:show]
 
   mount RailsAdmin::Engine => '/dbadmin', as: 'rails_admin'
