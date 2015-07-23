@@ -614,6 +614,10 @@ ul.linenav {
   line-height:24px;
 }
 
+.goalboxes .goalcolorbox {
+  margin-bottom:.5em;
+}
+
 .goalcolorbox {
   padding:3px 12px;
   display:inline-block;
@@ -790,8 +794,10 @@ ul.linenav {
   border-bottom:1px solid #ccc;
 }
 
-.twoways .col-md-6:first-child {
-  border-right:1px solid #ccc;
+@media (min-width: 992px) {
+  .twoways .col-md-6:first-child {
+    border-right:1px solid #ccc;
+  }
 }
 
 .twoways .col-md-6 {
