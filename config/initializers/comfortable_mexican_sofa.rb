@@ -32,7 +32,10 @@ ComfortableMexicanSofa.configure do |config|
   # If you are using S3 and HTTPS, pass :s3_protocol => '' to have URLs that use the protocol of the page
   config.upload_file_options = config.upload_file_options = {
   :storage        => :s3,
-  :s3_credentials => "#{Rails.root}/config/s3.yml"
+  :s3_credentials => "#{Rails.root}/config/s3.yml",
+  :path => "/:class/:id/:attachment/:style/:filename",
+  :url => ":s3_domain_url",
+  :s3_host_name => "s3-us-west-1.amazonaws.com"
 }
 
   # Sofa allows you to setup entire site from files. Database is updated with each
