@@ -4,7 +4,23 @@
   position:relative;
 
   &.connect {
-    background-image:url(image-path('goalbg-connect.png'));
+    background-image:url(image-path('goalbg-connect.jpg'));
+  }
+
+  &.live {
+    background-image:url(image-path('goalbg-live.jpg'));
+  }
+
+  &.play {
+    background-image:url(image-path('goalbg-play.jpg'));
+  }
+
+  &.create {
+    background-image:url(image-path('goalbg-create.jpg'));
+  }
+
+  &.learn {
+    background-image:url(image-path('goalbg-learn.jpg'));
   }
 }
 
