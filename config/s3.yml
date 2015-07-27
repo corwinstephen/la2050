@@ -1,8 +1,8 @@
 development:
   bucket: la2050
-  access_key_id: AKIAIJ4SZZTJYPU2TGIQ
-  secret_access_key: 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
+  access_key_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['S3_SECRET_ACCESS_KEY'] %>
 production:
   bucket: la2050
-  access_key_id: AKIAIJ4SZZTJYPU2TGIQ
-  secret_access_key: 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
+  access_key_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['S3_SECRET_ACCESS_KEY'] %>
