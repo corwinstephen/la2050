@@ -104,3 +104,21 @@ CSV.foreach(file, headers: true) do |row|
   goal = Goal.find_by_name(row['goal'].try(:downcase))
   job.goals << goal unless goal.nil?
 end
+
+# Load Activations
+file = Rails.root.join("db", "seed_files", "activations.csv")
+CSV.foreach(file, headers: true) do |row|
+  attrs = {
+    title: row['title'],
+    description: row['description'],
+    action_url: row['action url'],
+    action_text: row['action text']
+  }
+
+  action_item = ActionItem.create(attrs)
+
+  # match and add goal
+  # this code doesn't grab mulitple tags need to split on comma
+  goal = Goal.find_by_name(row['goal'].try(:downcase))
+  action_item.goals << goal unless goal.nil?
+end
