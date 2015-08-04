@@ -1,3 +1,11 @@
+:javascript
+  $(function(){
+    $('#submitlink').click(function(e){
+      e.preventDefault();
+      $('html, body').animate({scrollTop: $('#submit').offset().top - 50}, 500);
+    });
+  });
+
 .background-white
   .greaterinitiative
     .container
@@ -29,7 +37,7 @@
             .linebreak
             .hero-info.margin-bottom Submissions are currently open
 
-            %a.bigger.button{ href: 'http://good.is' } Submit now
+            %a.bigger.button#submitlink{ href: '#submit' } Submit now
 
   .background-white.paddedsection
     .container
@@ -57,12 +65,13 @@
 
             %p.prose.aside All dates 12pm, Pacific Time
 
+  %a{ id: 'submit' }
   .background-grey.paddedsection.text-center
     .container
       .row
         .col-md-8.col-md-offset-2
           %p.prose.secondary Ready to submit?
-          %p.prose.guide Choose a submission category
+          %p.prose.guide.margin-bottom Choose a submission category
 
           .goalboxes
             %a.goalcolorbox.bigger.red{ href: 'http://myla2050connect.maker.good.is/' } Connect

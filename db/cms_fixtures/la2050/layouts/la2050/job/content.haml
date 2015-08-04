@@ -1,0 +1,23 @@
+.background-white.paddedsection
+  .container
+    .row
+      .col-md-12
+        %h2 {{cms:page:job_title}}
+
+    .row
+      .col-md-8
+        %dl
+          %dt Employment type
+          %dl {{cms:page:employment_type}}
+
+        %dl
+          %dt Posted
+          %dl {{cms:page:posted}} ago
+
+        %dl
+          %dt Location
+          %dl {{cms:page:location}}
+
+        %dl
+          %dt To apply
+          %dl {{cms:page:to_apply}}

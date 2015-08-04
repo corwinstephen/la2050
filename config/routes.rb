@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :metrics, only: [:show]
+  resources :jobs, only: [:show]
 
   mount RailsAdmin::Engine => '/dbadmin', as: 'rails_admin'
   comfy_route :cms_admin, :path => '/admin'
