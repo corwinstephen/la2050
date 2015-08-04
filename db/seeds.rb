@@ -118,6 +118,7 @@ CSV.foreach(file, headers: true) do |row|
   action_item = ActionItem.create(attrs)
 
   # match and add goal
+  # this code doesn't grab mulitple tags need to split on comma
   goal = Goal.find_by_name(row['goal'].try(:downcase))
   action_item.goals << goal unless goal.nil?
 end
