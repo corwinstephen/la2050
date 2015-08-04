@@ -20,12 +20,13 @@
     .row
       .col-sm-8.col-sm-offset-2.text-center
         %h1 Metrics
-        %p
-          %a{ :href => "/metrics" } Where do these come from?
-
     .row
       .col-md-8.col-md-offset-2
         {{cms:partial:metrics/goal_metrics}}
+    .row
+      .col-sm-8.col-sm-offset-2.text-center
+        %p
+          %a.button{ :href => "/metrics" } Where do these come from?
 
 .background-white.paddedsection
   .container
