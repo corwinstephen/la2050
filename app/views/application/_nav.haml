@@ -7,7 +7,7 @@
       %a#nav-homelink{:href => "/"} LA2050
 
     %nav.col-sm-10.col-xs-12.hidden-xs
-      %a{:href => "/about", class: (['story', 'press', 'instagram', 'team', 'contact', 'la2050listens'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
+      %a{:href => "/about", class: (['story', 'community', 'press', 'instagram', 'contact', 'la2050listens'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
       %span= "|"
       %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenge
       %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
@@ -17,13 +17,13 @@
       .nav-subnav.col-xs-12
         %a{:href => "/about", class: (['story'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Story
         \/
+        %a{:href => "/community", class: (['community'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Community
+        \/
         %a{:href => "/blog", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Blog
         \/
         %a{:href => "/press", class: (['press'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Press
         \/
         %a{:href => "/instagram", class: (['instagram'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Instagram
-        \/
-        %a{:href => "/team", class: (['team'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Team
         \/
         %a{:href => "/contact", class: (['contact'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Contact
 
