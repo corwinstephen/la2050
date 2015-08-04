@@ -18,12 +18,26 @@
         %p.prose.guide.margin-top Our goals are to make Los Angeles the best place to:
 
 .goalsdisplay
-  .goalsdisplay-playback
+  .goalsdisplay-learnback
     .container
       .row.text-center
         .col-md-12
-          %a{:href => "/goals/play"}
-            {{ cms:file:transparent_play.png:image }}
+          %a{:href => "/goals/learn"}
+            {{ cms:file:transparent_learn.png:image }}
+
+  .goalsdisplay-createback
+    .container
+      .row.text-center
+        .col-md-12
+          %a{:href => "/goals/create"}
+            {{ cms:file:transparent_create.png:image }}
+
+    .goalsdisplay-playback
+      .container
+        .row.text-center
+          .col-md-12
+            %a{:href => "/goals/play"}
+              {{ cms:file:transparent_play.png:image }}
 
   .goalsdisplay-connectback
     .container
@@ -39,18 +53,6 @@
           %a{:href => "/goals/live"}
             {{ cms:file:transparent_live.png:image }}
 
-  .goalsdisplay-learnback
-    .container
-      .row.text-center
-        .col-md-12
-          %a{:href => "/goals/learn"}
-            {{ cms:file:transparent_learn.png:image }}
 
-  .goalsdisplay-createback
-    .container
-      .row.text-center
-        .col-md-12
-          %a{:href => "/goals/create"}
-            {{ cms:file:transparent_create.png:image }}
 
 
