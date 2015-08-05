@@ -1,6 +1,6 @@
-.goalmetrics.margin-top
+.goalmetrics
   - Goal.find_by_name(@cms_page.slug).metrics.each do |metric|
-    .col-md-6.text-center
+    .col-md-6
       .metric
         %i
         = link_to(metric.name, metric_path(metric))

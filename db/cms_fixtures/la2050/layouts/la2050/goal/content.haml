@@ -7,7 +7,7 @@
         %p.prose.secondary.margin-bottom to make LA the best place to
         .goalsdisplay
           <img src='{{cms:page:goal_graphic_url:string}}' />
-        %p.prose.primary.margin-top
+        %p.prose.secondary.margin-top
           One of five
           %a{ href: '/goals' } LA2050 Goals
 
@@ -25,8 +25,7 @@
         {{cms:partial:metrics/goal_metrics}}
     .row
       .col-sm-8.col-sm-offset-2.text-center
-        %p
-          %a.button{ :href => "/metrics" } Where do these come from?
+        %a.margin-top.button{ :href => "/metrics" } Where do these come from?
 
 .background-white.paddedsection
   .container
