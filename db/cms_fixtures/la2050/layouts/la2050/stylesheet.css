@@ -97,17 +97,17 @@ h1 a, h2 a, h3 a {
 
 h1 {
   font-size:36px;
-  margin-bottom:36px;
+  margin-bottom:24px;
 }
 
 h2 {
   font-size:30px;
-  margin-bottom:30px;
+  margin-bottom:18px;
 }
 
 h3 {
   font-size:18px;
-  line-height:24px;
+  line-height:18px;
 }
 
 h1:first-child {
@@ -166,6 +166,10 @@ p.prose.secondary {
   color:rgba(0, 0, 0, 0.54);
   font-size:24px;
   line-height:36px;
+}
+
+p.prose.secondary.darker {
+  color:rgba(0, 0, 0, 0.87);
 }
 
 p.prose.guide {
@@ -238,32 +242,32 @@ li {
 }
 
 .paddedsection {
-  padding-top:5em;
-  padding-bottom:5em;
+  padding-top:3em;
+  padding-bottom:3em;
 }
 
 .margin-bottom {
-  margin-bottom:48px;
+  margin-bottom:30px;
 }
 
 .margin-right {
-  margin-right:48px;
+  margin-right:30px;
 }
 
 .margin-left {
-  margin-left:48px;
+  margin-left:30px;
 }
 
 .margin-top {
-  margin-top:48px;
+  margin-top:36px;
 }
 
 .margin-bottom-more {
-  margin-bottom:5em;
+  margin-bottom:3em;
 }
 
 .margin-top-more {
-  margin-top:5em;
+  margin-top:3em;
 }
 
 .nomargin {
@@ -467,7 +471,7 @@ li {
 
 .goalsdisplay img {
   width:100%;
-  margin:5em 0;
+  margin:1em 0;
 }
 
 /*.goalsdisplay-playback {
