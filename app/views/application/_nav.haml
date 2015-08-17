@@ -9,7 +9,7 @@
     %nav.col-sm-10.col-xs-12.hidden-xs
       %a{:href => "/about", class: (['story', 'community', 'press', 'instagram', 'contact', 'la2050listens'].include?(@cms_page.try(:slug)) ? 'selected' : '')} About
       %span= "|"
-      %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenge
+      %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenges
       %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
       %a{:href => "/goals", class: (['dashboard', 'goals', 'metrics', 'datasets', 'reports', 'live', 'create', 'learn', 'connect', 'play'].include?(@cms_page.try(:slug)) || ['metrics'].include?(controller.controller_name) ? 'selected' : '')} Goals
 
