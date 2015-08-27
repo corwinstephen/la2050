@@ -19,7 +19,7 @@
         \/
         %a{:href => "/community", class: (['community'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Community
         \/
-        %a{:href => "/blog", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Blog
+        %a{:href => "/blog", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Happenings
         \/
         %a{:href => "/press", class: (['press'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Press
         \/
