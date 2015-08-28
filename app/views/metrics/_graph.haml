@@ -1,4 +1,7 @@
-- unless @metric.percent_of_target.nil?
+- if @metric.percent_of_target.nil?
+  %p
+    Know how to measure this metric? Send us an email at connect@la2050.org
+- else
   .pillbox-wrap
     .pillbox-outer
       .pillbox-inner{style: "width:#{@metric.percent_of_target}%;" }
