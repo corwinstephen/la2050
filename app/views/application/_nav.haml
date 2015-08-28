@@ -36,9 +36,9 @@
       .nav-subnav.col-xs-12
         %a{:href => "/challenge", class: (['challenge'].include?(@cms_page.try(:slug)) ? 'selected' : '')} 2015 MyLA2050 Grants Challenge
         \/
-        %a{:href => "/la2050listens", class: (['la2050listens'].include?(@cms_page.try(:slug)) ? 'selected' : '')} #LA2050Listens
-        \/
         %a{:href => "/grantees", class: (['grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Our Grantees
+        \/
+        %a{:href => "/la2050listens", class: (['la2050listens'].include?(@cms_page.try(:slug)) ? 'selected' : '')} #LA2050Listens
 
 :javascript
   $(document).ready(function(){
