@@ -3,7 +3,7 @@ module ApplicationHelper
   
   def display_about_nav?
     request.original_fullpath == '/blog' ||
-      @cms_page.present? && ['la2050listens', 'about', 'press', 'instagram', 'community', 'contact'].include?(@cms_page.slug)
+      @cms_page.present? && ['about', 'press', 'instagram', 'community'].include?(@cms_page.slug)
   end
 
   def display_dashboard_nav?
@@ -11,8 +11,12 @@ module ApplicationHelper
       controller.controller_name == 'metrics'
   end
 
+  def display_challenge_nav?
+    (@cms_page.present? && ['challenge', 'la2050listens', 'grantees'].include?(@cms_page.slug))
+  end
+
   def display_subnav?
-    display_about_nav? || display_dashboard_nav?
+    display_about_nav? || display_dashboard_nav? || display_challenge_nav?
   end
 
 end

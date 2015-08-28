@@ -841,6 +841,15 @@ footer ul > li > ul > li {
   margin-left:1em;
 }
 
+.footer-la2050 {
+  color:rgba(0, 0, 0, 0.54);
+}
+
+.footer-la2050 h1 {
+  margin-bottom: 0em;
+  color:rgba(0, 0, 0, 0.54);
+}
+
 .footer-sectionheader {
   margin-bottom:1em;
   color:rgba(0, 0, 0, 0.54);
