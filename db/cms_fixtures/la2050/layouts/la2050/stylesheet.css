@@ -147,7 +147,7 @@ p.prose.primary {
 
 p.prose.primary strong {
   font-weight:bold;
-  color:#00b3bc;
+  color:#f13585;
 }
 
 p.prose.primary a {
@@ -319,16 +319,6 @@ li {
 .arrowguide .icon-arrow-cyan-down {
   width:3em;
   height:3em;
-}
-
-.homehero-contentwrap {
-  position:absolute;
-  font-size:24px;
-  color:rgba(255, 255, 255, 0.95);
-  height:292px;
-  top:50%;
-  margin-top:-146px;
-  width:100%;
 }
 
 .hero-title {

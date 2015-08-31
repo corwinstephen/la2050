@@ -2,7 +2,7 @@
   $(function(){
     $('#getinvolvedlink').click(function(e){
       e.preventDefault();
-       $('html, body').animate({scrollTop: $('#getinvolved').offset().top - 50}, 500);
+      $('html, body').animate({scrollTop: $('#getinvolved').offset().top - 50}, 500);
     });
 
     $('#learnmorelink').click(function(e){
@@ -13,94 +13,97 @@
 
 #homehero
   .homehero-contentwrap
-    .container
-      .row
-        .col-md-12
-          .hero-title.margin-bottom.animated.flipInX <span>L</span>A2050
-          .hero-byline.margin-bottom Driving and tracking progress toward a <br />shared vision for the future of Los Angeles.
-          %a#getinvolvedlink.button.bigger.margin-right{ href: '#getinvolved' } Get involved
-          or
-          %a#learnmorelink.margin-left{href: '#'} Learn more about what we're doing
+    %img{ src: '{{cms:file:homehero.jpg}}' }
 
-.background-grey.paddedsection
+.background-white.paddedsection
   .container
     .row
       .col-sm-8.col-sm-offset-2.text-center
         %a{ id: 'learnmore' }
         %p.prose.primary.margin-bottom
-          LA2050 is a community-guided initiative to drive and track progress toward a
+          LA2050 is an initiative driving and tracking progress toward a
           %strong shared vision for the future of Los Angeles.
-        %p.prose.secondary.nomargin Our vision is that Los Angeles in 2050 will be the best place to learn, connect, play, create and live.
+        %p.prose.secondary.nomargin We worked with the LA2050 community to develop five broad, aspirational goals to reach our shared vision. 
+
 
         .arrowguide
-          %p.prose.guide Here’s how we’ll get there:
           .text-center
             .icon-arrow-cyan-down
+          %p.prose.guide Together,  we can make LA the best place to:
 
-.background-white
-  .sectionbreak
-  .paddedsection
-    .container
-      .row.homeexplain.text-center
-        .col-md-2.col-md-offset-1
-          %h1 Goals
-        .col-md-7.col-md-offset-1
-          %p We worked with Angelenos to come up with the following five goals. All LA2050 activities work in support of these five goals.
-          %p.prose.guide Together, we can make Los Angeles the best place to:
-          .goalboxes
-            %a.goalcolorbox.bigger.cyan{ href: '/goals/learn' } Learn
-            %a.goalcolorbox.bigger.yellow{ href: '/goals/create' } Create
-            %a.goalcolorbox.bigger.magenta{ href: '/goals/play' } Play
-            %a.goalcolorbox.bigger.red{ href: '/goals/connect' } Connect
-            %a.goalcolorbox.bigger.green{ href: '/goals/live' } Live
+    .row
+      .col-sm-8
+        %dl
+          %dt Learn
+          %dd Our region is a place where every resident has the opportunity and tools to engage and interact with other Angelenos, and is empowered to contribute meaningfully to civic life.
 
-          .linebreak
 
-      .row.homeexplain.text-center
-        .col-md-2.col-md-offset-1
-          %h1 Metrics
-        .col-md-7.col-md-offset-1
-          %p
-            Metrics measure whether we are on track to reach our goals.
-            They're backed by data, which helps us understand what's working and what's not.
-          %p.prose.guide
-            For example
-          %p.margin-bottom
-            <a href='/metrics/Per capita crime rate'>Per-capita crime rate</a> is a metric that affects whether Los Angeles is becoming a safer place to <a href='/goals/play'>play</a>, and truancy rate measures whether LA is a great place to learn.
+        %dl
+          %dt Create
+          %dd Our region empowers its residents to use their creativity by fostering entrepreneurship, cultural diversity, and inclusivity.
 
-          .metricexplainbox.margin-bottom
-            .margin-bottom
-              .metric
-                %i.icon-chart
-                Per capita crime rate
-              .icon-arrow-right-black
-              %a.goalcolorbox.bigger.magenta{ href: 'goals/play' } Play
 
-            %div
-              .metric
-                %i.icon-chart
-                Truancy rate
-              .icon-arrow-right-black
-              %a.goalcolorbox.bigger.cyan{ href: 'goals/play' } Learn
+        %dl
+          %dt Play
+          %dd Our region’s residents have the economic resources and cultural capital to lead active, healthy lives, and everyone benefits from a sustainable environment.
 
-          .text-center 
-            %a{ href: '/metrics' } See all the LA2050 metrics
 
-          .linebreak
+        %dl
+          %dt Connect
+          %dd Our region offers opportunities for lifelong learning, allowing all residents to contribute their skills, talents, and abilities to society.
 
-      .row.homeexplain
-        .col-md-2.col-md-offset-1
-          %h1 Reports
-        .col-md-7.col-md-offset-1
-          %p.margin-bottom
-            We compile the information we get from the
-            %a{:href => "/goals"} goals
-            and
-            %a{:href => "/metrics"} metrics
-            into several reports which analyze the current state of human development and make informed projections about where we'll be in the year 2050. We also analyze projects submitted to the
-            %a{:href => "/challenge"} My LA2050 Grants Challenge
-            to highlight useful trends and patterns from the frontlines of the community. We also analyze the impact of LA2050 as an initiative.
-          %a.button.bigger{ href: '/reports' } Read our reports
+
+        %dl
+          %dt Live
+          %dd Our region is a place where people of all ages have easy access to clean, safe, and sustainable public spaces.
+
+        
+
+    .row.homeexplain.text-center
+      .col-md-2.col-md-offset-1
+        %h1 Metrics
+      .col-md-7.col-md-offset-1
+        %p
+          Metrics measure whether we are on track to reach our goals.
+          They're backed by data, which helps us understand what's working and what's not.
+        %p.prose.guide
+          For example
+        %p.margin-bottom
+          <a href='/metrics/Per capita crime rate'>Per-capita crime rate</a> is a metric that affects whether Los Angeles is becoming a safer place to <a href='/goals/play'>play</a>, and truancy rate measures whether LA is a great place to learn.
+
+        .metricexplainbox.margin-bottom
+          .margin-bottom
+            .metric
+              %i.icon-chart
+              Per capita crime rate
+            .icon-arrow-right-black
+            %a.goalcolorbox.bigger.magenta{ href: 'goals/play' } Play
+
+          %div
+            .metric
+              %i.icon-chart
+              Truancy rate
+            .icon-arrow-right-black
+            %a.goalcolorbox.bigger.cyan{ href: 'goals/play' } Learn
+
+        .text-center 
+          %a{ href: '/metrics' } See all the LA2050 metrics
+
+        .linebreak
+
+    .row.homeexplain
+      .col-md-2.col-md-offset-1
+        %h1 Reports
+      .col-md-7.col-md-offset-1
+        %p.margin-bottom
+          We compile the information we get from the
+          %a{:href => "/goals"} goals
+          and
+          %a{:href => "/metrics"} metrics
+          into several reports which analyze the current state of human development and make informed projections about where we'll be in the year 2050. We also analyze projects submitted to the
+          %a{:href => "/challenge"} My LA2050 Grants Challenge
+          to highlight useful trends and patterns from the frontlines of the community. We also analyze the impact of LA2050 as an initiative.
+        %a.button.bigger{ href: '/reports' } Read our reports
 
 .sectionbreak
 
