@@ -897,11 +897,16 @@ footer ul > li > ul > li {
 
 .footer-la2050 {
   color:rgba(0, 0, 0, 0.54);
+  font-size:10px;
+}
+
+.footer-la2050 > div {
+  margin-bottom:5px;
 }
 
 .footer-la2050 h1 {
   margin-bottom: 0em;
-  color:rgba(0, 0, 0, 0.54);
+  color:rgba(0, 0, 0, 0.87);
 }
 
 .footer-sectionheader {
