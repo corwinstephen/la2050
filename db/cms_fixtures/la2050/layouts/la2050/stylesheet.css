@@ -50,6 +50,7 @@ button, .button, input[type=submit] {
   font-weight:bold;
   border-radius:1px;
   text-align:center;
+  white-space:nowrap;
 }
 
 button:hover, .button:hover {
@@ -253,6 +254,10 @@ li {
   background-color:rgba(139, 210, 44, 0);
 }
 
+.borderbox {
+  border:3px solid rgba(0, 0, 0, 0.87);
+}
+
 .paddedsection {
   padding-top:3em;
   padding-bottom:3em;
@@ -290,14 +295,15 @@ li {
   padding:1.44em;
 }
 
-.borderbox {
-  border:3px solid rgba(0, 0, 0, 0.87);
+.inlineblock {
+  display:inline-block;
 }
 
 .linebreak {
   width:100%;
   border-bottom:1px solid #999;
 }
+
 
 .sectionbreak {
   width:100%;
