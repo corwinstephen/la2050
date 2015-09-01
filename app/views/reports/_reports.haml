@@ -1,8 +1,9 @@
-- Report.all.each do |report|
-  .row
-    %h2= report.title
-    %p
-      - if report.photo?
-        = image_tag report.photo.url(:small)
-    %p= report.description
-    = link_to "Read the report", report.report_url, class: 'button'
+.row.row-eq-height
+  - Report.all.each do |report|
+    .col-md-4.col-sm-6
+      %h2= report.title
+      %p
+        - if report.photo?
+          = image_tag report.photo.url(:small)
+      %p= report.description
+      = link_to "Read the report", report.report_url, class: 'button'

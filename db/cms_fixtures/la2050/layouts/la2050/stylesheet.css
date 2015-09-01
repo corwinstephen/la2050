@@ -872,6 +872,13 @@ ul.linenav {
   margin-bottom:1.44em;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 footer {
   background-color:#f9f9f9;
   padding:5em 0;
