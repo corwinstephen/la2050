@@ -440,7 +440,19 @@ li {
   margin-bottom:2em;
 }
 
+.homectas dd {
+  height:110px; 
+}
+
+.homecta {
+  margin-bottom:100px;
+}
+
 @media (max-width: 992px) {
+  .homectas dd {
+    height:auto; 
+  }
+
   .homecta {
     border-bottom:1px solid #ccc;
     margin-bottom:3em;

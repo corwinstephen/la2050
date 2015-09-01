@@ -99,6 +99,16 @@ i {
   background-size:contain;
 }
 
+.icon-megaphone {
+  background:url(asset-path('icon-megaphone.svg')) center center no-repeat;
+  background-size:contain;
+}
+
+.icon-check {
+  background:url(asset-path('icon-check.svg')) center center no-repeat;
+  background-size:contain;
+}
+
 .home-sunback {
   background:url(asset-path('sunback.png')) no-repeat;
   background-origin:bottom center;
