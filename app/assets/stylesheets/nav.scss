@@ -39,6 +39,14 @@
         }
       }
     }
+
+    &.home.scrolled {
+      nav {
+        a {
+          color:rgba(0, 0, 0, .87);
+        }
+      }
+    }
   }
 
   &.will-be-scrolled {
