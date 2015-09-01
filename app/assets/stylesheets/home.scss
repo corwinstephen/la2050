@@ -1,6 +1,40 @@
 #homehero {
+  position:relative;
+}
+
+.homehero-bg {
   img {
     width:100%;
+    z-index:1;
+  }
+}
+
+.homehero-fg {
+  width:100%;
+  position:absolute;
+  bottom:0;
+
+  img {
+    width:100%;
+    z-index:3;
+  }
+}
+
+.homehero-text {
+  position:absolute;
+  bottom:26%;
+  width:100%;
+  text-align:center;
+  left:0;
+
+  img {
+    display:inline-block;
+    max-width:100%;
+    z-index:2;
+
+    @media (max-width: 900px){
+      width: 80%;
+    }
   }
 }
 

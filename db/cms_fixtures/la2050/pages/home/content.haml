@@ -12,10 +12,9 @@
   });
 
 #homehero
-  .homehero-contentwrap
-    %img{ src: '{{cms:file:homehero.jpg}}' }
-    %img{ src: '{{cms:file:herotext.svg}}' }
-    %img{ src: '{{cms:file:homehero-foreground.jpg}}' }
+  .homehero-bg {{cms:file:homehero.jpg:image}}
+  .homehero-text.animated.lightSpeedIn {{cms:file:homehero-text.svg:image}}
+  .homehero-fg {{cms:file:homehero-foreground.png:image}}
 
 .paddedsection{ data: { parallax: 'scroll', image: { src: '{{cms:file:sunback.png}}', speed: 0.6 } } }
   .container
