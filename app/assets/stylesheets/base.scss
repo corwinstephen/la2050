@@ -1,7 +1,9 @@
 .richtext {
   ul {
     li {
-      list-style:bullet;
+      list-style-type:disc;
+      margin-left:1em;
+      line-height:1.66em;
     }
   }
 }
