@@ -134,8 +134,12 @@
     .container
       .row
         .col-md-12.text-center
-          .la2050graphic {{ cms:file:la2050logo.png:image }}
-          %p.prose.secondary We are confident that with your help, we will shape the LA story anew – and build the LA2050 of our dreams. 
-          %p.prose.guide Get involved. Sign up for our mailing list.
-          %input{ type: 'text', placeholder: 'Your email' }
-          %button Sign up
+          .home-biglogo.margin-top {{ cms:file:biglogo.png:image }}
+          %p.prose.secondary.margin-bottom-more We are confident that with your help, we will shape the<br />LA story anew – and build the LA2050 of our dreams. 
+          .home-whichway {{ cms:file:icon-whichway.png:image }}
+          %p.prose.guide.margin-top.margin-bottom Get involved. Sign up for our mailing list.
+
+          .col-md-6.col-md-offset-3.home-signup
+            %input{ type: 'text', placeholder: 'Your email' }
+            %button Sign up
+

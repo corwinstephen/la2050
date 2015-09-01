@@ -144,6 +144,7 @@ input[type=text], input[type=password], input[type=email] {
   background-color:#f9f9f9;
   border:none;
   box-sizing:border-box;
+  border-bottom:1px solid #929292;
 }
 
 p {
@@ -414,6 +415,20 @@ li {
 .homegetinvolved img {
   width:100%;
   margin-bottom:5em;
+}
+
+.home-biglogo img {
+  width:80%;
+  margin-bottom:30px;
+}
+
+.home-signup input[type=text] {
+  width:64%;
+  display:inline-block;
+}
+
+.home-signup button {
+  width:33%;
 }
 
 .icon {
@@ -895,13 +910,12 @@ footer ul > li > ul > li {
 }
 
 .footer-social {
-  margin-bottom:3em;
+  margin-top:25px;
 }
 
 .footer-newslettersignup input[type=email] {
   display:inline-block;
-  max-width:300px;
-  border:3px solid #333;
+  max-width:249px;
   vertical-align:top;
   margin-right:.5em;
 }
