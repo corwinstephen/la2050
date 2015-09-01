@@ -73,6 +73,18 @@ button.bigger, .button.bigger {
   background-color:#00b3bc;
 }
 
+.button.magenta {
+  background-color:#f13585;
+}
+
+.button.yellow {
+  background-color:#fdc100;
+}
+
+.button.blue {
+  background-color:#4d99d3;
+}
+
 dl {
 
 }
@@ -309,7 +321,7 @@ li {
 }
 
 .arrowguide {
-  margin:5em 0 0 0;
+  margin:3em 0;
 }
 
 .arrowguide p {
@@ -345,6 +357,47 @@ li {
   color:rgba(255, 255, 255, 0.95);
   font-style:italic;
   font-size:24px;
+}
+
+.home-goals dl {
+  width:100%;
+  overflow:hidden;
+}
+
+.home-goals dl.learn {
+  color:#00b3bc;
+}
+
+.home-goals dl.create {
+  color:#fdc100;
+}
+
+.home-goals dl.play {
+  color:#f13585;
+}
+
+.home-goals dl.connect {
+  color:#f9a136;
+}
+
+.home-goals dl.live {
+  color:#8bd22c;
+}
+
+.home-goals dl dt {
+  font-size:64px;
+  display:inline-block;
+  text-transform:uppercase;
+  margin-bottom:0;
+  width:320px;
+  float:left;
+  text-align:right;
+  margin-right:1em;
+}
+
+.home-goals dl dd {
+  color:rgba(0, 0, 0, .87);
+  overflow:hidden;
 }
 
 .homegetinvolved img {

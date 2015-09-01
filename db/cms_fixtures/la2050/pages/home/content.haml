@@ -15,7 +15,7 @@
   .homehero-contentwrap
     %img{ src: '{{cms:file:homehero.jpg}}' }
 
-.background-white.paddedsection
+.paddedsection{ data: { parallax: 'scroll', image: { src: '{{cms:file:sunback.png}}', speed: 0.6 } } }
   .container
     .row
       .col-sm-8.col-sm-offset-2.text-center
@@ -29,42 +29,46 @@
         .arrowguide
           .text-center
             .icon-arrow-cyan-down
-          %p.prose.guide Together,  we can make LA the best place to:
 
     .row
-      .col-sm-8
-        %dl
-          %dt Learn
-          %dd Our region is a place where every resident has the opportunity and tools to engage and interact with other Angelenos, and is empowered to contribute meaningfully to civic life.
+      .col-md-10.col-md-offset-1
+        .home-goals
+          %p.prose.guide.text-center.margin-bottom Together,  we can make LA the best place to:
+          %dl.live
+            %dt Learn
+            %dd Our region is a place where every resident has the opportunity and tools to engage and interact with other Angelenos, and is empowered to contribute meaningfully to civic life.
 
 
-        %dl
-          %dt Create
-          %dd Our region empowers its residents to use their creativity by fostering entrepreneurship, cultural diversity, and inclusivity.
+          %dl.create
+            %dt Create
+            %dd Our region empowers its residents to use their creativity by fostering entrepreneurship, cultural diversity, and inclusivity.
 
 
-        %dl
-          %dt Play
-          %dd Our region’s residents have the economic resources and cultural capital to lead active, healthy lives, and everyone benefits from a sustainable environment.
+          %dl.play
+            %dt Play
+            %dd Our region’s residents have the economic resources and cultural capital to lead active, healthy lives, and everyone benefits from a sustainable environment.
 
 
-        %dl
-          %dt Connect
-          %dd Our region offers opportunities for lifelong learning, allowing all residents to contribute their skills, talents, and abilities to society.
+          %dl.connect
+            %dt Connect
+            %dd Our region offers opportunities for lifelong learning, allowing all residents to contribute their skills, talents, and abilities to society.
 
 
-        %dl
-          %dt Live
-          %dd Our region is a place where people of all ages have easy access to clean, safe, and sustainable public spaces.
+          %dl.live
+            %dt Live
+            %dd Our region is a place where people of all ages have easy access to clean, safe, and sustainable public spaces.
 
+.home-how.paddedsection
+  .home-how-overlay
+  .container
     .row
       .col-sm-8.col-sm-offset-2.text-center
+        %img.margin-bottom{ src: '{{cms:file:holdhands.png}}' }
+        %p.prose.guide How we do it
         %p.prose.primary.margin-bottom
           LA2050 deploys financial, human, and social capital to build a better future--a future for Angelenos, shaped by Angelenos.
         %p.prose.secondary.margin-bottom
-          We accomplish this through <a href='/reports'>research and reporting</a>, <a href='/grantees'>grantmaking</a> via the My LA2050 Grants Challenge, and <a href='/reports'>tracking progress</a> on the indicators and goals. 
-
-
+          We accomplish this through <a href='/reports'>research and reporting</a>, <a href='/grantees'>grantmaking</a> via the My LA2050 Grants Challenge, and <a href='/reports'>tracking progress</a> on the indicators and goals.
 
 .background-grey.paddedsection.homegetinvolved
   .container
@@ -81,7 +85,7 @@
             %dt Reports
             %dd
               LA2050 conducts research and reporting to inform residents and leaders about the status of the region and the progress toward our goals.
-          %a.button{ href: '/challenge' } See our challenges
+          %a.button.magenta{ href: '/challenge' } Read our reports
 
         .col-md-4.text-center.homecta
           .icon.icon-briefcase
@@ -89,7 +93,7 @@
             %dt Challenges
             %dd
               {{ cms:page:challenge_cta:text }}
-          %a.button.green{ href: '/jobs' } Search jobs
+          %a.button.blue{ href: '/jobs' } See our challenges
 
         .col-md-4.text-center.homecta
           .icon.icon-chart
@@ -97,9 +101,9 @@
             %dt Metrics
             %dd
               We use data-backed metrics to measure whether we are on the right path to reach our goals.
-          %a.button.cyan{ href: '/metrics' } Join the discussion
+          %a.button.cyan{ href: '/metrics' } View our metrics
 
-      .row
+      .row.margin-top-more
         .col-md-4.col-md-offset-2.text-center.homecta
           .icon.icon-chart
           %dl
@@ -107,7 +111,7 @@
             %dd
               We also engage Angelenos by curating and hosting events, activations, and digital meet-ups. 
 
-          %a.button{ href: '/challenge' } See our challenges
+          %a.button.yellow{ href: '/challenge' } See our activations
 
         .col-md-4.text-center.homecta
           .icon.icon-briefcase
@@ -115,7 +119,7 @@
             %dt Jobs
             %dd
               {{ cms:page:jobs_cta:text }}
-          %a.button.green{ href: '/jobs' } Search jobs
+          %a.button.green{ href: '/jobs' } See our jobs
 
 .sectionbreak
 

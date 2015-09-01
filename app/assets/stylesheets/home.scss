@@ -9,6 +9,21 @@ i {
   vertical-align:middle;
 }
 
+.home-how {
+  position:relative;
+  background-image:url(asset-path('aerial.jpg'));
+  background-size:cover;
+}
+
+.home-how-overlay {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(#00b3bc, .08);
+}
+
 .icon-doc {
   background:url(asset-path('icon-document.svg')) center center no-repeat;
   background-size:contain;
@@ -22,4 +37,9 @@ i {
 .icon-chart {
   background:url(asset-path('icon-chart.svg')) center center no-repeat;
   background-size:contain;
+}
+
+.home-sunback {
+  background:url(asset-path('sunback.png')) no-repeat;
+  background-origin:bottom center;
 }
