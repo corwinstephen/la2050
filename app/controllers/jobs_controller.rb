@@ -8,7 +8,9 @@ class JobsController < ApplicationController
       employment_type: @job.employment_type,
       posted: time_ago_in_words(@job.date_posted),
       location: @job.location,
-      to_apply:@job.to_apply 
+      description: @job.description,
+      to_apply: @job.to_apply,
+      organizations: @job.organizations.map(&:name).join(', ')
     }
   end
 end
