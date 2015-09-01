@@ -1,0 +1,5 @@
+- Report.all.each do |report|
+  .row
+    %h2= report.title
+    %p= report.description
+    = link_to "Read the report", report.report_url, class: 'button'
