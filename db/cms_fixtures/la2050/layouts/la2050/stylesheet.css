@@ -53,6 +53,11 @@ button, .button, input[type=submit] {
   white-space:nowrap;
 }
 
+.button:visited {
+  color:#fff;
+  text-decoration:none;
+}
+
 button:hover, .button:hover {
   background-color:#0DB7C0;
   text-decoration:none;
