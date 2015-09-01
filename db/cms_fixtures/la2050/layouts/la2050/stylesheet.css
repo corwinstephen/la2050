@@ -163,7 +163,7 @@ p.prose.primary a:hover {
 }
 
 p.prose.secondary {
-  color:rgba(0, 0, 0, 0.54);
+  color:rgba(0, 0, 0, 0.7);
   font-size:24px;
   line-height:36px;
 }
@@ -345,33 +345,6 @@ li {
   color:rgba(255, 255, 255, 0.95);
   font-style:italic;
   font-size:24px;
-}
-
-.homeexplain {
-  margin-bottom:5em;
-}
-
-.homeexplain .linebreak {
-  margin-top:3em;
-}
-
-.homeexplain:last-child {
-  margin-bottom:0;
-}
-
-.homeexplain p {
-  font-size:24px;
-  line-height:36px;
-}
-
-.homeexplain p.prose.guide {
-  margin-top:3em;
-  margin-bottom:2em;
-}
-
-.homeexplain .button {
-  width:100%;
-  text-align:center;
 }
 
 .homegetinvolved img {

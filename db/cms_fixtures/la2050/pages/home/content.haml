@@ -57,110 +57,75 @@
           %dt Live
           %dd Our region is a place where people of all ages have easy access to clean, safe, and sustainable public spaces.
 
-        
+    .row
+      .col-sm-8.col-sm-offset-2.text-center
+        %p.prose.primary.margin-bottom
+          LA2050 deploys financial, human, and social capital to build a better future--a future for Angelenos, shaped by Angelenos.
+        %p.prose.secondary.margin-bottom
+          We accomplish this through <a href='/reports'>research and reporting</a>, <a href='/grantees'>grantmaking</a> via the My LA2050 Grants Challenge, and <a href='/reports'>tracking progress</a> on the indicators and goals. 
 
-    .row.homeexplain.text-center
-      .col-md-2.col-md-offset-1
-        %h1 Metrics
-      .col-md-7.col-md-offset-1
-        %p
-          Metrics measure whether we are on track to reach our goals.
-          They're backed by data, which helps us understand what's working and what's not.
-        %p.prose.guide
-          For example
-        %p.margin-bottom
-          <a href='/metrics/Per capita crime rate'>Per-capita crime rate</a> is a metric that affects whether Los Angeles is becoming a safer place to <a href='/goals/play'>play</a>, and truancy rate measures whether LA is a great place to learn.
 
-        .metricexplainbox.margin-bottom
-          .margin-bottom
-            .metric
-              %i.icon-chart
-              Per capita crime rate
-            .icon-arrow-right-black
-            %a.goalcolorbox.bigger.magenta{ href: 'goals/play' } Play
-
-          %div
-            .metric
-              %i.icon-chart
-              Truancy rate
-            .icon-arrow-right-black
-            %a.goalcolorbox.bigger.cyan{ href: 'goals/play' } Learn
-
-        .text-center 
-          %a{ href: '/metrics' } See all the LA2050 metrics
-
-        .linebreak
-
-    .row.homeexplain
-      .col-md-2.col-md-offset-1
-        %h1 Reports
-      .col-md-7.col-md-offset-1
-        %p.margin-bottom
-          We compile the information we get from the
-          %a{:href => "/goals"} goals
-          and
-          %a{:href => "/metrics"} metrics
-          into several reports which analyze the current state of human development and make informed projections about where we'll be in the year 2050. We also analyze projects submitted to the
-          %a{:href => "/challenge"} My LA2050 Grants Challenge
-          to highlight useful trends and patterns from the frontlines of the community. We also analyze the impact of LA2050 as an initiative.
-        %a.button.bigger{ href: '/reports' } Read our reports
-
-.sectionbreak
 
 .background-grey.paddedsection.homegetinvolved
   .container
     .row.text-center
       .col-md-10.col-md-offset-1
-        .la2050graphic {{ cms:file:la2050logo.png:image }}
         .margin-top.margin-bottom
           %a{ id: 'getinvolved' }
-          %p.prose.secondary
-            Help us reach our goals for Los Angeles.
-          %p.prose.guide.nomargin Get involved
 
-    .row.homectas.margin-bottom-more.margin-top-more
-      .col-md-4.text-center.homecta
-        .icon.icon-doc
-        %dl
-          %dt Challenge
-          %dd
-            {{ cms:page:challenge_cta:text }}
-        %a.button{ href: '/challenge' } See our challenges
+    .homectas.margin-bottom-more.margin-top-more
+      .row
+        .col-md-4.text-center.homecta
+          .icon.icon-doc
+          %dl
+            %dt Reports
+            %dd
+              LA2050 conducts research and reporting to inform residents and leaders about the status of the region and the progress toward our goals.
+          %a.button{ href: '/challenge' } See our challenges
 
-      .col-md-4.text-center.homecta
-        .icon.icon-briefcase
-        %dl
-          %dt Jobs
-          %dd
-            {{ cms:page:jobs_cta:text }}
-        %a.button.green{ href: '/jobs' } Search jobs
+        .col-md-4.text-center.homecta
+          .icon.icon-briefcase
+          %dl
+            %dt Challenges
+            %dd
+              {{ cms:page:challenge_cta:text }}
+          %a.button.green{ href: '/jobs' } Search jobs
 
-      .col-md-4.text-center.homecta
-        .icon.icon-chart
-        %dl
-          %dt Metrics
-          %dd
-            Learn more about the numbers behind the metrics and meet Angelenos moving LA in the right direction. 
-        %a.button.cyan{ href: '/metrics' } Join the discussion
+        .col-md-4.text-center.homecta
+          .icon.icon-chart
+          %dl
+            %dt Metrics
+            %dd
+              We use data-backed metrics to measure whether we are on the right path to reach our goals.
+          %a.button.cyan{ href: '/metrics' } Join the discussion
 
-    .row
-      .col-md-12.text-center
-        %p.prose.aside Want to contribute something different?
-        %p
-          <a href='#'>Tell us about it</a>
+      .row
+        .col-md-4.col-md-offset-2.text-center.homecta
+          .icon.icon-chart
+          %dl
+            %dt Activations
+            %dd
+              We also engage Angelenos by curating and hosting events, activations, and digital meet-ups. 
+
+          %a.button{ href: '/challenge' } See our challenges
+
+        .col-md-4.text-center.homecta
+          .icon.icon-briefcase
+          %dl
+            %dt Jobs
+            %dd
+              {{ cms:page:jobs_cta:text }}
+          %a.button.green{ href: '/jobs' } Search jobs
 
 .sectionbreak
 
 .background-white
   .paddedsection
     .container
-      .row.homekeepupwrap
-        .col-md-6
-          .homekeepup-image
-
-        .col-md-6
-          .homekeepup.borderbox
-            %p.prose.guide Keep up with LA2050
-            %p.aside Sign up for our mailing list
-            %input{ type: 'text', placeholder: 'Your email' }
-            %button Get involved
+      .row
+        .col-md-12.text-center
+          .la2050graphic {{ cms:file:la2050logo.png:image }}
+          %p.prose.secondary We are confident that with your help, we will shape the LA story anew – and build the LA2050 of our dreams. 
+          %p.prose.guide Get involved. Sign up for our mailing list.
+          %input{ type: 'text', placeholder: 'Your email' }
+          %button Sign up
