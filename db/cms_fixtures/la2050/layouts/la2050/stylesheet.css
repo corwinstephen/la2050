@@ -297,6 +297,10 @@ li {
   margin:0;
 }
 
+.nomarginbottom {
+  margin-bottom:0 !important;
+}
+
 .padded {
   padding:1.44em;
 }
@@ -916,6 +920,10 @@ footer ul > li > ul > li {
 
 .footer-social {
   margin-top:25px;
+}
+
+.footer-social a {
+  margin-right:5px;
 }
 
 .footer-newslettersignup input[type=email] {
