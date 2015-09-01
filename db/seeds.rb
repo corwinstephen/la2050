@@ -122,3 +122,15 @@ CSV.foreach(file, headers: true) do |row|
   goal = Goal.find_by_name(row['goal'].try(:downcase))
   action_item.goals << goal unless goal.nil?
 end
+
+# Load Reports
+file = Rails.root.join("db", "seed_files", "reports.csv")
+CSV.foreach(file, headers: true) do |row|
+  attrs = {
+    title: row['title'],
+    description: row['description'],
+    report_url: row['report_url']
+  }
+
+  report = Report.create(attrs)
+end
