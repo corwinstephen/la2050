@@ -1,3 +1,9 @@
+PATH
+  remote: /Users/Muffin/Code/comfy-blog
+  specs:
+    comfy_blog (1.12.3)
+      comfortable_mexican_sofa (>= 1.12.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -87,8 +93,6 @@ GEM
       rails (>= 4.0.0, < 5)
       rails-i18n (>= 4.0.0)
       sass-rails (>= 4.0.3)
-    comfy_blog (1.12.3)
-      comfortable_mexican_sofa (>= 1.12.7)
     debug_inspector (0.0.2)
     devise (3.5.2)
       bcrypt (~> 3.0)
@@ -269,7 +273,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   comfortable_mexican_sofa (~> 1.12.0)
-  comfy_blog (~> 1.12.0)
+  comfy_blog!
   devise
   jbuilder (~> 2.0)
   jquery-rails

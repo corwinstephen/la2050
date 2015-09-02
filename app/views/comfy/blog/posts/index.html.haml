@@ -18,8 +18,15 @@
               %span.blogpost-author
                 = post.author
 
+            .blogtags
+              - post.tags.each do |tag|
+                .blogtag
+                  .blogtag-tip
+                  = tag.name
+                  
             .blogpost-shadedbox
               %p= post.content.html_safe
+
 
           = comfy_paginate @posts
 
