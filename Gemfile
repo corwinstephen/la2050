@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'comfortable_mexican_sofa', '~> 1.12.0'
-gem 'comfy_blog', git: 'git@github.com:corwinstephen/comfy-blog.git'
+gem 'comfy_blog', git: 'https://github.com/corwinstephen/comfy-blog.git'
 
 gem 'pg'
 

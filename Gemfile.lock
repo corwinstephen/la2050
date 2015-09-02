@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:corwinstephen/comfy-blog.git
+  remote: https://github.com/corwinstephen/comfy-blog.git
   revision: c6b4d2e72b9db293eceaf0a859169b1fb07945d2
   specs:
     comfy_blog (1.12.3)
