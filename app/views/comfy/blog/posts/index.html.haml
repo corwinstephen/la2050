@@ -22,8 +22,8 @@
               - post.tags.each do |tag|
                 .blogtag
                   .blogtag-tip
-                  = tag.name
-                  
+                  = link_to tag.name, tag: tag.name
+
             .blogpost-shadedbox
               %p= post.content.html_safe
 
@@ -37,6 +37,13 @@
 
         .linebreak
 
-        %h3 Tags
+        .blog-sidenav
+          %h3 Tags
+          %ul.margin-bottom
+            - Comfy::Blog::Tag.all.each do |tag|
+              %li= link_to tag.name, tag: tag.name
 
-        %h3 Archives
+          %h3 Archives
+          %ul
+            - Comfy::Blog::Post.all.each do |post|
+              %li= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
