@@ -1,11 +1,10 @@
-- Report.all.in_groups_of(3) do |reports|
+- Report.all.in_groups_of(2) do |reports|
   .row.row-eq-height.margin-bottom
     - reports.each do |report|
       - if report.present?
-        .col-md-4
+        .col-md-6.report
           %h2= report.title
-          %p
-            - if report.photo?
-              = image_tag report.photo.url(:small)
+          - if report.photo?
+            = image_tag report.photo.url(:medium)
           %p= report.description
-          = link_to "Read the report", report.report_url, class: 'button'
+          = link_to "Read the report", report.pdf.url, class: 'button'

@@ -126,11 +126,19 @@ end
 # Load Reports
 file = Rails.root.join("db", "seed_files", "reports.csv")
 CSV.foreach(file, headers: true) do |row|
+  image_file = File.open("db/seed_files/reports/images/#{row['file_name']}.jpg")
+  pdf = File.open("db/seed_files/reports/pdfs/#{row['file_name']}.pdf")
+
   attrs = {
     title: row['title'],
     description: row['description'],
-    report_url: row['report_url']
+    report_url: "",
+    photo: image_file,
+    pdf: pdf
   }
 
   report = Report.create(attrs)
+
+  image_file.close
+  pdf.close
 end
