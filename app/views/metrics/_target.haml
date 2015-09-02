@@ -1,0 +1,7 @@
+- if @metric.dream == true
+  %dt Dream metric:
+  %dl
+    Know how to measure this metric? Send us an email at connect@la2050.org
+- elsif @metric.dream == false
+  %dt Our target:
+  %dl #{@metric.target_description}
