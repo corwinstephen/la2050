@@ -17,11 +17,7 @@
             .hero-byline $1,000,000 to make LA the best place to learn, create, play, connect, and live.
             .linebreak
 
-            .hero-info.margin-bottom Submissions open September 8th 2015 noon PST
-
-            / .hero-info.margin-bottom Submissions are currently open
-
-            / %a.bigger.button#submitlink{ href: '#submit' } Submit now
+            {{cms:partial:challenges/heroinfo}}
 
   .background-white.paddedsection
     .container
@@ -31,23 +27,7 @@
           %p.prose.secondary How will you help Los Angeles become the best place to learn, create, play, connect, and live? Submit an application for the chance to win $100,000 to make your idea come to life.
 
       .row
-        .col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2
-          .text-center.margin-top
-            %p.prose.guide Timeline
-
-          .borderbox.padded.text-center.margin-top
-            %p.prose.guide.little 1. Submission
-            .timelinebox
-              .timelinebox-arrow
-              September 8th - October 6th
-
-            .timelinebox-deactivated
-              %p.prose.guide.little 2. Voting
-              .timelinebox October 20th - November 3rd
-              %p.prose.guide.little 3. Winners announced
-              .timelinebox December 8
-
-            %p.prose.aside All dates 12pm, Pacific Time
+        {{cms:partial:challenges/schedule}}
 
   %a{ id: 'submit' }
   .background-grey.paddedsection.text-center.readytosubmit
