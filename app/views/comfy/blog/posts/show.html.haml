@@ -1,18 +1,9 @@
-%h1 Blog Post
+= render 'application/nav'
 
-%h1= @post.title
+.background-white.paddedsection
+  .container
+    .row
+      .col-xs-12
+        = render partial: 'post', locals: { post: @post }
 
-.author
-  = @post.author
-.date
-  = @post.published_at.to_s(:db)
-.content
-  = @post.content.html_safe
-
-.comments
-  - @post.comments.published.each do |comment|
-    .comment
-      .author= comment.author
-      .content= comment.content
-  
-  = render :partial => 'comfy/blog/comments/form'
+= cms_snippet_render(:footer)

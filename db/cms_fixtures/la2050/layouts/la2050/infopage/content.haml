@@ -1,8 +1,8 @@
 .background-white.paddedsection
   .container
     .row
-      .col-md-9
+      .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
         %h1.margin-bottom
           {{cms:page:title:string}}
-        %div
+        .richtext
           {{cms:page:content:rich_text}}

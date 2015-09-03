@@ -7,30 +7,14 @@
         %h1.margin-bottom Blog Posts
 
     .row
-      .col-md-8
+      .col-sm-8
         - @posts.each do |post|
-          .blogpost
-            %h3= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
-            .blogpost-meta
-              Posted
-              = post.published_at.strftime("%B %e, %Y")
-              by
-              %span.blogpost-author
-                = post.author
-
-            .blogtags
-              - post.tags.each do |tag|
-                .blogtag
-                  .blogtag-tip
-                  = link_to tag.name, tag: tag.name
-
-            .blogpost-shadedbox
-              %p= post.content.html_safe
+          = render partial: 'post', locals: { post: post }
 
 
           = comfy_paginate @posts
 
-      .col-md-4.blognav
+      .col-sm-4.blognav
         %h3 Keep up with LA2050
         %input{type: 'email', placeholder: 'Your email'}
         = link_to 'Email things to me', '#', class: 'button'
@@ -38,12 +22,16 @@
         .linebreak
 
         .blog-sidenav
-          %h3 Tags
-          %ul.margin-bottom
-            - Comfy::Blog::Tag.all.each do |tag|
-              %li= link_to tag.name, tag: tag.name
+          .col-xs-6.col-sm-12
+            %h3 Tags
+            %ul.margin-bottom
+              - Comfy::Blog::Tag.all.each do |tag|
+                %li= link_to tag.name, tag: tag.name
 
-          %h3 Archives
-          %ul
-            - Comfy::Blog::Post.all.each do |post|
-              %li= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
+          .col-xs-6.col-sm-12
+            %h3 Archives
+            %ul
+              - Comfy::Blog::Post.all.each do |post|
+                %li= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
+
+= cms_snippet_render(:footer)
