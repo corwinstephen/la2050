@@ -1,0 +1,17 @@
+.blogpost
+  %h3= link_to post.title, comfy_blog_post_path(@cms_site.path, @blog.path, post.slug)
+  .blogpost-meta
+    Posted
+    = post.published_at.strftime("%B %e, %Y")
+    by
+    %span.blogpost-author
+      = post.author
+
+  .blogtags
+    - post.tags.each do |tag|
+      .blogtag
+        .blogtag-tip
+        = link_to tag.name, tag: tag.name
+
+  .blogpost-shadedbox
+    %p= post.content.html_safe
