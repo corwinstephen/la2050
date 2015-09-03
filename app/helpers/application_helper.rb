@@ -7,7 +7,7 @@ module ApplicationHelper
     # Challenge Closes October 6th 2015 12noon PST
     close_at = DateTime.new(2015,10,6,12,00,00,"-08:00")
     today = DateTime.now
-    today.between? close_at, open_at
+    today.between? open_at, close_at
   end
 
   def voting_open?
@@ -16,7 +16,7 @@ module ApplicationHelper
     # Voting Closes November 3rd 2015 12noon PST
     close_at = DateTime.new(2015,11,3,12,00,00,"-08:00")
     today = DateTime.now
-    today.between? close_at, open_at
+    today.between? open_at, close_at
   end
 
   # if today is after vote date show winners
