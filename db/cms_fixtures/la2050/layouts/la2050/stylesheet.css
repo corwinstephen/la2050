@@ -959,6 +959,7 @@ footer ul > li > ul > li {
   max-width:249px;
   vertical-align:top;
   margin-right:.5em;
+  float:left;
 }
 
 .footer-newslettersignup input[type=submit] {
