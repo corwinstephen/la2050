@@ -670,11 +670,16 @@ ul.linenav {
 
 .winnersmall-meta {
   margin-bottom:1em;
+  height:32px;
+}
+
+.winnersmall-img img {
+  width:100%;
 }
 
 .winnersmall-meta .winnerlabel {
   float:right;
-  line-height:24px;
+  line-height:32px;
 }
 
 .goalboxes .goalcolorbox {
