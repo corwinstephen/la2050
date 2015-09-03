@@ -1,4 +1,4 @@
-- big = Grantee.order('RANDOM()').limit(3)
+- big = Grantee.where.not(video_url: nil).order('RANDOM()').limit(3)
 - big.all.each_with_index do |grantee, index|
   - if index % 2 == 0
     .row.featuredwinners-winner
