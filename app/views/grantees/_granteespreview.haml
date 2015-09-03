@@ -1,2 +1,2 @@
-- Grantee.limit(3).each do |grantee|
+- Grantee.where.not(video_url: nil).order('RANDOM()').limit(3).each do |grantee|
   = render partial: 'grantees/minigrantee', locals: { grantee: grantee }

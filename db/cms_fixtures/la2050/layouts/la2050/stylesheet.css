@@ -226,6 +226,7 @@ th {
 
 td {
   height:5em;
+  padding-right:1em;
   vertical-align:middle;
   border-bottom:1px solid #ccc;
 }
