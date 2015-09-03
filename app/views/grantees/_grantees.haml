@@ -13,7 +13,7 @@
               = image_tag 'icon-gift.svg'
               #{grantee.year} Winner
           %p.guide= grantee.description
-          %a.button{ href: grantee.action_url } Learn more
+          %a.button{ href: grantee.learn_more_url } Learn more
       .col-sm-7
         - if grantee.video_url.present?
           .featuredwinners-video
@@ -34,7 +34,7 @@
               = image_tag 'icon-gift.svg'
               #{grantee.year} Winner
           %p.guide= grantee.description
-          %a.button{ href: grantee.action_url } Learn more
+          %a.button{ href: grantee.learn_more_url } Learn more
 
 .row.minigrantees
   - Grantee.where.not(id: big.map(&:id)).order('RANDOM()').each do |grantee|
