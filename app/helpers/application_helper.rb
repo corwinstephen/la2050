@@ -1,6 +1,15 @@
 module ApplicationHelper
   include AutoHtml
   
+  def current_date
+    DateTime.now
+  end
+
+  def challenge_open_date
+    # Challenge Opens September 8th 2015 12noon PST
+    DateTime.new(2015,9,8,12,Rational(-8,24))
+  end
+
   def display_about_nav?
     request.original_fullpath == '/blog' ||
       @cms_page.present? && ['about', 'press', 'instagram', 'community'].include?(@cms_page.slug)
