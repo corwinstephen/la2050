@@ -1,19 +1,22 @@
 .background-white
-  .granteeshero
-    .container
-      .row
-        .col-md-12
-          %h1.nomarginbottom My LA2050 Grants Challenge
-          %p $1,000,000 to make LA the best place to learn, create, play, connect, and live
-          %a.button.bigger{ href: '/challenge' } Learn about our next challenge
-          .linebreak
+  #challengehero
+    .darkener
+    .challengehero-contentwrap
+      .container
+        .row
+          .col-md-12
+            .hero-title My LA2050 Grantees
+            .hero-byline $1,000,000 to make LA the best place to learn, create, play, connect, and live.
+            .linebreak
 
-  .previouswinners
-    .container
-      .row
-        .col-md-12
-          %h2.margin-bottom Previous winners
+            %a.button.bigger{ href: '/challenge' } Learn about our next challenge
 
+  .background-white.paddedsection
+    .previouswinners
+      .container
+        .row
+          .col-md-12
+            %h2.margin-bottom Previous winners
 
       .featuredwinners
         {{ cms:partial:grantees/grantees }}
