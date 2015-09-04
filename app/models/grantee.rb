@@ -12,6 +12,9 @@ class Grantee < ActiveRecord::Base
   has_attached_file :photo, :styles => { :medium => "600x600>", :small => "360x215#", :thumb => "100x100>" }, :default_url => "grantees/missing.svg"
   validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
 
+  attr_accessor :delete_photo
+  before_validation { self.photo.clear if self.delete_photo == '1' }
+
   def learn_more_url
     action_url || website_url || submission_url
   end
