@@ -23,8 +23,11 @@ class DataPoint < ActiveRecord::Base
   end
 
   def percent_of_target
-    target = self.metric.data_points.order('data_time DESC').first
     return nil unless target
     return (100 * value / target.value).round
+  end
+
+  def target
+    self.metric.data_points.order('data_time DESC').first
   end
 end

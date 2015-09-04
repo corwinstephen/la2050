@@ -817,12 +817,13 @@ ul.linenav {
 
 .metricheader {
   background-color:#4d99d3;
-  padding:5em 0;
+  padding:3em 0;
   color:#fff;
 }
 
 .metricheader-name {
   font-size:36px;
+  line-height:20px;
   font-weight:bold;
 }
 
@@ -833,15 +834,21 @@ ul.linenav {
 
 .metricheader .linebreak {
   border-bottom-color:rgba(255, 255, 255, .2);
-  margin:36px 0;
+  margin:1em 0;
 }
 
 .metricheader dt {
   margin-right:1em;
+  margin-bottom:0 !important;
 }
 
 .metricheader dt, .metricheader dd {
   display:inline-block;
+  margin-bottom:0;
+}
+
+.metricheader dl {
+  margin-bottom:0;
 }
 
 .timelinebox {
