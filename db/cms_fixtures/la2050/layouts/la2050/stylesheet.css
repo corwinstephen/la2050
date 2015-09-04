@@ -888,6 +888,8 @@ ul.linenav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  margin-left:-15px;
+  margin-right:-15px;
 }
 
 .report h2 {
