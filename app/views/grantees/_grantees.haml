@@ -1,4 +1,4 @@
-- big = Grantee.where.not(video_url: nil).order('RANDOM()').limit(3)
+- big = Grantee.order('RANDOM()').limit(3)
 - big.all.each_with_index do |grantee, index|
   - if index % 2 == 0
     .row.featuredwinners-winner
@@ -18,6 +18,8 @@
         - if grantee.video_url.present?
           .featuredwinners-video
             = auto_html(grantee.video_url) { youtube(width: '100%') }
+        - else
+          = image_tag grantee.photo.url(:medium)
   - else
     .row.featuredwinners-winner
       .col-sm-7
