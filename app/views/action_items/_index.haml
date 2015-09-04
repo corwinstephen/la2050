@@ -1,0 +1,4 @@
+.container
+  .row
+    - ActionItem.all.each do |item|
+      = render partial: 'action_items/item', locals: { action_item: item }
