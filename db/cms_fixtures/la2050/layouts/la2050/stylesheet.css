@@ -416,6 +416,14 @@ li {
   overflow:hidden;
 }
 
+@media (max-width: 625px) {
+  .home-goals dl dt, .home-goals, dl dd {
+    display:block;
+    width:100%;
+    text-align:center;
+  }
+}
+
 .homegetinvolved img {
   width:100%;
   margin-bottom:5em;
