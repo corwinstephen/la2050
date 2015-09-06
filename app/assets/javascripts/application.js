@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.slicknav
 //= require parallax
 //= require_tree .

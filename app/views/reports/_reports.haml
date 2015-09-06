@@ -1,8 +1,8 @@
 - Report.all.in_groups_of(2) do |reports|
-  .row.row-eq-height.margin-bottom
+  .row.margin-bottom
     - reports.each do |report|
       - if report.present?
-        .col-md-6.report
+        .col-sm-6.report
           %h2= report.title
           - if report.photo?
             = image_tag report.photo.url(:medium)

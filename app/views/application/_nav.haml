@@ -6,12 +6,16 @@
     .col-sm-2.col-xs-12
       %a#nav-homelink{:href => "/"} LA2050
 
-    %nav.col-sm-10.col-xs-12.hidden-xs
-      %a{:href => "/about", class: (['story', 'community', 'press', 'instagram'].include?(@cms_page.try(:slug)) || request.original_fullpath == '/blog' ? 'selected' : '')} About
-      %a{:href => "/goals", class: (['dashboard', 'goals', 'metrics', 'datasets', 'reports', 'live', 'create', 'learn', 'connect', 'play'].include?(@cms_page.try(:slug)) || ['metrics'].include?(controller.controller_name) ? 'selected' : '')} Goals
-      %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenges
-      %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
-
+    %nav.col-sm-10.col-xs-12
+      %ul
+        %li
+          %a{:href => "/about", class: (['story', 'community', 'press', 'instagram'].include?(@cms_page.try(:slug)) || request.original_fullpath == '/blog' ? 'selected' : '')} About
+        %li
+          %a{:href => "/goals", class: (['dashboard', 'goals', 'metrics', 'datasets', 'reports', 'live', 'create', 'learn', 'connect', 'play'].include?(@cms_page.try(:slug)) || ['metrics'].include?(controller.controller_name) ? 'selected' : '')} Goals
+        %li
+          %a{:href => "/challenge", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenges
+        %li
+          %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
 
     - if display_about_nav?
       .nav-subnav.col-xs-12
@@ -41,6 +45,44 @@
         \/
         %a{:href => "/la2050listens", class: (['la2050listens'].include?(@cms_page.try(:slug)) ? 'selected' : '')} #LA2050Listens
 
+
+.mobileheader LA2050
+%ul#resnav
+  %li
+    About
+    %ul
+      %li
+        %a{:href => "/about", class: (['about'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Story
+      %li
+        %a{:href => "/community", class: (['community'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Community
+      %li
+        %a{:href => "/blog", class: (request.original_fullpath == '/blog' ? 'selected' : '')} Happenings
+      %li
+        %a{:href => "/press", class: (['press'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Press
+      %li
+        %a{:href => "/instagram", class: (['instagram'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Instagram
+
+  %li
+    Goals
+    %ul
+      %li
+        %a{:href => "/goals", class: (['goals', 'live', 'create', 'learn', 'connect', 'play'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Goals
+      %li
+        %a{:href => "/metrics", class: (['metrics'].include?(@cms_page.try(:slug)) || controller.controller_name == 'metrics' ? 'selected' : '')} Metrics
+      %li
+        %a{:href => "/reports", class: (['reports'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Reports
+  %li
+    Challenge
+    %ul
+      %li
+        %a{:href => "/challenge", class: (['challenge'].include?(@cms_page.try(:slug)) ? 'selected' : '')} 2015 MyLA2050 Grants Challenge
+      %li
+        %a{:href => "/grantees", class: (['grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Our Grantees
+      %li
+        %a{:href => "/la2050listens", class: (['la2050listens'].include?(@cms_page.try(:slug)) ? 'selected' : '')} #LA2050Listens
+  %li
+    %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
+
 :javascript
   $(document).ready(function(){
     var $navWrap = $('.nav-wrap');
@@ -57,4 +99,7 @@
         $navWrap.removeClass(classBeforeName);
       }
     });
+
+    // Mobile nav
+    $('#resnav').slicknav();
   });
