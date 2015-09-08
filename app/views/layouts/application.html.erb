@@ -15,7 +15,15 @@
   <% end %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="description" content="LA2050 is an initiative driving and tracking progress toward a shared vision for the future of Los Angeles.">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta property="og:title" content="LA2050">
+  <meta property="og:site_name" content="LA2050">
+  <meta property="og:url" content="http://la2050.org">
+  <meta property="og:description" content="LA2050 is an initiative driving and tracking progress toward a shared vision for the future of Los Angeles.">
+  <meta property="fb:app_id" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="<%= image_url('og.png') %>">
 </head>
 <body>
 
