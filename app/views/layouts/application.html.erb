@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LA2050</title>
+  <title>
+    <% if @cms_page.try(:label).present? %>
+      <%= @cms_page.label.capitalize %> - 
+    <% end %>
+    LA2050
+  </title>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <% if @cms_site %>
