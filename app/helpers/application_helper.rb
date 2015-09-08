@@ -7,9 +7,9 @@ module ApplicationHelper
 
   def challenge_phase
     # Challenge Opens September 8th 2015 12noon PST
-    open_at = DateTime.new(2015,9,8,12,00,00,"-08:00")
+    open_at = DateTime.new(2015,9,8,12,00,00,"-07:00")
     # Challenge Opens October 6th 2015 12noon PST
-    close_at = DateTime.new(2015,10,6,12,00,00,"-08:00")
+    close_at = DateTime.new(2015,10,6,12,00,00,"-07:00")
     now = DateTime.now
 
     if now < open_at
