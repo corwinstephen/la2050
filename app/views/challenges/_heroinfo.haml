@@ -1,7 +1,10 @@
-- if challenge_open?
+- if challenge_phase == :open
   .hero-info.margin-bottom Submissions are currently open
 
   %a.bigger.button#submitlink{ href: '#submit' } Submit now
 
-- else 
+- elsif challenge_phase == :not_open
   .hero-info Submissions open September 8th 2015 noon PST
+
+- else
+  .hero-info Voting begins October 20th and noon, PST
