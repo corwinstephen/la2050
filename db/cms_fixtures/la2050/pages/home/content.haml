@@ -10,7 +10,6 @@
        $('html, body').animate({scrollTop: $('#learnmore').offset().top - 80}, 500);
     });
   });
-
 #homehero
   .homehero-bg {{cms:file:homehero.jpg:image}}
   .homehero-text.animated.lightSpeedIn {{cms:file:homehero-text.svg:image}}
@@ -20,6 +19,7 @@
       .homehero-ctatext Together, shaping the future of Los Angeles.
       %a.button#learnmorelink{ href: '#learnmore' } Learn more
       %a.button#getinvolvedlink{ href: '#getinvolved' } Get involved
+      %a.button{ style: 'margin-top:5px;background-color:#f13583; width:auto;', href: '/challenge' } Vote in the MyLa2050 Grants Challenge
 
 .paddedsection{ data: { parallax: 'scroll', image: { src: '{{cms:file:sunback.png}}' }, speed: 0.5 } }
   .container
