@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.slicknav
+//= require cookie
 //= require parallax
 //= require_tree .
