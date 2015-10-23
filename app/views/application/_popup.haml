@@ -50,11 +50,11 @@
     if(popupDoesExist() && !sawPopup()){
       setTimeout(function(){
         popupOpen();
+        markSeen();
       }, 1300);
     }
 
     $('.popup-x').click(function(){
       popupClose();
-      markSeen();
     });
   });
