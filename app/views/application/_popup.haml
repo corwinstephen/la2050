@@ -1,10 +1,12 @@
 #shield
-.popup
-  .popup-x X
-  - if cms_block_render(:title, Comfy::Cms::Page.find_by_full_path('/popup')).present?
-    .popup-title= cms_block_render(:title, Comfy::Cms::Page.find_by_full_path('/popup'))
 
-  .popup-content= cms_block_render(:content, Comfy::Cms::Page.find_by_full_path('/popup'))
+- if cms_block_render(:content, Comfy::Cms::Page.find_by_full_path('/popup')).present?
+  .popup
+    .popup-x X
+    - if cms_block_render(:title, Comfy::Cms::Page.find_by_full_path('/popup')).present?
+      .popup-title= cms_block_render(:title, Comfy::Cms::Page.find_by_full_path('/popup'))
+
+    .popup-content= cms_block_render(:content, Comfy::Cms::Page.find_by_full_path('/popup'))
 
 :javascript
   function popupOpen(){
@@ -40,8 +42,12 @@
     return hash;
   }
 
+  function popupDoesExist(){
+    return $('.popup').length > 0;
+  }
+
   $(document).ready(function(){
-    if(!sawPopup()){
+    if(popupDoesExist() && !sawPopup()){
       setTimeout(function(){
         popupOpen();
       }, 1300);
