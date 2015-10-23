@@ -28,7 +28,7 @@
   }
 
   function hashedContent(){
-    return hash($('.popup').html());
+    return hash(escape($('.popup').html()));
   }
 
   function hash(input) {

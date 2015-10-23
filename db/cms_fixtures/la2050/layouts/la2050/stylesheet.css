@@ -1001,6 +1001,13 @@ footer ul > li > ul > li {
   transform:translateX(-50%) translateY(-50%);
 }
 
+@media(max-width: 565px){
+  .popup {
+    max-width:initial;
+    min-width:95vw;
+  }
+}
+
 .popup img {
   width:100%;
 }
@@ -1032,6 +1039,7 @@ footer ul > li > ul > li {
   padding-top:2rem;
   border-top:1px solid #eee;
 }
+
 
 #shield {
   display:none;
