@@ -1,0 +1,26 @@
+#shield
+.popup
+  .popup-x X
+  .popup-title= cms_block_render(:title, Comfy::Cms::Page.find_by_full_path('/popup'))
+  .popup-content= cms_block_render(:content, Comfy::Cms::Page.find_by_full_path('/popup'))
+
+:javascript
+  function popupOpen(){
+    $('#shield').fadeIn(500);
+    $('.popup').slideDown(300);
+  }
+
+  function popupClose(){
+    $('#shield').fadeOut(500);
+    $('.popup').slideUp(150);
+  }
+
+  $(document).ready(function(){
+    setTimeout(function(){
+      popupOpen();
+    }, 1300);
+
+    $('.popup-x').click(function(){
+      popupClose();
+    });
+  });
