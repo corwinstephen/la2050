@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Rich::Engine => '/rich', :as => 'rich'
   devise_for :users
   resources :metrics, only: [:show]
   resources :jobs, only: [:show]

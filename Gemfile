@@ -32,6 +32,7 @@ gem 'aws-sdk' , '<2.0'
 gem 'rest-client'
 gem 'devise'
 gem 'puma'
+gem 'rich', github: 'bastiaanterhorst/rich'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

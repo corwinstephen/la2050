@@ -47,5 +47,27 @@ RailsAdmin.config do |config|
       end
     end
 
+    config.model 'Job' do
+      visible true
+      edit do
+        field :title
+        field :employment_type
+        field :location
+        field :description, :rich_editor do
+          config({
+            :insert_many => true
+          })
+        end
+        field :to_apply, :rich_editor do
+          config({
+            :insert_many => true
+          })
+        end
+        field :date_posted
+        field :goals
+        field :organizations
+      end
+    end
+
   end
 end
