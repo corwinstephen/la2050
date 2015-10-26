@@ -32,7 +32,8 @@ gem 'aws-sdk' , '<2.0'
 gem 'rest-client'
 gem 'devise'
 gem 'puma'
-gem 'rich', :git => 'https://github.com/kreativgebiet/rich.git'
+gem 'ckeditor'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

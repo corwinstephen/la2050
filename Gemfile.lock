@@ -5,18 +5,6 @@ GIT
     comfy_blog (1.12.3)
       comfortable_mexican_sofa (>= 1.12.7)
 
-GIT
-  remote: https://github.com/kreativgebiet/rich.git
-  revision: b4cc4e321eb36d8f1e0fd0a98dbc47abc2df1c36
-  specs:
-    rich (1.4.8)
-      jquery-rails
-      kaminari
-      mime-types
-      rack-raw-upload
-      rails (>= 3.2.0)
-      sass-rails
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -78,6 +66,9 @@ GEM
     bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (6.0.2)
+    ckeditor (4.1.4)
+      cocaine
+      orm_adapter (~> 0.5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.7)
@@ -180,8 +171,6 @@ GEM
     rack-pjax (0.8.0)
       nokogiri (~> 1.5)
       rack (~> 1.1)
-    rack-raw-upload (1.1.1)
-      multi_json
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.0)
@@ -284,6 +273,7 @@ DEPENDENCIES
   auto_html
   aws-sdk (< 2.0)
   byebug
+  ckeditor
   coffee-rails (~> 4.1.0)
   comfortable_mexican_sofa (~> 1.12.0)
   comfy_blog!
@@ -297,7 +287,6 @@ DEPENDENCIES
   rails (= 4.2.0)
   rails_admin
   rest-client
-  rich!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

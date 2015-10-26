@@ -53,16 +53,8 @@ RailsAdmin.config do |config|
         field :title
         field :employment_type
         field :location
-        field :description, :rich_editor do
-          config({
-            :insert_many => true
-          })
-        end
-        field :to_apply, :rich_editor do
-          config({
-            :insert_many => true
-          })
-        end
+        field :description, :ck_editor
+        field :to_apply, :ck_editor
         field :date_posted
         field :goals
         field :organizations

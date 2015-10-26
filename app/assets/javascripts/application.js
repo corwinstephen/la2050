@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require jquery.slicknav
 //= require cookie
+//= require ckeditor/init
 //= require parallax
 //= require_tree .
