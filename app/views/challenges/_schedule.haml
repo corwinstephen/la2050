@@ -3,11 +3,9 @@
     %p.prose.guide Timeline
 
   .borderbox.padded.text-center.margin-top
-    %div{class: challenge_phase == :open ? '' : 'timelinebox-deactivated' }
+    .timelinebox-deactivated
       %p.prose.guide.little 1. Submission
       .timelinebox
-        - if challenge_phase == :open
-          .timelinebox-arrow
         September 8th - October 6th
 
     .timelinebox-deactivated
@@ -15,8 +13,10 @@
       .timelinebox
         October 20th - November 3rd
 
-    .timelinebox-deactivated
+    %div
       %p.prose.guide.little 3. Winners announced
-      .timelinebox December 8
+      .timelinebox
+        .timelinebox-arrow
+        December 8
 
     %p.prose.aside All dates 12pm, Pacific Time
