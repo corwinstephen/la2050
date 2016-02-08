@@ -1,4 +1,4 @@
-- JSON.parse([].each do |image|
+- JSON.parse(RestClient.get('https://api.instagram.com/v1/users/255502041/media/recent/?client_id=44007b8606ba4bec9df930eb2974df1d', { accept: :json }))['data'].each do |image|
   .col-sm-4.col-xs-6
     = link_to image['link'] do
       = image_tag(image['images']['standard_resolution']['url'])
