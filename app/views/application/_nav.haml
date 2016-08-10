@@ -39,7 +39,8 @@
 
     - if display_challenge_nav?
       .nav-subnav.col-xs-12
-        %a{:href => "/challenge", class: (['challenge'].include?(@cms_page.try(:slug)) ? 'selected' : '')} 2015 MyLA2050 Grants Challenge
+        %a{:href => "http://challenge.la2050.org" } 2016 MyLA2050 Grants Challenge
+        %a{:href => "/2015_challenge", class: (['challenge'].include?(@cms_page.try(:slug)) ? 'selected' : '')} 2015 Challenge
         \/
         %a{:href => "/grantees", class: (['grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Our Grantees
         \/
