@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   comfy_route :blog_admin, :path => '/admin'
   comfy_route :blog, :path => '/blog'
+
+  match '/challenge', to: redirect('http://challenge.la2050.org', 301), via: :get
   
   # Make sure this routeset is defined last
   comfy_route :cms, :path => '/', :sitemap => false
