@@ -32,7 +32,7 @@ module ApplicationHelper
   end
 
   def display_challenge_nav?
-    (@cms_page.present? && ['challenge', 'la2050listens', 'grantees'].include?(@cms_page.slug))
+    (@cms_page.present? && ['2015_challenge', 'la2050listens', 'grantees'].include?(@cms_page.slug))
   end
 
   def display_subnav?

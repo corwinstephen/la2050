@@ -13,7 +13,7 @@
         %li
           %a{:href => "/goals", class: (['dashboard', 'goals', 'metrics', 'datasets', 'reports', 'live', 'create', 'learn', 'connect', 'play'].include?(@cms_page.try(:slug)) || ['metrics'].include?(controller.controller_name) ? 'selected' : '')} Goals
         %li
-          %a{:href => "http://challenge.la2050.org", class: (['challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenges
+          %a{:href => "/grantees", class: (['2015_challenge', 'grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Challenge
         %li
           %a{:href => "/jobs", class: (['jobs'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Jobs
 
@@ -39,8 +39,7 @@
 
     - if display_challenge_nav?
       .nav-subnav.col-xs-12
-        %a{:href => "http://challenge.la2050.org" } 2016 MyLA2050 Grants Challenge
-        %a{:href => "/2015_challenge", class: (['2015_challenge'].include?(@cms_page.try(:slug)) ? 'selected' : '')} 2015 Challenge
+        %a{:href => "http://challenge.la2050.org", :target => '_blank' } 2016 MyLA2050 Grants Challenge
         \/
         %a{:href => "/grantees", class: (['grantees'].include?(@cms_page.try(:slug)) ? 'selected' : '')} Our Grantees
         \/
